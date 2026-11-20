@@ -1,0 +1,108 @@
+name: Refresh cache
+
+on:
+  schedule:
+    # Every second day of month at 03:17 UTC
+    - cron: '17 3 */2 * *'
+  workflow_dispatch:
+
+permissions:
+  # Needed to push the refreshed cache
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+env:
+  CACHE_DIR: ~/.cache/antorassured/pages
+  QUARKUS_CXF_REPO_URL: https://github.com/quarkiverse/quarkus-cxf.git
+  QUARKUS_CXF_BRANCHES: main 3.40 3.33
+  JAVA_VERSION: 25
+
+jobs:
+  refresh-cache:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+
+    - name: Clone ${{ github.repository }} to ${{ env.CACHE_DIR }}
+      id: clone-cache
+      run: |
+        cacheDir="${CACHE_DIR/#\~/$HOME}"
+        mkdir -p "$(dirname "$cacheDir")"
+        git clone --branch "$GITHUB_REF_NAME" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY.git" "$cacheDir"
+
+    - name: Set up JDK ${{ env.JAVA_VERSION }}
+      uses: actions/setup-java@v6
+      with:
+        distribution: temurin
+        java-version: ${{ env.JAVA_VERSION }}
+
+    - name: Cache ~/.m2/repository
+      uses: actions/cache@v6
+      with:
+        path: ~/.m2/repository
+        # There is no single pom.xml to hash, so we save a new cache with every run and restore the newest one
+        key: ${{ runner.os }}-maven-${{ github.run_id }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
+
+    - name: Build quarkus-cxf branches and run docs tests
+      env:
+        # AntoraTest requires GITHUB_TOKEN to validate GitHub links
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git clone "$QUARKUS_CXF_REPO_URL" quarkus-cxf
+        cd quarkus-cxf
+
+        failedBranches=()
+        for branch in $QUARKUS_CXF_BRANCHES; do
+          echo "::group::quarkus-cxf $branch"
+          # Test failures are ignored: the remote pages are cached even if some links are broken
+          if git checkout --force "$branch" \
+              && git clean -fdx \
+              && ./mvnw -B -ntp clean install -DskipTests -Dquarkus.build.skip -pl '!docs' \
+              && (cd docs && ../mvnw -B -ntp test -Dmaven.test.failure.ignore=true)
+          then
+            echo "::endgroup::"
+          else
+            echo "::endgroup::"
+            echo "::error::Could not build quarkus-cxf $branch"
+            failedBranches+=("$branch")
+          fi
+        done
+
+        # Keep on with the other branches if one of them does not build, but still report the problem
+        if [ "${#failedBranches[@]}" -gt 0 ]; then
+          echo "Could not build quarkus-cxf branches: ${failedBranches[*]}"
+          exit 1
+        fi
+
+    - name: Commit and push ${{ env.CACHE_DIR }}
+      # Push what we have even if some quarkus-cxf branch could not be built
+      if: ${{ !cancelled() && steps.clone-cache.outcome == 'success' }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        cd "${CACHE_DIR/#\~/$HOME}"
+        git add --all
+        if git diff --cached --quiet; then
+          echo "No changes in $CACHE_DIR"
+          exit 0
+        fi
+        git -c user.name='Cache Updater' \
+            -c user.email='github-actions@noreply.github.com' \
+            commit --quiet -m "Cache refresh: $QUARKUS_CXF_BRANCHES"
+        git show --stat --format='%H %s' HEAD | tail -n 1
+        # The credentials are passed only here, so that they are not stored in .git/config of the clone
+        authHeader="AUTHORIZATION: basic $(printf 'x-access-token:%s' "$GITHUB_TOKEN" | base64 -w 0)"
+        git -c "http.$GITHUB_SERVER_URL/.extraheader=$authHeader" push origin "HEAD:$GITHUB_REF_NAME"
+
+    - name: Avoid caching SNAPSHOT artifacts in local Maven repository
+      if: ${{ always() }}
+      run: |
+        if [ -d ~/.m2/repository ]; then
+          find ~/.m2/repository -type d -name '*-SNAPSHOT' -exec rm -r {} +
+        fi
