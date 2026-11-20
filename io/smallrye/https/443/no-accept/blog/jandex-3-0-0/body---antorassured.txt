@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; base-uri 'none'; object-src 'none'; form-action 'none'">
+
+  <!-- SEO TITLE -->
+  
+  <title>Jandex 3.0.0 - SmallRye</title>
+  <meta property="og:title" content="Jandex 3.0.0" />
+  <meta name="twitter:title" content="Jandex 3.0.0">
+  <meta property="og:site_name" content="SmallRye">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="Jandex found a new home in SmallRye and version 3.0.0 is available!">
+  <meta property="og:description" content="Jandex found a new home in SmallRye and version 3.0.0 is available!" />
+  <meta name="twitter:description" content="Jandex found a new home in SmallRye and version 3.0.0 is available!">
+  <!-- SEO AUTHOR -->
+  <meta property="article:author" content="Ladislav Thon" />
+  <meta name="author" content="Ladislav Thon" />
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://smallrye.io/blog/jandex-3-0-0/" />
+  <meta property="og:url" content="https://smallrye.io/blog/jandex-3-0-0/" />
+  <meta name="twitter:url" content="https://smallrye.io/blog/jandex-3-0-0/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2022-08-25T19:00Z[UTC]" />
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://smallrye.io/images/rye-field-og.jpg">
+  <meta name="twitter:image" content="https://smallrye.io/images/rye-field-og.jpg">
+  <!-- SEO COLLECTION PAGES -->
+  <link rel="prev" href="https://smallrye.io/blog/fault-tolerance-6-0-0/" />
+  <link rel="next" href="https://smallrye.io/blog/fault-tolerance-5-5/" />
+  <!-- SEO TWITTER -->
+  <meta name="twitter:site" content="@smallrye_io" />
+  <meta name="twitter:creator" content="@smallrye_io" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.1.9" />
+
+<link rel="alternate" type="application/rss+xml" title="SmallRye" href="https://smallrye.io/rss.xml"/>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <script>
+    try {
+      var t = localStorage.getItem('site-theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { /* private mode: follow the OS preference */ }
+  </script>
+  <style>
+/* ==========================================================================
+   SmallRye. Tokens first; the token names are shared by every rule below.
+   Light is the default. The two dark blocks must stay identical apart from
+   their selector: one follows the OS, the other the theme toggle.
+   Brand: navy #322f51 and sky #43b3d7 from the logo; the rye field photo.
+   ========================================================================== */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400 700;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/open-sans-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400 600;
+  font-display: swap;
+  src: url("/fonts/roboto-mono-latin.woff2") format("woff2");
+}
+:root {
+  color-scheme: light;
+  --primary: #322F51;
+  --primary-deep: #221F3B;
+  --accent: #43B3D7;
+  --accent-ink: #14709A;
+  --label-on-dark: #6FCBE8;
+  --bg: #FBFAF6;
+  --bg-alt: #F1EFE6;
+  --bg-card: #FFFFFF;
+  --fg: #1C1A30;
+  --fg-muted: #58556F;
+  --line: #DCD9CC;
+  --on-primary: #FFFFFF;
+  --btn-bg: #322F51;
+  --btn-fg: #FFFFFF;
+  --shadow: none;
+  --code-bg: #F1EFE6;
+  --code-fg: #1C1A30;
+  --hl-comment: #6A6880;
+  --hl-keyword: #7A2E8E;
+  --hl-string: #1B6E3A;
+  --hl-number: #9A4A00;
+  --hl-title: #14608A;
+  --hl-attr: #7D4500;
+  --hl-meta: #6A6880;
+
+  --font-display: "Open Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-body: "Open Sans", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  --font-mono: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --container: 72rem;
+  --radius: 4px;
+}
+@media (prefers-color-scheme: dark) {
+:root:not([data-theme="light"]) {
+  color-scheme: dark;
+  --bg: #14122A;
+  --bg-alt: #1A1833;
+  --bg-card: #1F1D3C;
+  --fg: #ECEBF6;
+  --fg-muted: #B5B2CF;
+  --line: #35325A;
+  --accent-ink: #6FCBE8;
+  --btn-bg: #6FCBE8;
+  --btn-fg: #14122A;
+  --code-bg: #0E0C20;
+  --code-fg: #E6E5F2;
+  --hl-comment: #9895B3;
+  --hl-keyword: #D2A8FF;
+  --hl-string: #7EE787;
+  --hl-number: #FFA657;
+  --hl-title: #79C0FF;
+  --hl-attr: #FFA657;
+  --hl-meta: #9895B3;
+}
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #14122A;
+  --bg-alt: #1A1833;
+  --bg-card: #1F1D3C;
+  --fg: #ECEBF6;
+  --fg-muted: #B5B2CF;
+  --line: #35325A;
+  --accent-ink: #6FCBE8;
+  --btn-bg: #6FCBE8;
+  --btn-fg: #14122A;
+  --code-bg: #0E0C20;
+  --code-fg: #E6E5F2;
+  --hl-comment: #9895B3;
+  --hl-keyword: #D2A8FF;
+  --hl-string: #7EE787;
+  --hl-number: #FFA657;
+  --hl-title: #79C0FF;
+  --hl-attr: #FFA657;
+  --hl-meta: #9895B3;
+}
+
+/* ---- Base ---------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 400 1.0625rem/1.65 var(--font-body); overflow-wrap: break-word; }
+img { max-width: 100%; height: auto; }
+a { color: var(--accent-ink); text-underline-offset: 0.18em; text-decoration-thickness: 1px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 700; line-height: 1.2; letter-spacing: -0.015em; margin: 0 0 0.6em; }
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.4rem, 3vw, 1.85rem); }
+h3 { font-size: 1.25rem; }
+h4 { font-size: 1.05rem; }
+p { margin: 0 0 1em; }
+code, kbd, pre, samp { font-family: var(--font-mono); font-size: 0.9em; }
+.container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 1.25rem; }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--accent); color: #14122A; padding: 0.5rem 1rem; z-index: 100; }
+.skip-link:focus { left: 1rem; }
+.label, .eyebrow { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); margin: 0 0 0.6rem; }
+.eyebrow a { color: inherit; text-decoration: none; }
+.eyebrow a:hover { text-decoration: underline; }
+.lead { font-size: 1.15rem; color: var(--fg-muted); max-width: 44rem; }
+.muted { color: var(--fg-muted); }
+
+.btn { display: inline-flex; align-items: center; min-height: 2.9rem; padding: 0.6rem 1.25rem; border-radius: var(--radius); font-weight: 600; text-decoration: none; border: 2px solid transparent; }
+.btn-primary { background: var(--btn-bg); color: var(--btn-fg); }
+.btn-primary:hover { filter: brightness(1.15); }
+.btn-ghost { border-color: currentColor; color: inherit; }
+
+/* ---- Header -------------------------------------------------------------- */
+.site-header { border-bottom: 1px solid var(--line); background: var(--bg); position: relative; z-index: 20; }
+.bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; min-height: 4.25rem; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; min-height: 2.9rem; }
+.brand img { width: 150px; height: auto; display: block; }
+.logo-dark { display: none !important; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .logo-light { display: none !important; }
+  :root:not([data-theme="light"]) .logo-dark { display: block !important; }
+}
+:root[data-theme="dark"] .logo-light { display: none !important; }
+:root[data-theme="dark"] .logo-dark { display: block !important; }
+.nav-toggle-input { position: absolute; opacity: 0; width: 0; height: 0; }
+.nav-toggle { display: flex; align-items: center; justify-content: center; width: 2.9rem; height: 2.9rem; border-radius: var(--radius); border: 1px solid var(--line); cursor: pointer; }
+.nav-toggle span, .nav-toggle span::before, .nav-toggle span::after { display: block; width: 1.3rem; height: 2px; background: var(--fg); position: relative; transition: transform 0.2s; content: ""; }
+.nav-toggle span::before { position: absolute; top: -6px; }
+.nav-toggle span::after { position: absolute; top: 6px; }
+.nav-toggle-input:checked + .nav-toggle span { background: transparent; }
+.nav-toggle-input:checked + .nav-toggle span::before { transform: translateY(6px) rotate(45deg); }
+.nav-toggle-input:checked + .nav-toggle span::after { transform: translateY(-6px) rotate(-45deg); }
+.nav-toggle-input:focus-visible + .nav-toggle { outline: 3px solid var(--accent); }
+.site-nav { display: none; width: 100%; padding-bottom: 0.75rem; }
+.nav-toggle-input:checked ~ .site-nav { display: block; }
+.site-nav ul { list-style: none; margin: 0; padding: 0; }
+.site-nav a { display: flex; align-items: center; min-height: 2.9rem; padding: 0 0.25rem; color: var(--fg); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--line); }
+.site-nav a[aria-current="page"] { color: var(--accent-ink); }
+@media (min-width: 52rem) {
+  .bar { flex-wrap: nowrap; }
+  .nav-toggle { display: none; }
+  .site-nav { display: block; width: auto; padding: 0; }
+  .site-nav ul { display: flex; gap: 1.75rem; }
+  .site-nav a { border: 0; padding: 0; box-shadow: inset 0 -2px 0 transparent; }
+  .site-nav a:hover, .site-nav a[aria-current="page"] { box-shadow: inset 0 -2px 0 var(--accent); }
+}
+
+/* ---- Hero: the rye field, type set left on a navy wash ------------------- */
+.hero { position: relative; isolation: isolate; color: #FFFFFF; background: var(--primary-deep); overflow: hidden; }
+.hero-photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; z-index: -2; }
+.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(100deg, rgba(34, 31, 59, 0.94) 0%, rgba(34, 31, 59, 0.82) 42%, rgba(34, 31, 59, 0.25) 100%); }
+.hero-inner { padding-top: clamp(4rem, 12vw, 8.5rem); padding-bottom: clamp(4rem, 12vw, 8.5rem); }
+.hero h1 { max-width: 18ch; font-size: clamp(2.25rem, 6vw, 4rem); letter-spacing: -0.025em; }
+.hero .lead { color: #E3E1F0; max-width: 34rem; }
+.hero a:not(.btn) { color: var(--label-on-dark); }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 2rem; }
+.hero .btn-primary { background: var(--accent); color: #14122A; }
+
+/* ---- Sections: space and hairline rules, one navy field ------------------ */
+.section { padding: clamp(3rem, 7vw, 5rem) 0; }
+.section + .section { border-top: 1px solid var(--line); }
+
+.pillar-grid { display: grid; gap: 2.5rem; }
+.pillar { border-top: 3px solid var(--accent); padding-top: 1.25rem; }
+.pillar h2 { font-size: 1.35rem; }
+.pillar p:last-child { color: var(--fg-muted); margin: 0; }
+@media (min-width: 52rem) { .pillar-grid { grid-template-columns: repeat(3, 1fr); gap: 3rem; } }
+
+/* The release ledger: dates in mono, titles as rows. */
+.releases-grid { display: grid; gap: 2rem; }
+@media (min-width: 52rem) { .releases-grid { grid-template-columns: 1fr 2fr; gap: 4rem; } }
+.more { font-weight: 600; }
+.ledger { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.ledger li { display: grid; gap: 0.15rem; padding: 0.9rem 0; border-bottom: 1px solid var(--line); }
+.ledger time { font-family: var(--font-mono); font-size: 0.85rem; color: var(--fg-muted); }
+.ledger a { font-size: 1.15rem; font-weight: 600; color: var(--fg); text-decoration: none; }
+.ledger a:hover { color: var(--accent-ink); text-decoration: underline; }
+@media (min-width: 40rem) { .ledger li { grid-template-columns: 10.5rem 1fr; align-items: baseline; gap: 1.5rem; } }
+
+.used-by { background: var(--bg-alt); }
+.logo-row { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 0.75rem; grid-template-columns: 1fr; }
+.logo-row a { display: flex; align-items: center; justify-content: center; height: 6.5rem; padding: 1rem 1.5rem; border: 1px solid var(--line); border-radius: var(--radius); }
+.logo-row a:hover { border-color: var(--accent); }
+.logo-row img { height: 3rem; width: auto; max-width: 100%; }
+.logo-row img[src*="quarkus"] { height: 2.4rem; }
+.logo-row img[src*="wildfly"] { height: 4.25rem; }
+.logo-row img[src*="openliberty"] { height: 3.4rem; }
+@media (min-width: 40rem) { .logo-row { grid-template-columns: repeat(3, 1fr); } }
+
+.join-grid { display: grid; gap: 2.5rem; }
+@media (min-width: 52rem) { .join-grid { grid-template-columns: 1fr 1fr; gap: 4rem; } }
+.join ul { padding-left: 1.2rem; }
+
+/* ---- Inner pages --------------------------------------------------------- */
+.page-banner { padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(1.5rem, 4vw, 2.5rem); border-bottom: 1px solid var(--line); background: var(--bg-alt); }
+.page-banner h1 { max-width: 22ch; margin-bottom: 0.3em; }
+.page-banner .lead { margin: 0; }
+.post-banner h1 { max-width: 30ch; }
+.page-banner + .section { border-top: 0; }
+.byline { display: flex; align-items: center; gap: 0.75rem; margin: 1rem 0 0; }
+.byline p { margin: 0; display: grid; line-height: 1.35; }
+.byline-name { font-weight: 600; color: var(--fg); }
+.byline time { font-family: var(--font-mono); font-size: 0.85rem; color: var(--fg-muted); }
+.avatar, .prose .avatar { width: 48px; height: 48px; border-radius: 50%; flex: none; object-fit: cover; border: 2px solid var(--line); }
+.avatar-initial { display: grid; place-items: center; background: var(--primary); color: #FFFFFF; font-weight: 700; }
+
+/* The reading column lines up with the banner above it rather than centring. */
+.container.prose > * { max-width: 48rem; }
+.prose h2 { margin-top: 2.2em; padding-top: 0.2em; }
+.prose h3 { margin-top: 1.8em; }
+.prose h4 { margin-top: 1.5em; }
+.prose > :first-child, .prose .sect1:first-child h2 { margin-top: 0; }
+.prose ul, .prose ol { padding-left: 1.4rem; }
+.prose li { margin: 0.3em 0; }
+.prose li > p { margin: 0; }
+.prose pre { background: var(--code-bg); color: var(--code-fg); border: 1px solid var(--line); border-radius: var(--radius); padding: 1rem 1.1rem; overflow-x: auto; line-height: 1.5; font-size: 0.875rem; }
+.prose pre code { font-size: inherit; background: none; padding: 0; border: 0; }
+.prose :not(pre) > code { background: var(--code-bg); border: 1px solid var(--line); border-radius: 3px; padding: 0.05em 0.3em; font-size: 0.86em; }
+.prose blockquote, .prose .quoteblock { margin: 1.5em 0; padding: 0.25em 0 0.25em 1.1rem; border-left: 3px solid var(--accent); color: var(--fg-muted); }
+.prose table { border-collapse: collapse; width: 100%; margin: 1.5em 0; display: block; overflow-x: auto; }
+.prose th, .prose td { border: 1px solid var(--line); padding: 0.45rem 0.7rem; text-align: left; vertical-align: top; }
+.prose th { background: var(--bg-alt); }
+.prose img { border-radius: var(--radius); }
+.prose hr { border: 0; border-top: 1px solid var(--line); margin: 2.5em 0; }
+/* AsciiDoc blocks */
+.prose .title { font-weight: 600; color: var(--fg-muted); font-size: 0.9rem; margin: 1.25em 0 0.4em; }
+.prose .listingblock, .prose .literalblock { margin: 1.25em 0; }
+.prose .admonitionblock { margin: 1.5em 0; border-left: 3px solid var(--accent); background: var(--bg-alt); border-radius: 0 var(--radius) var(--radius) 0; padding: 0.8rem 1rem; }
+.prose .admonitionblock table, .prose .admonitionblock td { border: 0; padding: 0; margin: 0; display: block; }
+.prose .admonitionblock .icon { font-family: var(--font-mono); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: 0.3rem; }
+.prose .admonitionblock .content > :last-child { margin-bottom: 0; }
+.prose dl { margin: 1.25em 0; }
+.prose dt { font-weight: 700; margin-top: 1.1em; }
+.prose dd { margin: 0.2em 0 0; color: var(--fg-muted); }
+.prose dd > p { margin: 0; }
+
+/* Project list: definition lists as rows with a rule between. */
+.projects-page .prose dl { border-top: 1px solid var(--line); margin: 0 0 2.5rem; }
+.projects-page .prose dt { margin: 0; padding-top: 0.9rem; }
+.projects-page .prose dd { padding-bottom: 0.9rem; border-bottom: 1px solid var(--line); }
+
+.toc { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-alt); padding: 0.9rem 1.1rem; margin: 0 0 2rem; font-size: 0.95rem; }
+.toc-title { margin: 0 0 0.4rem; font-family: var(--font-mono); font-weight: 600; color: var(--fg-muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.toc ul { list-style: none; margin: 0; padding: 0; }
+.toc ul ul { padding-left: 1rem; }
+.toc li { margin: 0.2rem 0; }
+.toc a { text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.post-back { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line); }
+
+/* Blog listing */
+.post-list, .prose .post-list { list-style: none; margin: 0; padding: 0; }
+.post-list li { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.post-list li:first-child { padding-top: 0; }
+.post-list h2 { font-size: 1.35rem; margin: 0; }
+.post-list .byline { margin: 0.6rem 0 0.75rem; }
+.post-list .avatar, .prose .post-list .avatar { width: 40px; height: 40px; }
+.post-list h2 a { color: var(--fg); text-decoration: none; }
+.post-list h2 a:hover { color: var(--accent-ink); text-decoration: underline; }
+.post-list p:last-child { margin: 0; color: var(--fg-muted); }
+.pagination ul { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin: 2rem 0 0; padding: 0; }
+.pagination p { margin: 0; }
+.pagination a { display: inline-flex; align-items: center; min-height: 2.9rem; font-weight: 600; }
+.pagination .page-number { color: var(--fg-muted); font-size: 0.9rem; font-family: var(--font-mono); }
+
+/* ---- Footer -------------------------------------------------------------- */
+.site-footer { background: var(--primary-deep); color: #CFCDE3; font-size: 0.95rem; margin-top: 0; }
+.site-footer a { color: #ECEBF6; }
+.site-footer a:hover { color: var(--label-on-dark); }
+.footer-grid { display: grid; gap: 2rem; padding-top: 3.5rem; padding-bottom: 3rem; }
+@media (min-width: 52rem) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1.3fr; gap: 3rem; } }
+.footer-logo { display: inline-block; margin-bottom: 1rem; }
+.footer-logo img { width: 140px; height: auto; display: block; }
+.footer-head { font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--label-on-dark); margin: 0 0 0.5rem; }
+.footer-head ~ .footer-head { margin-top: 1.5rem; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+.site-footer li a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.footer-bottom { background: #17152C; }
+.footer-bottom-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem 2rem; padding-top: 0.75rem; padding-bottom: 0.75rem; font-size: 0.85rem; }
+.footer-bottom-bar p { margin: 0; }
+.footer-bottom-bar a { display: inline-flex; align-items: center; min-height: 2.75rem; }
+.sponsor { display: flex; align-items: center; gap: 0.75rem; }
+.sponsor img { display: block; width: 200px; height: auto; }
+.footer-trademark { flex-basis: 100%; }
+.footer-bottom-bar .footer-trademark a { display: inline; min-height: 0; }
+
+/* ---- Theme toggle -------------------------------------------------------- */
+.theme-toggle { position: fixed; right: 1rem; bottom: 1rem; z-index: 30; width: 2.9rem; height: 2.9rem; border-radius: var(--radius); border: 1px solid var(--line); background: var(--bg-card); color: var(--fg); display: grid; place-items: center; cursor: pointer; }
+.theme-toggle[hidden] { display: none; }
+.theme-toggle .icon { width: 1.3rem; height: 1.3rem; fill: none; stroke: currentColor; stroke-width: 1.9; stroke-linecap: round; }
+.theme-toggle .icon-sun { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+/* ---- Code colours (highlight.js) ----------------------------------------- */
+.hljs { background: transparent; color: var(--code-fg); }
+.hljs-comment, .hljs-quote { color: var(--hl-comment); font-style: italic; }
+.hljs-keyword, .hljs-selector-tag, .hljs-literal, .hljs-doctag, .hljs-name { color: var(--hl-keyword); }
+.hljs-string, .hljs-regexp, .hljs-addition, .hljs-template-tag { color: var(--hl-string); }
+.hljs-number, .hljs-symbol, .hljs-bullet, .hljs-link, .hljs-deletion { color: var(--hl-number); }
+.hljs-title, .hljs-section, .hljs-type, .hljs-built_in, .hljs-class .hljs-title, .hljs-function .hljs-title { color: var(--hl-title); }
+.hljs-attr, .hljs-attribute, .hljs-variable, .hljs-template-variable, .hljs-selector-attr, .hljs-selector-id, .hljs-selector-class { color: var(--hl-attr); }
+.hljs-meta, .hljs-meta .hljs-keyword, .hljs-subst { color: var(--hl-meta); }
+.hljs-emphasis { font-style: italic; }
+.hljs-strong { font-weight: 700; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://smallrye.io/#organization",
+      "name": "SmallRye",
+      "url": "https://smallrye.io/",
+      "logo": "https://smallrye.io/images/logo.svg",
+      "description": "SmallRye is a project to share and collaborate on implementing specifications that are part of Eclipse MicroProfile.",
+      "email": "smallrye@googlegroups.com",
+      "sameAs": [
+        "https://github.com/smallrye",
+        "https://twitter.com/smallrye_io",
+        "https://groups.google.com/d/forum/smallrye"
+      ],
+      "parentOrganization": { "@type": "Organization", "name": "Commonhaus Foundation", "url": "https://www.commonhaus.org/" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://smallrye.io/#website",
+      "name": "SmallRye",
+      "url": "https://smallrye.io/",
+      "publisher": { "@id": "https://smallrye.io/#organization" }
+    }
+  ]
+}
+</script>
+    <script type="module" src="/static/bundle/app-RBDOCUG6.js"></script>
+      <!-- no style found for key 'app' in Bundler mapping !-->
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/">
+      <img class="logo-light" src="/images/logo.svg" alt="SmallRye" width="160" height="41">
+      <img class="logo-dark" src="/images/logo-dark.svg" alt="SmallRye" width="160" height="41">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav-toggle"><span></span></label>
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/blog" aria-current="page">Blog</a></li>
+        <li><a href="/docs/index.html">Documentation</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  <main id="main">
+
+<section class="page-banner post-banner">
+  <div class="container">
+    <p class="eyebrow"><a href="/blog">Blog</a></p>
+    <h1>Jandex 3.0.0</h1>
+<div class="byline">
+  <img class="avatar" src="/images/authors/lthon.jpg" alt="" width="48" height="48" loading="lazy" data-no-zoom>
+  <p><span class="byline-name">Ladislav Thon</span>
+  <time datetime="2022-08-25">25 August 2022</time></p>
+</div>
+  </div>
+</section>
+<article class="section">
+  <div class="container prose post-body">
+    <nav class="toc" aria-label="On this page">
+      <p class="toc-title">On this page</p>
+      <nav class="roq-toc" aria-label="Table of contents">
+<ul>
+<li data-level="1"><a href="#_move_to_smallrye">Move to SmallRye</a></li>
+<li data-level="1"><a href="#_move_to_java_8">Move to Java 8</a></li>
+<li data-level="1"><a href="#_uniform_annotation_access">Uniform annotation access</a></li>
+<li data-level="1"><a href="#_uniform_method_parameter_access">Uniform method parameter access</a>
+<ul>
+<li data-level="2"><a href="#_synthetic_and_mandated_parameters">Synthetic and mandated parameters</a></li>
+</ul>
+</li>
+<li data-level="1"><a href="#_proper_representation_of_recursive_type_parameters">Proper representation of recursive type parameters</a></li>
+<li data-level="1"><a href="#_changed_indexer_index_return_type">Changed Indexer.index() return type</a></li>
+<li data-level="1"><a href="#_class_retained_annotations">Class-retained annotations</a></li>
+<li data-level="1"><a href="#_navigation_for_interfaces_and_packages">Navigation for interfaces and packages</a></li>
+<li data-level="1"><a href="#_added_annotationinstance_builder">Added AnnotationInstance builder</a></li>
+<li data-level="1"><a href="#_maven_plugin_changes">Maven plugin changes</a></li>
+<li data-level="1"><a href="#_other_smaller_changes">Other smaller changes</a></li>
+<li data-level="1"><a href="#summary">Summary</a></li>
+</ul>
+</nav>
+
+    </nav>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex is a space efficient Java class file indexer and offline reflection library.
+For many years, it lived in the WildFly GitHub organization, as it was originally written for WildFly (actually for JBoss AS 7, WildFly&#8217;s predecessor).
+Recently, Quarkus accelerated Jandex usage outside of WildFly, prompting for higher pace of bug fixes and new features, and we felt that WildFly is no longer the best home for Jandex.
+With a hint of sadness, we bid farewell to WildFly (you&#8217;ve been the best for long!) and are proud to announce that we settle comfortably in the SmallRye space.</p>
+</div>
+<div class="paragraph">
+<p>SmallRye started as a set of implementations of MicroProfile specifications that could be shared among various runtimes, but it has long been way more than that.
+Importantly, both WildFly and Quarkus use SmallRye components, so Jandex is certainly no stranger here.
+To highlight that, without further ado, we announce the first release of Jandex in SmallRye, version 3.0.0!</p>
+</div>
+<div class="paragraph">
+<p>Jandex 3.0.0 contains many bug fixes and features and, given the major version bump, also some breaking changes.
+But fear not&#8201;&#8212;&#8201;upgrading is still pretty easy.
+The full list of changes <a href="https://github.com/smallrye/jandex/milestone/3?closed=1">can be found</a> in the Jandex issue tracker (which, by the way, moved to GitHub Issues a while ago).
+Here, we&#8217;ll highlight all the important ones and describe how to migrate.</p>
+</div>
+<div class="paragraph">
+<p>Note that the following text is pretty long and detailed.
+If you want a TLDR, feel free to skip to the <a href="#summary">summary</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_move_to_smallrye">Move to SmallRye</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As mentioned, Jandex is now a SmallRye project.
+As part of that, we&#8217;ve consolidated all the Jandex projects into a single repository: <a href="https://github.com/smallrye/jandex/" class="bare">https://github.com/smallrye/jandex/</a>.
+This means that the Jandex Maven plugin is released together with Jandex core, and if you contribute, you no longer have to add test classes to a dedicated <code>typeannotation-test</code> project.</p>
+</div>
+<div class="paragraph">
+<p>This also entails a change in Maven coordinates.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Old coordinates</th>
+<th class="tableblock halign-left valign-top">New coordinates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>org.jboss:jandex</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>io.smallrye:jandex</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>org.jboss.jandex:jandex-maven-plugin</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>io.smallrye:jandex-maven-plugin</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>Recommendation</strong>: if you use the Maven Enforcer plugin, configure it to ban any dependencies on <code>org.jboss:jandex</code>.
+Similar plugin exists for Gradle.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_move_to_java_8">Move to Java 8</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex 2.x is a Java 6 project.
+That has never been a problem, but Java 6 is just too old these days.
+However, Jandex has always been and continues to be conservative.
+Even though the major Jandex consumers we know of require Java 11 now, Jandex only bumps to Java 8.</p>
+</div>
+<div class="paragraph">
+<p>Nothing changes on the ability to parse new Java bytecode.
+Jandex running on Java 8 can still parse Java 17 bytecode just fine.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation</strong>: if you are not on Java 8+ yet, you really should be.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uniform_annotation_access">Uniform annotation access</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Accessing annotations has been the original primary use case for Jandex.
+However, it has never been very uniform.
+The <code>ClassInfo</code> type has different methods to access annotations than <code>MethodInfo</code> or <code>FieldInfo</code>.
+The <code>AnnotationTarget</code> interface, which all "annotated things" implement, has no annotation-related methods.</p>
+</div>
+<div class="paragraph">
+<p>With Jandex 3.0.0, this changes.
+The <code>AnnotationTarget</code> interface gains a slew of method for accessing annotations.
+There are 2 kinds of them, actually:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>methods that access annotations directly on the target;</p>
+</li>
+<li>
+<p>methods that access annotations on the target and all nested annotation targets.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The 2nd is how Jandex used to always operate, but the 1st is often what you need.
+Now, both options are available.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Purpose</th>
+<th class="tableblock halign-left valign-top">Directly on the target</th>
+<th class="tableblock halign-left valign-top">On the target and nested targets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Has annotation of given type?</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hasDeclaredAnnotation(DotName)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>hasAnnotation(DotName)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get single annotation of given type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>declaredAnnotation(DotName)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotation(DotName)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get all annotations of given type (not repeatable)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">doesn&#8217;t make sense, there may only be one</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotations(DotName)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get all annotations of given type, including repeatable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>declaredAnnotationsWithRepeatable(DotName, IndexView)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotationsWithRepeatable(DotName, IndexView)</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Get all annotations</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>declaredAnnotations()</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>annotations()</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> there used to be a <code>ClassInfo.annotations()</code> method returning a <code>Map</code>.
+That method is renamed to <code>ClassInfo.annotationsMap()</code>.
+The <code>ClassInfo.annotations()</code> method returns a <code>List</code> now.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if you call the <code>Map</code>-returning <code>annotations()</code> method on <code>ClassInfo</code>, move to <code>annotationsMap()</code>.
+Note that callers of this method compiled against Jandex 2.x will continue running correctly, because Jandex 3.0.0 includes a synthetic bridge method for binary compatibility.</p>
+</div>
+<div class="paragraph">
+<p>The <code>classAnnotation()</code>, <code>classAnnotationsWithRepeatable()</code> and <code>classAnnotations()</code> methods on <code>ClassInfo</code> are now deprecated, with the corresponding <code>declaredAnnotation*</code> methods being the suggested replacement.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if you call any of the <code>classAnnotation*</code> methods on <code>ClassInfo</code>, move to <code>declaredAnnotation*</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if you call the existing methods that access annotations both on the target and nested annotation targets, and then filter them out to retain only the annotations declared directly on the target, use the <code>declaredAnnotation*</code> methods.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_uniform_method_parameter_access">Uniform method parameter access</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex uses the <code>MethodInfo</code> class to represent methods and <code>MethodParameterInfo</code> to represent method parameters.
+However, <code>MethodInfo</code> used to never expose any access to <code>MethodParameterInfo</code>.
+You could only access parameters from <code>MethodInfo</code> through the <code>parameterName(int)</code> and <code>parameters()</code> methods, where the <code>parameterName()</code> returned the name of given parameter, while <code>parameters()</code> returned the list of parameter types.
+The <code>MethodParameterInfo</code> class was only used to represent a target of <code>AnnotationInstance</code>s.</p>
+</div>
+<div class="paragraph">
+<p>This is not very convenient.
+In Jandex 3.0.0, <code>MethodInfo</code> has several methods to access parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>parametersCount()</code>: returns the number of parameters</p>
+</li>
+<li>
+<p><code>parameterTypes()</code>: returns the list of parameter types</p>
+</li>
+<li>
+<p><code>parameterName(int)</code>: returns the name of given parameter</p>
+</li>
+<li>
+<p><code>parameterType(int)</code>: returns the type of given parameter</p>
+</li>
+<li>
+<p><code>parameters()</code>: returns the list of parameters as <code>MethodParameterInfo</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> there used to be a <code>MethodInfo.parameters()</code> method returning a <code>List&lt;Type&gt;</code>.
+That method is renamed to <code>MethodInfo.parameterTypes()</code>.
+The <code>MethodInfo.parameters()</code> method returns <code>List&lt;MethodParameterInfo&gt;</code> now.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> inspect your code that accesses method parameters.
+It can usually be simplified using the newly introduced methods.</p>
+</div>
+<div class="sect2">
+<h3 id="_synthetic_and_mandated_parameters">Synthetic and mandated parameters</h3>
+<div class="paragraph">
+<p>In addition to parameters explicitly declared in the source code, bytecode generators (such as <code>javac</code>) sometimes have to emit additional parameters.
+When these parameters are prescribed by the Java Language Specification (JLS), they are called <em>implicitly declared</em> or <em>mandated</em>.
+Otherwise, they are an unspecified artifact of compiler implementation and are called <em>synthetic</em>.</p>
+</div>
+<div class="paragraph">
+<p>Jandex used to pretty much not care.
+Sometimes, you would see these extra parameters, while sometimes, you would not.</p>
+</div>
+<div class="paragraph">
+<p>In Jandex 3.0.0, the parameter accessing methods mentioned above never return synthetic and mandated parameters.
+(At least in the vast majority of cases.
+Jandex uses the <code>Signature</code> bytecode attribute and a few simple heuristics to figure out the list of explicitly declared parameters.
+It seems <code>javac</code> emits the <code>Signature</code> attribute for all methods that have synthetic/mandated parameters, even if it wouldn&#8217;t have to, so classes compiled with <code>javac</code> should be fine.
+There are rare cases, involving constructors of local/anonymous classes that capture lexically enclosing variables, where Jandex will return synthetic/mandated parameters for classes compiled with ECJ.)</p>
+</div>
+<div class="paragraph">
+<p>For special occasions where access to the full list of method parameters (based on the method descriptor) is required, there are 2 more methods:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>descriptorParametersCount()</code>: returns the number of parameters including synthetic/mandated</p>
+</li>
+<li>
+<p><code>descriptorParameterTypes()</code>: returns the list of parameter types including synthetic/mandated</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The parameter types obtained from method descriptor are never annotated and their position in the list <em>cannot</em> be used to obtain a parameter name.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> in most cases, you don&#8217;t need these methods.
+Use the <code>parameter*</code> methods by default and only resort to <code>descriptorParameter*</code> when you need to.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_proper_representation_of_recursive_type_parameters">Proper representation of recursive type parameters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex includes a faithful representation of the Java type system, including generic types.
+Type parameters, and type variables in general, used to be represented by one of the following 2 classes:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>TypeVariable</code></p>
+</li>
+<li>
+<p><code>UnresolvedTypeVariable</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>A type variable can be unresolved for example when you&#8217;re indexing an incomplete classpath.
+However, with Jandex 2.x, a type variable may also be unresolved when it occurs in its own definition.</p>
+</div>
+<div class="paragraph">
+<p>For example, one often defines type parameters like <code>&lt;T extends Comparable&lt;T&gt;&gt;</code>.
+This type parameter definition is <em>recursive</em> in <code>T</code>.
+Since Jandex types generally do not form cycles, the first occurence of <code>T</code> is represented as <code>TypeVariable</code>, but the second occurence as <code>UnresolvedTypeVariable</code>.</p>
+</div>
+<div class="paragraph">
+<p>To become more faithful yet still avoid cycles in the object model, Jandex 3.0.0 includes an additional representation of type variables occuring in their own definition:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>TypeVariableReference</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With Jandex 3.0.0, the second occurence of <code>T</code> in the example above is represented as <code>TypeVariableReference</code>.
+A reference may be <code>follow()</code>-ed to obtain the type variable it points to.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if your code has special cases for handling <code>UnresolvedTypeVariable</code> or <code>Type.Kind.UNRESOLVED_TYPE_VARIABLE</code>, it is a good sign that it needs to be updated to deal with <code>TypeVariableReference</code> or <code>Type.Kind.TYPE_VARIABLE_REFERENCE</code>.
+And even if not, it is a good idea to test your code with some recursively defined type parameters.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if your code processes types in a recursive manner, you need to take care to avoid infinite regress.
+<code>follow()</code>-ing a <code>TypeVariableReference</code> and processing the resulting <code>TypeVariable</code> recursively is most likely <strong>not</strong> what you want.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_changed_indexer_index_return_type">Changed <code>Indexer.index()</code> return type</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>Indexer.index(InputStream)</code> method, as well as the <code>indexClass(Class&lt;?&gt;)</code> method, used to return <code>ClassInfo</code> of the just-indexed class.
+This is convenient, but prevents additional post-processing during <code>Indexer.complete()</code>.</p>
+</div>
+<div class="paragraph">
+<p>In Jandex 2.x, there was no such post-processing, but Jandex 3.0.0 adds some.
+Notably, post-processing is required for propagating type annotations on type variables across nested classes, as well as resolving unresolved type variables across nested classes and patching the resulting type variable references.</p>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> the <code>Indexer.index(InputStream)</code> and <code>indexClass(Class&lt;?&gt;)</code> methods now have a return type of <code>void</code>.
+You have to build a complete <code>Index</code> to be able to obtain a <code>ClassInfo</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> if you create a one-off <code>Indexer</code> to index a single class, you can simplify your code using <code>Index.singleClass()</code>.
+Note that callers of <code>Indexer.index()</code> / <code>indexClass()</code> compiled against Jandex 2.x will continue running, because Jandex 3.0.0 includes a synthetic bridge method for binary compatibility.
+That bridge method always returns <code>null</code> though.
+If you want to keep compiling against Jandex 2.x and add compatibility with Jandex 3.0.0, you need to ignore the return value of <code>Indexer.index()</code> / <code>indexClass()</code>, or at least handle <code>null</code> result gracefully.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_class_retained_annotations">Class-retained annotations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex 2.x only indexes annotations with <code>@Retention</code> of <code>RUNTIME</code>.
+With Jandex 3.0.0, annotations with retention of <code>CLASS</code> are indexed as well.</p>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> this is technically a breaking change, but shouldn&#8217;t really affect anyone.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> you can distinguish class-retained annotations from runtime-retained by calling <code>AnnotationInstance.runtimeVisible()</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_navigation_for_interfaces_and_packages">Navigation for interfaces and packages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some methods were added to <code>Index</code>, and actually to <code>IndexView</code>, to navigate the interface hierarchy and package structure:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>getKnownDirectSubinterfaces()</code>: returns all known direct subinterfaces of the specified interface</p>
+</li>
+<li>
+<p><code>getAllKnownSubinterfaces()</code>: returns all known interfaces that extend the given interface, directly and indirectly</p>
+</li>
+<li>
+<p><code>getClassesInPackage()</code>: returns all classes present in given package (but not in subpackages)</p>
+</li>
+<li>
+<p><code>getSubpackages()</code>: returns direct subpackages of given package (but not indirect subpackages)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> this is a breaking change if you implement the <code>IndexView</code> interface.
+Such implementations typically delegate to some other <code>IndexView</code>, in which case, adaptation should be straightforward.
+Otherwise, consult the javadoc of these methods for more precise description.</p>
+</div>
+<div class="paragraph">
+<p>Jandex 3.0.0 doesn&#8217;t break the behavior of <code>getKnownDirectImplementors()</code> and <code>getAllKnownImplementors()</code>.
+These methods are still inconsistent in that <code>getKnownDirectImplementors()</code> returns subinterfaces and classes implementing the interface, while <code>getAllKnownImplementors()</code> only returns classes implementing the interface.
+It was tempting to fix this inconsistency, but in the end, we decided it was not worth the potential trouble.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_added_annotationinstance_builder">Added <code>AnnotationInstance</code> builder</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To make life of Quarkus extension authors that create their own <code>AnnotationInstance</code>s easier, we introduced a builder.
+The previously existing <code>AnnotationInstance.create()</code> methods are not going away, they are not even deprecated, they are just more difficult to use.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> use <code>AnnotationInstance.builder()</code> instead of <code>AnnotationInstance.create()</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_maven_plugin_changes">Maven plugin changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>As mentioned above, the Jandex Maven plugin has been merged into the Jandex codebase.
+Moving forward, you won&#8217;t have to track which Jandex Maven plugin version corresponds to which Jandex release: they are released together now and always have the same version number.</p>
+</div>
+<div class="paragraph">
+<p>There are some changes and improvements in the Maven plugin, too.</p>
+</div>
+<div class="paragraph">
+<p>First of all, one execution of the Jandex Maven plugin now always produces a single index.
+Previously, each file set configured in the Jandex Maven plugin execution produced its own index.
+This is counter-intuitive and usually not what you need.</p>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> this is a breaking change, but shouldn&#8217;t hopefully affect anyone.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> use multiple executions of the Jandex Maven plugin if you need to produce multiple Jandex indices during Maven build.</p>
+</div>
+<div class="paragraph">
+<p>Further, the file set configuration allows configuring a <em>dependency</em> in addition to a directory.
+This is useful if your artifact should carry an index including not only its own classes, but also classes from some of its dependencies.</p>
+</div>
+<div class="paragraph">
+<p>And lastly, a new goal <code>jandex-jar</code> was added to the Maven plugin to allow reindexing an already existing JAR.
+This is useful for example in combination with shading.</p>
+</div>
+<div class="paragraph">
+<p><strong>Recommendation:</strong> the Maven plugin is described pretty well in the <a href="https://smallrye.io/jandex/">Jandex documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_smaller_changes">Other smaller changes</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There&#8217;s a few more changes, but those are smaller and less impactful, so we&#8217;ll just describe them briefly here.</p>
+</div>
+<div class="paragraph">
+<p><strong>BREAKING CHANGE:</strong> the <code>IndexReader.getDataVersion()</code> method was removed.
+To the best of our knowledge, noone has actually ever used it, and the return value was wrong (didn&#8217;t conform to the contract stated in the javadoc).
+The <code>getIndexVersion()</code> method remains intact.</p>
+</div>
+<div class="paragraph">
+<p>A notion of <em>equivalence</em> of Jandex objects was added.
+This is useful when building more advanced layers on top of Jandex that deal with annotation overlays and similar things.
+If you&#8217;re interested, see the <code>EquivalenceKey</code> class.</p>
+</div>
+<div class="paragraph">
+<p>The methods on <code>IndexView</code> that accept a class name as a <code>DotName</code> now have more convenient overloads that accept a <code>String</code> and even <code>Class&lt;?&gt;</code>.
+If you search the index for classes that you have on your classpath, using these new methods can simplify your code.
+For example, instead of <code>index.getClassByName(DotName.createSimple(MyClass.class.getName()))</code>, you can call <code>index.getClassByName(MyClass.class)</code>.</p>
+</div>
+<div class="paragraph">
+<p>The method <code>ClassInfo.isInterface()</code> was added.
+It can be used to determine whether given <code>ClassInfo</code> actually represents an interface.</p>
+</div>
+<div class="paragraph">
+<p>The <code>ClassInfo.memberClasses()</code> was added, which returns a set of <code>DotName</code>s of member classes of given class.
+To inspect those member classes more deeply, you need to look them up in an <code>Index</code>.</p>
+</div>
+<div class="paragraph">
+<p>The class <code>JandexReflection</code> was added, containing some utility methods to load classes corresponding to Jandex <code>ClassInfo</code> or <code>Type</code>.
+The classes are by default loaded from TCCL, but if there&#8217;s none, the class loader that loaded <code>JandexReflection</code> itself is used.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="summary">Summary</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jandex 3.0.0 contains many interesting features and improvements.
+This unfortunately required a few breaking changes.
+Here&#8217;s the recommended migration path:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Upgrade to Jandex 2.4.3.Final.
+This release deprecates some of the methods that are changed in Jandex 3.0.0 and offers replacements.
+Notably, this includes <code>ClassInfo.annotations()</code> (use <code>annotationsMap()</code> instead) and <code>MethodInfo.parameters()</code> (use <code>parameterTypes()</code> instead).
+Make sure you don&#8217;t use any deprecated Jandex methods.</p>
+</li>
+<li>
+<p>Make sure you don&#8217;t use <code>Indexer.index()</code>'s or <code>indexClass()</code>'s return value.</p>
+</li>
+<li>
+<p>At this point, if you compile your code against Jandex 2.4.3.Final, it will most likely run just fine against both 2.4.3.Final and 3.0.0.
+Exceptions include: if you implement <code>IndexView</code> (there are new methods) or if you use the Jandex <code>Type</code> hierarchy extensively (you&#8217;ll need to handle <code>TypeVariableReference</code>).</p>
+</li>
+<li>
+<p>Upgrade to Jandex 3.0.0.
+Configure Maven Enforcer plugin to ban <code>org.jboss:jandex</code> from getting into your dependency tree.
+With the exception of situations listed in the previous item, your code should compile and run without an issue.</p>
+</li>
+<li>
+<p>Profit!</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>With this release, Jandex also has a new <a href="https://smallrye.io/jandex/">documentation site</a>.
+It is currently rather incomplete, but that will hopefully improve over time.
+Jandex javadoc was also improved on many places, and remains the go-to reference.</p>
+</div>
+<div class="paragraph">
+<p>If you experience any troubles, or if you have any exciting ideas for Jandex, please <a href="https://github.com/smallrye/jandex/issues">file an issue</a>.</p>
+</div>
+</div>
+</div>    <p class="post-back"><a href="/blog">&larr; All posts</a></p>
+  </div>
+</article>
+
+  </main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-about">
+      <a class="footer-logo" href="/"><img src="/images/logo-dark.svg" alt="SmallRye" width="140" height="36" loading="lazy"></a>
+      <p>SmallRye is open source under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache Software License 2.0</a>.</p>
+      <p>This website is built with <a href="https://iamroq.dev/">Quarkus Roq</a>, hosted on <a href="https://pages.github.com/">GitHub Pages</a> and is completely open source. If you want to make it better, <a href="https://github.com/smallrye/smallrye.github.io">fork the website</a> and show us what you've got.</p>
+    </div>
+    <nav aria-label="Site">
+      <p class="footer-head">Navigation</p>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/community">Community</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/docs/index.html">Documentation</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Contribute and get help">
+      <p class="footer-head">Contribute</p>
+      <ul>
+        <li><a href="https://github.com/smallrye">GitHub</a></li>
+        <li><a href="https://twitter.com/smallrye_io">Follow us</a></li>
+      </ul>
+      <p class="footer-head">Get help</p>
+      <ul>
+        <li><a href="https://quarkusio.zulipchat.com">Chatroom</a></li>
+        <li><a href="https://groups.google.com/d/forum/smallrye">Google Groups</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="External links">
+      <p class="footer-head">External links</p>
+      <ul>
+        <li><a href="https://microprofile.io/">Eclipse MicroProfile</a></li>
+        <li><a href="https://github.com/eclipse?q=microprofile">Eclipse MicroProfile on GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-bar">
+      <p><a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a></p>
+      <p class="sponsor">A <a href="https://www.commonhaus.org/">Commonhaus Foundation</a> project <a href="https://www.commonhaus.org/"><img src="/assets/images/commonhaus_reversed.svg" alt="Commonhaus Foundation" width="200" height="21" loading="lazy"></a></p>
+      <p class="footer-trademark">Copyright &copy; SmallRye. For details on our trademarks, please visit our <a href="https://www.commonhaus.org/policies/trademark-policy/">Trademark Policy</a> and <a href="https://www.commonhaus.org/trademarks/">Trademark List</a>. Trademarks of third parties are owned by their respective holders and their mention here does not suggest any endorsement or association.</p>
+    </div>
+  </div>
+</footer>
+<!-- Light/dark switch. Hidden until the script wires it, so a no-JS visitor
+     never sees a dead button. Every site has it: keep it. -->
+<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark theme" hidden>
+  <svg class="icon icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+  <svg class="icon icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.6M12 19.4V22M2 12h2.6M19.4 12H22M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></svg>
+</button>
+<script>
+  (function () {
+    var root = document.documentElement;
+    var btn = document.querySelector('.theme-toggle');
+    if (!btn) return;
+    btn.hidden = false;
+    var mq = window.matchMedia('(prefers-color-scheme: dark)');
+    function isDark() { var t = root.getAttribute('data-theme'); return t ? t === 'dark' : mq.matches; }
+    function sync() {
+      btn.setAttribute('aria-pressed', isDark() ? 'true' : 'false');
+      btn.setAttribute('aria-label', isDark() ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    btn.addEventListener('click', function () {
+      var next = isDark() ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('site-theme', next); } catch (e) { /* not fatal */ }
+      sync();
+    });
+    mq.addEventListener('change', sync);
+    sync();
+  })();
+</script>
+</body>
+</html>

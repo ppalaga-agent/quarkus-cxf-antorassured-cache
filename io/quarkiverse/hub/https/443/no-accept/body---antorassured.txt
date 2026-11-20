@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- SEO TITLE -->
+  
+  <title>Quarkiverse Hub</title>
+  <meta property="og:title" content="Quarkiverse Hub" />
+  <meta name="twitter:title" content="Quarkiverse Hub">
+  <meta property="og:site_name" content="Quarkiverse Hub">
+  <!-- SEO DESCRIPTION -->
+  <meta name="description" content="The Quarkiverse Hub provides support for Quarkus extension projects contributed by the community.">
+  <meta property="og:description" content="The Quarkiverse Hub provides support for Quarkus extension projects contributed by the community." />
+  <meta name="twitter:description" content="The Quarkiverse Hub provides support for Quarkus extension projects contributed by the community.">
+
+  <!-- SEO URL -->
+  <link rel="canonical" href="https://hub.quarkiverse.io/" />
+  <meta property="og:url" content="https://hub.quarkiverse.io/" />
+  <meta name="twitter:url" content="https://hub.quarkiverse.io/">
+
+  <!-- SEO TYPE -->
+  <meta property="og:type" content="website" />
+
+  <!-- SEO IMAGE -->
+  <meta name="twitter:card" content="summary">
+  <!-- SEO TWITTER -->
+  <meta name="twitter:site" content="@quarkusio" />
+  <meta name="twitter:creator" content="@quarkusio" />
+  <!-- SEO LOCALE -->
+  <meta property="og:locale" content="en" />
+  <!-- SEO GENERATOR -->
+  <meta name="generator" content="Quarkus Roq v2.2.0" />
+<!-- Favicon -->
+<link rel="icon" href="/images/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.webmanifest">
+    <script type="module" src="/static/bundle/app-M44Y6NDA.js"></script>
+      <link rel="stylesheet" href="/static/bundle/app-V7TPCI2Q.css" />
+</head>
+<body>
+<header style="margin: 0 auto; padding: var(--space-4) var(--size-gutter); display: flex; align-items: center; justify-content: space-between">
+  <div style="display: flex; align-items: center; justify-content: start; column-gap: 40px">
+    <a href="https://www.quarkiverse.io/" class="header-logo"><div data-gatsby-image-wrapper class="gatsby-image-wrapper gatsby-image-wrapper-constrained logo" style="background-color: white"><div style="max-width: 36px; display: block"><img alt="" role="presentation" aria-hidden="true" src="data:image/svg+xml;charset=utf-8,%3Csvg%20height='36'%20width='36'%20xmlns='http://www.w3.org/2000/svg'%20version='1.1'%3E%3C/svg%3E" style="max-width: 100%; display: block; position: static"></div><img src="/images/quarkiverse-logo.png" alt="Quarkiverse logo" style="object-fit: cover; background-color: white" decoding="async" loading="lazy"></div></a>
+    <a href="/" style="font-size: var(--font-sm); text-decoration: none">
+      <h1>Quarkiverse Hub</h1>
+    </a>
+  </div>
+  <div><a href="https://github.com/quarkiverse/quarkiverse/edit/main/site/content/Home.md" target="_blank" class="header-padded-anchor"><i class="fa-solid fa-pencil header-padded-icon" aria-hidden="true"></i>Edit this Page</a></div>
+</header>
+  <div style="margin: 0 auto; max-width: var(--size-content); padding: var(--size-gutter); display: flex; flex-direction: row; column-gap: 40px">
+<nav>
+<ul>
+        <li><a href="/checklistfornewprojects/">ChecklistForNewProjects</a></li>
+        <li><a href="/documentingyourextension/">DocumentingYourExtension</a></li>
+        <li><a href="/infrastructure-for-quarkus-3-x/">Infrastructure for Quarkus 3.x</a></li>
+        <li><a href="/infrastructure-for-quarkus-3-x-manual-upgrade/">Infrastructure for Quarkus 3.x: Manual upgrade</a></li>
+        <li><a href="/migrating-to-the-sonatype-portal-api-using-jreleaser/">Migrating to the Sonatype Portal API using JReleaser</a></li>
+        <li><a href="/namingconventions/">NamingConventions</a></li>
+        <li><a href="/release/">Release</a></li>
+</ul>
+</nav>
+    <main><div><h1 id="welcome-to-the-quarkiverse-hub">Welcome to the Quarkiverse Hub!</h1>
+<p>Quarkus is a Kubernetes Native Java stack tailored for the OpenJDK HotSpot and GraalVM, crafted from the best of breed Java libraries and standards, as well as an ever growing ecosystem of its extensions. At the beginning we were accepting all the contributed extensions in the core Quarkus repository. Eventually though it grew too large and lead to a maintenance overhead. In addition to that, in some cases it's simply not always sensible to include an extension into the main Quarkus repository. For example, an extension might want to have a release cadence which is independent of the core repository's lifecycle.</p>
+<p>Quarkiverse is our solution to create a &quot;home&quot; for such extensions.</p>
+<h1 id="what-is-quarkiverse">What is Quarkiverse</h1>
+<p>The <a href="http://github.com/quarkiverse">Quarkiverse GitHub organization</a> provides repository hosting (including build, CI and release publishing setup) for Quarkus extension projects contributed by the community.</p>
+<p>Quarkus extensions hosted in the Quarkiverse organization can easily be included into the Quarkus extensions catalog available on <a href="http://code.quarkus.io">code.quarkus.io</a>, <a href="http://extensions.quarkus.io">extensions.quarkus.io</a>, and the Quarkus command line tools (such as <code>mvn quarkus:list-extensions</code>, <code>gradle listExtensions</code>). To stay listed, the only requirement is that the extension keeps functioning, stays up-to-date and cause no harm.</p>
+<h1 id="why-quarkiverse">Why Quarkiverse</h1>
+<p>In the early days and actually up until recently, Quarkus extensions contributed by the community members (including the core Quarkus team) have been welcomed in the main Quarkus repository at <a href="https://github.com/quarkusio/quarkus">https://github.com/quarkusio/quarkus</a>. Today the main repository has grown a lot and it's evident that it simply becomes troublesome to work with it for its contributors. That and other maintenance and infrastructure related issues inspired the creation of a separate organization called Quarkiverse to host Quarkus extension projects contributed by the community (including the Quarkus core team members themselves).</p>
+<p>The advantages of joining Quarkiverse are:</p>
+<ul>
+<li>Automated and secured publishing of your maven releases to Maven Central.</li>
+<li>Automated Cross-testing of your extension with Quarkus builds/releases (see <a href="https://github.com/quarkusio/quarkus-ecosystem-ci">https://github.com/quarkusio/quarkus-ecosystem-ci</a>)</li>
+<li>Consistent formatting and release of project</li>
+<li>Quarkus team members can in an emergency (i.e. maintainers are missing) help and fix issues.</li>
+</ul>
+<p>Note: While the Quarkus project has the &quot;keys&quot; to publish under <code>io.quarkiverse</code>, each project in Quarkiverse is driven and maintained by
+the lead of that project. They decide what happens with the project - Quarkiverse will just expect releases to be compatible with Quarkus - if a project
+for some reason cannot do a release we can in the best scenario help or in the worst scenario we'll temporarily exclude the project from the affected registry entries to avoid end-users to have a bad experience.</p>
+<p>If you do not want to commit to the above guidelines then you are more than welcome to publish an extension outside of Quarkus or Quarkiverse; and then you can
+still be listed in the registry - it is just not handled automatically. In this case we request you to use your own group ID to clearly identify those artifacts are from a third-party organization.</p>
+<h1 id="quarkiverse-and-quarkus-platform">Quarkiverse and Quarkus Platform</h1>
+<p>The word Quarkiverse, derived from &quot;Quarkus&quot; and &quot;universe&quot;, is carrying the meaning of the universe of Quarkus extensions. In other words, it is intended to represent a part of the Quarkus ecosystem. However, at the same time, there is also a notion of a Quarkus platform. There is a significant difference between the two.</p>
+<p>While the extensions under the Quarkiverse organization are generally independent projects lead by independent development teams, the fundamental promise of a Quarkus platform is any combination of the Quarkus extensions the platform consists of can be used in the same application without causing any conflict for each other. Quarkus platform implies coordination, cross testing and dependency version alignment across extensions that constitute the platform which is not generally applicable to the Quarkiverse extensions. It is, however, still possible for extensions hosted in the Quarkiverse to join a Quarkus platform assuming they satisfy the purpose and policies defined for that platform.</p>
+<h1 id="joining-quarkiverse">Joining Quarkiverse</h1>
+<h2 id="getting-an-extension-onboarded">Getting an extension onboarded:</h2>
+<p>See <a href="checklistfornewprojects">ChecklistForNewProjects</a> for all the steps you'll need to start a new project in the Quarkiverse org.</p>
+<p>The Quarkiverse team will provide the repository ready for development, nevertheless, it is always good to know that we respect the following conventions and policies.</p>
+<h2 id="documenting-your-extension">Documenting your extension</h2>
+<p>All Quarkiverse extensions can include documentation on <a href="http://docs.quarkiverse.io">http://docs.quarkiverse.io</a>.
+See the <a href="documentingyourextension">documentation about the documentation</a> for details on how how to document your extension.</p>
+<h2 id="managing-settings-on-the-github-repository">Managing settings on the GitHub repository</h2>
+<p>Extension maintainers have full control over the repository settings, but be aware that the settings are infrastructure as code, managed with Terraform.
+To change any setting in the repository (give push permissions to anyone, enable a GitHub app, etc.), update the repository's <code>.tf</code> file.
+You may notice that, even as an extension maintainer, you have restricted permissions in the GitHub UI.
+This is to reduce the risk of accidents where maintainers make changes which then get overwritten by the next Terraform run.</p>
+<h2 id="expectations-for-quarkiverse-projects">Expectations for Quarkiverse projects</h2>
+<p>Quarkiverse projects should follow some <a href="namingconventions">naming conventions</a> for maven coordinates and package names.</p>
+<h3 id="identify-project-maintainer">Identify Project Maintainer</h3>
+<p>Each project will have a GitHub team, and in here at least one must be listed and active as maintainer. This is the person that will be expected to lead and drive the project.</p>
+<h3 id="provide-mechanism-to-do-cross-testing-of-named-quarkus-core-and-platform-versions">Provide mechanism to do cross-testing of named quarkus core and platform versions</h3>
+<p>All Quarkiverse projects should have a build and test suite that can be parameterized to use specific Quarkus and Platform versions to ensure we can get
+early warning of issues of master builds; but also to verify compatibility with maintenance branch/tags.
+This is handled by the <a href="https://github.com/quarkusio/quarkus-ecosystem-ci">ecosystem CI</a>.</p>
+<h3 id="parent-pom">Parent POM</h3>
+<p>All Quarkiverse projects are expected to use <a href="https://github.com/quarkiverse/quarkiverse-parent">io.quarkiverse:quarkiverse-parent</a> as the parent POM.
+This POM contains common project release and artifact publishing configuration.</p>
+<h2 id="license">LICENSE</h2>
+<p>The project is expected to be licensed under ASL 2.0.</p>
+<h2 id="discussions">Discussions</h2>
+<p><a href="https://docs.github.com/discussions">GitHub Discussions</a> are disabled by default in Quarkiverse extension repositories.</p>
+<p>To avoid spreading information too much and make it hard to figure out where to post we have following default guidelines:</p>
+<ul>
+<li>Development questions should be addressed in the <a href="https://groups.google.com/g/quarkus-dev">Mailing List</a></li>
+<li>User questions in <a href="https://stackoverflow.com/questions/tagged/quarkus">Stack Overflow</a> + the Quarkiverse project tag.</li>
+</ul>
+<p>However we can enable it in the repository if the extension maintainer really wants it (open an issue requesting that and ping the <code>@quarkiverse/quarkiverse-owners</code> team in the issue). However be aware that Core developers will not follow or be aware of these discussions unless explicitly mentioned.</p>
+<h1 id="quarkus-extension-development-guides-and-references">Quarkus Extension Development Guides and References</h1>
+<p>In case you need help creating a new Quarkus extension Maven project, please follow <a href="https://quarkus.io/guides/building-my-first-extension">Building My First Extension</a> guide.</p>
+<p>Other useful articles related to Quarkus extension development can be found under the <a href="https://quarkus.io/guides/#writing-extensions">Writing Extensions</a> guide category on the <a href="http://quarkus.io">Quarkus.io</a> website.</p>
+</div>
+
+</main>
+  </div>
+<footer class="quarkiverse-footer">
+    <div class="footer-bar navigation">
+            <a href="https://github.com/quarkiverse/quarkiverse" target="_blank" rel="noreferrer" class="footer-anchor-link">Contribute<i class="fa-brands fa-github footer-styled-font-awesome-icon" aria-hidden="true"></i></a>
+        <a href="https://www.commonhaus.org/" class="quarkiverse-footer-foundation-logo" target="_blank" rel="noreferrer"><img src="/static/images/commonhaus_reversed.svg" alt="Commonhaus Foundation logo" loading="lazy"></a>
+        <div class="footer-license-info"><i class="fa-brands fa-creative-commons footer-padded-icon" aria-hidden="true"></i><i class="fa-brands fa-creative-commons-by footer-padded-icon" aria-hidden="true"></i><a href="https://creativecommons.org/licenses/by/3.0/" class="footer-license-text">CC by 3.0</a></div>
+    </div>
+        <div class="quarkiverse-footer-legal">
+      Copyright © Quarkiverse. All rights reserved. For details on our trademarks, please visit our <a href="https://www.commonhaus.org/policies/trademark-policy/">Trademark Policy</a> and <a href="https://www.commonhaus.org/trademarks/">Trademark List</a>. Trademarks of third parties are owned by their respective holders and their mention here does not suggest any endorsement or association.
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+  {
+    "name": "generate-certs.sh",
+    "path": "integration-tests/ws-security-policy/generate-certs.sh",
+    "sha": "e599d0b8b41dc215ba805c4208a72456094eaeec",
+    "size": 3347,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/generate-certs.sh?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/generate-certs.sh",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/e599d0b8b41dc215ba805c4208a72456094eaeec",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security-policy/generate-certs.sh",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/generate-certs.sh?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/e599d0b8b41dc215ba805c4208a72456094eaeec",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/generate-certs.sh"
+    }
+  },
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/ws-security-policy/pom.xml",
+    "sha": "98fe6cd072130b86c1f4f9787af9f1614110dba4",
+    "size": 33181,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/98fe6cd072130b86c1f4f9787af9f1614110dba4",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security-policy/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/98fe6cd072130b86c1f4f9787af9f1614110dba4",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "integration-tests/ws-security-policy/src",
+    "sha": "cddadd9952105066768384593967914de2f7d716",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/src?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security-policy/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/cddadd9952105066768384593967914de2f7d716",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/src?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/cddadd9952105066768384593967914de2f7d716",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security-policy/src"
+    }
+  },
+  {
+    "name": "v3.ext",
+    "path": "integration-tests/ws-security-policy/v3.ext",
+    "sha": "632d6d3a6f06bb4717ad10c80c3117114c7a19be",
+    "size": 145,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/v3.ext?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/v3.ext",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/632d6d3a6f06bb4717ad10c80c3117114c7a19be",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security-policy/v3.ext",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy/v3.ext?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/632d6d3a6f06bb4717ad10c80c3117114c7a19be",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security-policy/v3.ext"
+    }
+  }
+]

@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser" lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>FIPS 140 - Wikipedia</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-menu-disabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available skin-thumbsize-clientpref-standard skin-underline-clientpref-browser";var cookie=document.cookie.match(/(?:^|; )enwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","January","February","March","April","May","June","July","August","September","October","November","December"],"wgRequestId":"0106bf0c-d6d1-4b4f-9535-3183a5c83506","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"FIPS_140","wgTitle":"FIPS 140","wgCurRevisionId":1378598115,"wgRevisionId":1378598115,"wgArticleId":1539324,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Articles with short description","Short description matches Wikidata","Use American English from August 2026","All Wikipedia articles written in American English","Use mdy dates from August 2026","Articles containing potentially dated statements from October 2020","All articles containing potentially dated statements","Computer security standards","Cryptography standards","Standards of the United States"],"wgPageViewLanguage":"en","wgPageContentLanguage":"en","wgPageContentModel":"wikitext","wgRelevantPageName":"FIPS_140","wgRelevantArticleId":1539324,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgFlaggedRevsParams":{"tags":{"status":{"levels":1}},"namespaces":[0,4]},"wgConfirmEditCaptchaNeededForGenericEdit":"hcaptcha","wgConfirmEditForceShowCaptcha":false,"wgConfirmEditHCaptchaSiteKey":"5d0c670e-a5f4-4258-ad16-1f42792c9c62","wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgMediaViewerDesktopVue":false,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"en","pageLanguageDir":"ltr","pageVariantFallbacks":"en","editCheckSuggestionsAvailable":false},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":10000,"wgParsoidHtmlVersion":"2.8.0","parsermigration-parsoid":true,"wgPageAssessments":{"Computer security":{"class":"Start","importance":"Low"},"Computer security/WikiProject Computing":{"class":"Start","importance":"Low"},"Computing":{"class":"Start","importance":"Low"},"Computing/WikiProject Computer security":{"class":"Start","importance":"Low"},"Computing/WikiProject Software":{"class":"Start","importance":"Low"},"Cryptography":{"class":"Start","importance":"Mid"},"Cryptography/WikiProject Computer science":{"class":"Start","importance":"Mid"},"Project-independent assessment":{"class":"Start","importance":""}},"wgTestKitchenUserExperiments":{"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[]},"wgEditSubmitButtonLabelPublish":true,"wgVisualEditorPageIsDisambiguation":false,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgULSContentLanguageSelectorEnabled":true,"wgULSLanguageSelectorV2Enabled":true,"wgWikibaseItemId":"Q5425847","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"wgCheckUserClientHintsInEditRequest":true,"wgPersonalDashboardMenuVisible":false};
+RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.parsoid.styles":"ready","ext.cite.styles":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready","ext.readingLists.bookmark.icons":"ready","ext.readingLists.bookmark.styles":"ready"};RLPAGEMODULES=["ext.cite.ux-enhancements","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ReferenceTooltips","ext.gadget.switcher","ext.urlShortener.toolbar","ext.centralauth.centralautologin","ext.testKitchen","ext.wikimediaCustomizations.donorAccountCreation","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","wikibase.databox.fromWikidata","ext.checkUser.clientHints","ext.readerExperiments/preferredSources","ext.readingLists.bookmark.anonymous"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});mw.user.options.set({"usecodemirror":1});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=ext.cite.parsoid.styles%7Cext.cite.styles%7Cext.readingLists.bookmark.icons%2Cstyles%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediamessages.styles%7Cskins.vector.icons%2Cstyles%7Cskins.vector.search.codex.styles%7Cwikibase.client.init&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=en&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=en&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<meta name="generator" content="MediaWiki 1.48.0-wmf.5">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=1120">
+<meta property="og:title" content="FIPS 140 - Wikipedia">
+<meta property="og:type" content="website">
+<link rel="discord:component-embed" type="application/json" href="https://en.wikipedia.org/w/rest.php/discord/v0-internal/discord-preview?title=FIPS+140&amp;db=enwiki&amp;lang=en">
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="/w/index.php?title=FIPS_140&amp;action=edit">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/rest.php/v1/search" title="Wikipedia (en)">
+<link rel="EditURI" type="application/rsd+xml" href="//en.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://en.wikipedia.org/wiki/FIPS_140">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+<link rel="alternate" type="application/atom+xml" title="Wikipedia Atom feed" href="/w/index.php?title=Special:RecentChanges&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="auth.wikimedia.org">
+</head>
+<body class="mediawiki ltr sitedir-ltr mw-hide-empty-elt action-view skin-vector-2022 ns-0 ns-subject mw-editable page-FIPS_140 rootpage-FIPS_140 skin--responsive skin-vector skin-vector-search-vue">
+<div id="mw-aria-live-region" class="mw-aria-live-region" aria-live="polite"></div><a class="mw-jump-link" href="#bodyContent">Jump to content</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header no-font-mode-scale">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Site">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  title="Main menu" >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Main menu"   >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Main menu</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Main menu</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin" aria-label="Move Main menu to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin" aria-label="Hide Main menu">hide</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navigation
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Main_Page" title="Visit the main page [z]" accesskey="z"><span>Main page</span></a></li><li id="n-contents" class="mw-list-item"><a href="/wiki/Wikipedia:Contents" title="Guides to browsing Wikipedia"><span>Contents</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Current_events" title="Articles related to current events"><span>Current events</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Special:Random" title="Visit a randomly selected article [x]" accesskey="x"><span>Random article</span></a></li><li id="n-aboutsite" class="mw-list-item"><a href="/wiki/Wikipedia:About" title="Learn about Wikipedia and how it works"><span>About Wikipedia</span></a></li><li id="n-contactpage" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us" title="How to contact Wikipedia"><span>Contact us</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-interaction" class="vector-menu mw-portlet mw-portlet-interaction"  >
+	<div class="vector-menu-heading">
+		Contribute
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-help" class="mw-list-item"><a href="/wiki/Help:Contents" title="Guidance on how to use and edit Wikipedia"><span>Help</span></a></li><li id="n-introduction" class="mw-list-item"><a href="/wiki/Help:Introduction" title="Learn how to edit Wikipedia"><span>Learn to edit</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Wikipedia:Community_portal" title="The hub for editors"><span>Community portal</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Special:RecentChanges" title="A list of recent changes to Wikipedia [r]" accesskey="r"><span>Recent changes</span></a></li><li id="n-upload" class="mw-list-item"><a href="/wiki/Wikipedia:File_upload_wizard" title="Add images or other media for use on Wikipedia"><span>Upload file</span></a></li><li id="n-specialpages" class="mw-list-item"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q"><span>Special pages</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Main_Page" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/enwiki-25.svg" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container skin-invert">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en-25.svg" style="width: 8.75em; height: 1.375em;">
+		<img class="mw-logo-tagline" alt="The Free Encyclopedia" src="/static/images/mobile/copyright/wikipedia-tagline-en-25.svg" width="140" height="11" style="width: 8.75em; height: 0.6875em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Special:Search" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" title="Search Wikipedia [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input mw-searchInput" autocomplete="off"
+							 type="search" name="search" placeholder="Search Wikipedia" aria-label="Search Wikipedia" autocapitalize="none" spellcheck="false" title="Search Wikipedia [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Special:Search">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Search</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links vector-user-links-wide" aria-label="Personal tools">
+	<div class="vector-user-links-main">
+	
+<div id="p-vector-user-menu-preferences" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-userpage" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	<nav class="vector-appearance-landmark" aria-label="Appearance">
+		
+<div id="vector-appearance-dropdown" class="vector-dropdown "  title="Change the appearance of the page&#039;s font size, width, and color" >
+	<input type="checkbox" id="vector-appearance-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-appearance-dropdown" class="vector-dropdown-checkbox "  aria-label="Appearance"   >
+	<label id="vector-appearance-dropdown-label" for="vector-appearance-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-appearance mw-ui-icon-wikimedia-appearance cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Appearance</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+			<div id="vector-appearance-unpinned-container" class="vector-unpinned-container">
+				
+			</div>
+		
+	</div>
+</div>
+
+	</nav>
+	
+<div id="p-vector-user-menu-notifications" class="vector-menu mw-portlet emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span>Donate</span></a>
+</li>
+<li id="pt-createaccount-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=FIPS+140" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span>Create account</span></a>
+</li>
+<li id="pt-login-2" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=FIPS+140" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	</div>
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out vector-user-links-dropdown--collapsible"  title="Log in and more options" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Personal tools"   >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Personal tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal"  title="User menu" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="pt-sitesupport" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="https://donate.wikimedia.org/?wmf_source=donate&amp;wmf_medium=sidebar&amp;wmf_campaign=en.wikipedia.org&amp;uselang=en" data-mw-donate-attempt="top_link" class=""><span class="vector-icon mw-ui-icon-heart mw-ui-icon-wikimedia-heart cdx-button__icon"></span>
+
+<span>Donate</span></a>
+</li>
+<li id="pt-createaccount" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:CreateAccount&amp;returnto=FIPS+140" title="You are encouraged to create an account and log in; however, it is not mandatory" class=""><span class="vector-icon mw-ui-icon-userAvatar mw-ui-icon-wikimedia-userAvatar cdx-button__icon"></span>
+
+<span>Create account</span></a>
+</li>
+<li id="pt-login" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=Special:UserLogin&amp;returnto=FIPS+140" title="You&#039;re encouraged to log in; however, it&#039;s not mandatory. [o]" accesskey="o" class=""><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn cdx-button__icon"></span>
+
+<span>Log in</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="vector-column-start">
+			<div class="vector-main-menu-container">
+		<div id="mw-navigation">
+			<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Site">
+				<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+				</div>
+		</nav>
+		</div>
+	</div>
+	<div class="vector-sticky-pinned-container">
+				<nav id="mw-panel-toc" aria-label="Contents" data-event-name="ui.sidebar-toc" class="mw-table-of-contents-container vector-toc-landmark">
+					<div id="vector-toc-pinned-container" class="vector-pinned-container">
+					<div id="vector-toc" class="vector-toc vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-toc-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="toc-pinned"
+	data-pinnable-element-id="vector-toc"
+	data-pinned-container-id="vector-toc-pinned-container"
+	data-unpinned-container-id="vector-toc-unpinned-container"
+>
+	<h2 class="vector-pinnable-header-label">Contents</h2>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-toc.pin" aria-label="Move Contents to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-toc.unpin" aria-label="Hide Contents">hide</button>
+</div>
+
+
+	<ul class="vector-toc-contents" id="mw-panel-toc-list">
+		<li id="toc-mw-content-text"
+			class="vector-toc-list-item vector-toc-level-1">
+			<a href="#" class="vector-toc-link">
+				<div class="vector-toc-text">(Top)</div>
+			</a>
+		</li>
+		<li id="toc-Purpose_of_FIPS_140"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Purpose_of_FIPS_140">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">1</span>
+				<span>Purpose of FIPS 140</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Purpose_of_FIPS_140-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Security_levels"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Security_levels">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">2</span>
+				<span>Security levels</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Security_levels-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Scope_of_requirements"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Scope_of_requirements">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">3</span>
+				<span>Scope of requirements</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Scope_of_requirements-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Brief_history"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Brief_history">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">4</span>
+				<span>Brief history</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Brief_history-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-Criticism"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#Criticism">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">5</span>
+				<span>Criticism</span>
+			</div>
+		</a>
+		
+		<ul id="toc-Criticism-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-See_also"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#See_also">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">6</span>
+				<span>See also</span>
+			</div>
+		</a>
+		
+		<ul id="toc-See_also-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+	<li id="toc-References"
+		class="vector-toc-list-item vector-toc-level-1 vector-toc-list-item-expanded">
+		<a class="vector-toc-link" href="#References">
+			<div class="vector-toc-text">
+				<span class="vector-toc-numb">7</span>
+				<span>References</span>
+			</div>
+		</a>
+		
+		<ul id="toc-References-sublist" class="vector-toc-list">
+		</ul>
+	</li>
+</ul>
+</div>
+
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body">
+				<header class="mw-body-header vector-page-titlebar no-font-mode-scale">
+					<nav aria-label="Contents" class="vector-toc-landmark">
+						
+<div id="vector-page-titlebar-toc" class="vector-dropdown vector-page-titlebar-toc vector-button-flush-left"  title="Table of Contents" >
+	<input type="checkbox" id="vector-page-titlebar-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-titlebar-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+	<label id="vector-page-titlebar-toc-label" for="vector-page-titlebar-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+							<div id="vector-page-titlebar-toc-unpinned-container" class="vector-unpinned-container">
+			</div>
+		
+	</div>
+</div>
+
+					</nav>
+					<h1 id="firstHeading" class="firstHeading mw-first-heading"><span lang="en" dir="ltr"><span class="mw-page-title-main">FIPS 140</span></span></h1>
+			
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector"  aria-label="2 languages" aria-description="Go to an article in another language. Available in 2 languages"  >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive mw-portlet-lang-heading-2" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language-progressive mw-ui-icon-wikimedia-language-progressive cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">2 languages</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="vector-menu-content">
+			
+			<ul class="vector-menu-content-list">
+				
+				<li class="interlanguage-link interwiki-ca mw-list-item"><a href="https://ca.wikipedia.org/wiki/FIPS_140" title="FIPS 140 – Catalan" lang="ca" hreflang="ca" data-title="FIPS 140" data-language-autonym="Català" data-language-local-name="Catalan" class="interlanguage-link-target"><span>Català</span></a></li><li class="interlanguage-link interwiki-ja mw-list-item"><a href="https://ja.wikipedia.org/wiki/FIPS_140" title="FIPS 140 – Japanese" lang="ja" hreflang="ja" data-title="FIPS 140" data-language-autonym="日本語" data-language-local-name="Japanese" class="interlanguage-link-target"><span>日本語</span></a></li>
+			</ul>
+			<div class="after-portlet after-portlet-lang"><span class="wb-langlinks-edit wb-langlinks-link"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5425847#sitelinks-wikipedia" title="Edit interlanguage links" class="wbc-editpage">Edit links</a></span></div>
+		</div>
+
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Namespaces">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-nstab-main" class="selected mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/FIPS_140" title="View the content page [c]" accesskey="c" class=""><span>Article</span></a>
+</li>
+<li id="ca-talk" class="mw-list-item vector-tab-noicon"><a data-mw-interface  href="/wiki/Talk:FIPS_140" rel="discussion" title="Discuss improvements to the content page [t]" accesskey="t" class=""><span>Talk</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="vector-variants-dropdown" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="vector-variants-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-variants-dropdown" class="vector-dropdown-checkbox " aria-label="Change language variant"    >
+	<label id="vector-variants-dropdown-label" for="vector-variants-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">English</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Views">
+			    
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view" class="selected mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/wiki/FIPS_140" class=""><span>Read</span></a>
+</li>
+<li id="ca-edit" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=FIPS_140&amp;action=edit" title="Edit the source code of this page [e]" accesskey="e" class=""><span>Edit</span></a>
+</li>
+<li id="ca-history" class="mw-list-item vector-menu-item--collapsible vector-tab-noicon"><a data-mw-interface  href="/w/index.php?title=FIPS_140&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span>View history</span></a>
+</li>
+<li id="ca-bookmark" class="mw-list-item vector-menu-item--collapsible"><a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only reading-lists-bookmark" id="" title="Add this page to your saved items"><span class="vector-icon mw-ui-icon-bookmarkOutline mw-ui-icon-wikimedia-bookmarkOutline cdx-button__icon"></span>
+
+<span>Save</span>
+</a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+			</nav>
+
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Tools"   >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-verticalEllipsis mw-ui-icon-wikimedia-verticalEllipsis cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Tools</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Tools</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin" aria-label="Move Tools to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin" aria-label="Hide Tools">hide</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  >
+	<div class="vector-menu-heading">
+		Actions
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			<li id="ca-view-more" class="selected mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/wiki/FIPS_140" class=""><span class="vector-icon mw-ui-icon-eye mw-ui-icon-wikimedia-eye cdx-button__icon"></span>
+
+<span>Read</span></a>
+</li>
+<li id="ca-edit-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=FIPS_140&amp;action=edit" title="Edit the source code of this page [e]" accesskey="e" class=""><span class="vector-icon mw-ui-icon-edit mw-ui-icon-wikimedia-edit cdx-button__icon"></span>
+
+<span>Edit</span></a>
+</li>
+<li id="ca-history-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="/w/index.php?title=FIPS_140&amp;action=history" title="Past revisions of this page [h]" accesskey="h" class=""><span class="vector-icon mw-ui-icon-history mw-ui-icon-wikimedia-history cdx-button__icon"></span>
+
+<span>View history</span></a>
+</li>
+<li id="ca-bookmark-more" class="mw-list-item vector-menu-item--collapsible"><a data-mw-interface  href="#" class="reading-lists-bookmark" title="Add this page to your saved items"><span class="vector-icon mw-ui-icon-bookmarkOutline mw-ui-icon-wikimedia-bookmarkOutline cdx-button__icon"></span>
+
+<span>Save</span></a>
+</li>
+
+			
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Special:WhatLinksHere/FIPS_140" title="List of all English Wikipedia pages containing links to this page [j]" accesskey="j"><span>What links here</span></a></li><li id="t-recentchangeslinked" class="mw-list-item"><a href="/wiki/Special:RecentChangesLinked/FIPS_140" rel="nofollow" title="Recent changes in pages linked from this page [k]" accesskey="k"><span>Related changes</span></a></li><li id="t-upload" class="mw-list-item"><a href="//en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard" title="Upload files [u]" accesskey="u"><span>Upload file</span></a></li><li id="t-permalink" class="mw-list-item"><a href="/w/index.php?title=FIPS_140&amp;oldid=1378598115" title="Permanent link to this revision of this page"><span>Permanent link</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=FIPS_140&amp;action=info" title="More information about this page"><span>Page information</span></a></li><li id="t-cite" class="mw-list-item"><a href="/w/index.php?title=Special:CiteThisPage&amp;page=FIPS_140&amp;id=1378598115&amp;wpFormIdentifier=titleform" title="Information on how to cite this page"><span>Cite this page</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Special:UrlShortener&amp;url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FFIPS_140"><span>Get shortened URL</span></a></li><li id="parsermigration-switch-to-legacy" class="mw-list-item"><a href="/w/index.php?title=FIPS_140&amp;useparsoid=0"><span>Switch to legacy parser</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-coll-print_export" class="vector-menu mw-portlet mw-portlet-coll-print_export"  >
+	<div class="vector-menu-heading">
+		Print/export
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="coll-download-as-rl" class="mw-list-item"><a href="/w/index.php?title=Special:DownloadAsPdf&amp;page=FIPS_140&amp;action=show-download-screen" title="Download this page as a PDF file"><span>Download as PDF</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Printable version of this page [p]" accesskey="p"><span>Printable version</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-wikibase-otherprojects" class="vector-menu mw-portlet mw-portlet-wikibase-otherprojects"  >
+	<div class="vector-menu-heading">
+		In other projects
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-wikibase" class="wb-otherproject-link wb-otherproject-wikibase-dataitem mw-list-item"><a href="https://www.wikidata.org/wiki/Special:EntityPage/Q5425847" title="Structured data on this page hosted by Wikidata [g]" accesskey="g"><span>Wikidata item</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end no-font-mode-scale">
+					<div class="vector-sticky-pinned-container">
+						<nav class="vector-page-tools-landmark" aria-label="Page tools">
+							<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+				
+							</div>
+		</nav>
+						<nav class="vector-appearance-landmark" aria-label="Appearance">
+							<div id="vector-appearance-pinned-container" class="vector-pinned-container">
+				<div id="vector-appearance" class="vector-appearance vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-appearance-pinnable-header vector-pinnable-header-pinned"
+	data-feature-name="appearance-pinned"
+	data-pinnable-element-id="vector-appearance"
+	data-pinned-container-id="vector-appearance-pinned-container"
+	data-unpinned-container-id="vector-appearance-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Appearance</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-appearance.pin" aria-label="Move Appearance to sidebar">move to sidebar</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-appearance.unpin" aria-label="Hide Appearance">hide</button>
+</div>
+
+
+</div>
+
+							</div>
+		</nav>
+					</div>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">From Wikipedia, the free encyclopedia</div>
+						<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+						
+					</div>
+					
+					<div id="mw-content-text" class="mw-body-content"><div class="mw-content-ltr mw-parser-output" lang="en" dir="ltr" data-mw-parsoid-version="0.25.0.0-alpha3" data-mw-html-version="2.8.0"><section data-mw-section-id="0" id="mwAQ"><div class="shortdescription nomobile noexcerpt noprint searchaux" style="display:none" about="#mwt1" typeof="mw:Transclusion" id="mwAg" data-mw='{"parts":[{"template":{"target":{"wt":"Short description","href":"./Template:Short_description"},"params":{"1":{"wt":"U.S. government cryptographic standard"}},"i":0}}]}'>U.S. government cryptographic standard</div><span class="mw-empty-elt" about="#mwt1"><link rel="mw:PageProp/Category" href="./Category:Articles_with_short_description"/><link rel="mw:PageProp/Category" href="./Category:Short_description_matches_Wikidata"/></span>
+<p class="mw-empty-elt" id="mwAw"><span typeof="mw:Nowiki mw:Transclusion" about="#mwt2" id="mwBA" data-mw='{"parts":[{"template":{"target":{"wt":"Use American English","href":"./Template:Use_American_English"},"params":{"date":{"wt":"August 2026"}},"i":0}}]}'></span><link rel="mw:PageProp/Category" href="./Category:Use_American_English_from_August_2026" about="#mwt2"/><link rel="mw:PageProp/Category" href="./Category:All_Wikipedia_articles_written_in_American_English" about="#mwt2" id="mwBQ"/>
+<span typeof="mw:Nowiki mw:Transclusion" about="#mwt3" id="mwBg" data-mw='{"parts":[{"template":{"target":{"wt":"Use mdy dates","href":"./Template:Use_mdy_dates"},"params":{"date":{"wt":"August 2026"}},"i":0}}]}'></span><link rel="mw:PageProp/Category" href="./Category:Use_mdy_dates_from_August_2026" about="#mwt3" id="mwBw"/></p>
+
+<p id="mwCA">The 140 series of <b id="mwCQ">Federal Information Processing Standards</b> (<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard" title="Federal Information Processing Standard" class="mw-redirect" id="mwCg">FIPS</a>) are <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/United_States" title="United States" id="mwCw">U.S.</a> <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Government_of_the_United_States" title="Government of the United States" class="mw-redirect" id="mwDA">government</a> <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Computer_security" title="Computer security" id="mwDQ">computer security</a> <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Standardization" title="Standardization" id="mwDg">standards</a> that specify requirements for <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Cryptographic_module" title="Cryptographic module" id="mwDw">cryptographic modules</a>.</p>
+
+<p id="mwEA"><span about="#mwt4" typeof="mw:Transclusion" id="mwEQ" data-mw='{"parts":[{"template":{"target":{"wt":"As of","href":"./Template:As_of"},"params":{"1":{"wt":"2020"},"2":{"wt":"October"}},"i":0}}]}'>As of October</span><span typeof="mw:Entity" about="#mwt4"> </span><span about="#mwt4">2020</span><sup class="plainlinks noexcerpt noprint asof-tag update" style="display:none;" about="#mwt4"><a rel="mw:ExtLink" href="https://en.wikipedia.org/w/index.php?title=FIPS_140&amp;action=edit" class="external text" data-mw-original-href="//en.wikipedia.org/w/index.php?title=FIPS_140&amp;action=edit"><span typeof="mw:Entity">[</span>update<span typeof="mw:Entity">]</span></a></sup><span typeof="mw:Nowiki" about="#mwt4"></span><link rel="mw:PageProp/Category" href="./Category:Articles_containing_potentially_dated_statements_from_October_2020" about="#mwt4"/><link rel="mw:PageProp/Category" href="./Category:All_articles_containing_potentially_dated_statements" about="#mwt4" id="mwEg"/>, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-2" title="FIPS 140-2" id="mwEw">FIPS 140-2</a> and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-3" title="FIPS 140-3" id="mwFA">FIPS 140-3</a> are both accepted as current and active.<sup about="#mwt7" class="mw-ref reference" id="cite_ref-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-1"}}'><a href="#cite_note-1" id="mwFQ"><span class="mw-reflink-text" id="mwFg"><span class="cite-bracket" id="mwFw">[</span>1<span class="cite-bracket" id="mwGA">]</span></span></a></sup> FIPS 140-3 was approved on March 22, 2019 as the successor to FIPS 140-2 and became effective on September 22, 2019.<sup about="#mwt10" class="mw-ref reference" id="cite_ref-approval_2-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"approval"},"body":{"id":"mw-reference-text-cite_note-approval-2"}}'><a href="#cite_note-approval-2" id="mwGQ"><span class="mw-reflink-text" id="mwGg"><span class="cite-bracket" id="mwGw">[</span>2<span class="cite-bracket" id="mwHA">]</span></span></a></sup> FIPS 140-3 testing began on September 22, 2020, and a small number of validation certificates have been issued. FIPS 140-2 testing is still available until September 21, 2021 (later changed for applications already in progress to April 1, 2022<sup about="#mwt13" class="mw-ref reference" id="cite_ref-transition_3-0" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"transition"},"body":{"id":"mw-reference-text-cite_note-transition-3"}}'><a href="#cite_note-transition-3" id="mwHQ"><span class="mw-reflink-text" id="mwHg"><span class="cite-bracket" id="mwHw">[</span>3<span class="cite-bracket" id="mwIA">]</span></span></a></sup>), creating an overlapping transition period of one year. FIPS 140-2 test reports that remain in the CMVP queue will still be granted validations after that date, but all FIPS 140-2 validations will be moved to the Historical List on September 21, 2026 regardless of their actual final validation date.<sup about="#mwt14" class="mw-ref reference" id="cite_ref-transition_3-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"transition"}}'><a href="#cite_note-transition-3" id="mwIQ"><span class="mw-reflink-text" id="mwIg"><span class="cite-bracket" id="mwIw">[</span>3<span class="cite-bracket" id="mwJA">]</span></span></a></sup></p>
+
+<meta property="mw:PageProp/toc" id="mwJQ" data-mw='{"autoGenerated":true}'/></section><section data-mw-section-id="1" id="mwJg" aria-labelledby="Purpose_of_FIPS_140"><div class="mw-heading mw-heading2"><h2 id="Purpose_of_FIPS_140">Purpose of FIPS 140</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=1" title="Edit section: Purpose of FIPS 140"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwJw">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology" id="mwKA">National Institute of Standards and Technology</a> (NIST) issues the 140 Publication Series to coordinate the requirements and standards for cryptographic modules which include both hardware and software components for use by departments and agencies of the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/United_States" title="United States" id="mwKQ">United States</a> federal government. FIPS 140 does not purport to provide <i id="mwKg">sufficient</i> conditions to guarantee that a module conforming to its requirements is secure, still less that a system built using such modules is secure. The requirements cover not only the cryptographic modules themselves but also their documentation and (at the highest security level) some aspects of the comments contained in the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Source_code" title="Source code" id="mwKw">source code</a>.</p>
+
+<p id="mwLA">User agencies desiring to implement cryptographic modules should confirm that the module they are using is covered by an existing validation certificate. FIPS 140-1 and FIPS 140-2 validation certificates specify the exact module name, hardware, software, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Firmware" title="Firmware" id="mwLQ">firmware</a>, and/or applet version numbers.  For Levels 2 and higher, the operating platform upon which the validation is applicable is also listed.  Vendors do not always maintain their baseline validations.</p>
+
+<p id="mwLg">The <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/CMVP" title="CMVP" class="mw-redirect" id="mwLw">Cryptographic Module Validation Program</a> (CMVP) is operated jointly by the United States Government's <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology" title="National Institute of Standards and Technology" id="mwMA">National Institute of Standards and Technology</a> (NIST) Computer Security Division and the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Communications_Security_Establishment" title="Communications Security Establishment" id="mwMQ">Communications Security Establishment</a> (CSE) of the <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Government_of_Canada" title="Government of Canada" id="mwMg">Government of Canada</a>.  The use of validated cryptographic modules is required by the United States Government for all unclassified uses of cryptography. The Government of Canada also recommends the use of FIPS 140 validated cryptographic modules in unclassified applications of its departments.</p>
+
+</section><section data-mw-section-id="2" id="mwMw" aria-labelledby="Security_levels"><div class="mw-heading mw-heading2"><h2 id="Security_levels">Security levels</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=2" title="Edit section: Security levels"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwNA"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-2" title="FIPS 140-2" id="mwNQ">FIPS 140-2</a> defines four levels of security, simply named "Level 1" to "Level 4". It does not specify in detail what level of security is required by any particular application.</p>
+<ul id="mwNg"><li id="mwNw">FIPS 140-2 Level 1 the lowest, imposes very limited requirements; loosely, all components must be "production-grade" and various egregious   kinds of insecurity must be absent.</li>
+<li id="mwOA">FIPS 140-2 Level 2 adds requirements for physical tamper-evidence and role-based authentication.</li>
+<li id="mwOQ">FIPS 140-2 Level 3  adds requirements for physical tamper-resistance (making it difficult for attackers to gain access to sensitive information contained in the module) and identity-based authentication, and for a physical or logical separation between the interfaces by which "critical security parameters" enter and leave the module, and its other interfaces.</li>
+<li id="mwOg">FIPS 140-2 Level 4 makes the physical security requirements more stringent, and requires robustness against environmental attacks.</li></ul>
+
+<p id="mwOw">In addition to the specified levels, Section 4.1.1 of the specification describes additional attacks that may require mitigation, such as differential power analysis.  If a product contains countermeasures against these attacks, they must be documented and tested, but protections are not required to achieve a given level.  Thus, a criticism of FIPS 140-2 is that the standard gives a false sense of security at Levels 2 and above because the standard implies that modules will be tamper-evident and/or tamper-resistant, yet modules are permitted to have side channel vulnerabilities that allow simple extraction of keys.</p>
+
+</section><section data-mw-section-id="3" id="mwPA" aria-labelledby="Scope_of_requirements"><div class="mw-heading mw-heading2"><h2 id="Scope_of_requirements">Scope of requirements</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=3" title="Edit section: Scope of requirements"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+
+<p id="mwPQ">FIPS 140 imposes requirements in eleven different areas:</p>
+<ul id="mwPg"><li id="mwPw"><i id="mwQA">Cryptographic module specification</i> (what must be documented)</li>
+<li id="mwQQ"><i id="mwQg">Cryptographic module ports and interfaces</i> (what information flows in and out, and how it must be segregated)</li>
+<li id="mwQw"><i id="mwRA">Roles, services and authentication</i> (who can do what with the module, and how this is checked)</li>
+<li id="mwRQ"><i id="mwRg">Finite state model</i> (documentation of the high-level states the module can be in, and how transitions occur)</li>
+<li id="mwRw"><i id="mwSA">Physical security</i> (<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Tamper-evident" title="Tamper-evident" class="mw-redirect" id="mwSQ">tamper evidence</a> and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Tamper_resistance" title="Tamper resistance" class="mw-redirect" id="mwSg">resistance</a>, and robustness against extreme environmental conditions)</li>
+<li id="mwSw"><i id="mwTA">Operational environment</i> (what sort of <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Operating_system" title="Operating system" id="mwTQ">operating system</a> the module uses and is used by)</li>
+<li id="mwTg"><i id="mwTw">Cryptographic key management</i> (generation, entry, output, storage and destruction of keys)</li>
+<li id="mwUA"><i id="mwUQ"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Electromagnetic_interference" title="Electromagnetic interference" id="mwUg">EMI</a>/<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Electromagnetic_compatibility" title="Electromagnetic compatibility" id="mwUw">EMC</a></i></li>
+<li id="mwVA"><i id="mwVQ">Self-tests</i> (what must be tested and when, and what must be done if a test fails)</li>
+<li id="mwVg"><i id="mwVw">Design assurance</i> (what documentation must be provided to demonstrate that the module has been well designed and implemented)</li>
+<li id="mwWA"><i id="mwWQ">Mitigation of other attacks</i> (if a module is designed to mitigate against, say, <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Tempest_(codename)" title="Tempest (codename)" id="mwWg">TEMPEST</a> attacks then its documentation must say how)</li></ul>
+
+</section><section data-mw-section-id="4" id="mwWw" aria-labelledby="Brief_history"><div class="mw-heading mw-heading2"><h2 id="Brief_history">Brief history</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=4" title="Edit section: Brief history"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwXA">FIPS 140-1, issued on 11 January 1994 and withdrawn on May 25, 2002,<sup about="#mwt17" class="mw-ref reference" id="cite_ref-4" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-4"}}'><a href="#cite_note-4" id="mwXQ"><span class="mw-reflink-text" id="mwXg"><span class="cite-bracket" id="mwXw">[</span>4<span class="cite-bracket" id="mwYA">]</span></span></a></sup> was developed by a government and industry working group, composed of vendors and users of cryptographic equipment. The group identified the four "security levels" and eleven "requirement areas" listed above, and specified requirements for each area at each level.</p>
+
+<p id="mwYQ"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-2" title="FIPS 140-2" id="mwYg">FIPS 140-2</a>, issued on 25 May 2001, takes account of changes in available technology and official standards since 1994, and of comments received from the vendor, tester, and user communities. It was the main input document to the international standard <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization" title="International Organization for Standardization" id="mwYw">ISO</a>/<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission" id="mwZA">IEC</a> <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISO/IEC_19790" title="ISO/IEC 19790" id="mwZQ">19790</a>:2006 <i id="mwZg">Security requirements for cryptographic modules</i> issued on 1 March 2006. NIST issued Special Publication 800-29 outlining the significant changes from FIPS 140-1 to FIPS 140-2.<sup about="#mwt20" class="mw-ref reference" id="cite_ref-5" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-5"}}'><a href="#cite_note-5" id="mwZw"><span class="mw-reflink-text" id="mwaA"><span class="cite-bracket" id="mwaQ">[</span>5<span class="cite-bracket" id="mwag">]</span></span></a></sup></p>
+
+<p id="mwaw"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-3" title="FIPS 140-3" id="mwbA">FIPS 140-3</a>, issued on 22 March 2019 and announced<sup about="#mwt21" class="mw-ref reference" id="cite_ref-approval_2-1" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{"name":"approval"}}'><a href="#cite_note-approval-2" id="mwbQ"><span class="mw-reflink-text" id="mwbg"><span class="cite-bracket" id="mwbw">[</span>2<span class="cite-bracket" id="mwcA">]</span></span></a></sup> in May 2019 is currently in the overlapping transition period to supersede FIPS 140-2 and aligns the NIST guidance around two international standards documents: <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization" title="International Organization for Standardization" id="mwcQ">ISO</a>/<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission" id="mwcg">IEC</a> 19790:2012(E) <i id="mwcw">Information technology — Security techniques — Security requirements for cryptographic modules</i> and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Organization_for_Standardization" title="International Organization for Standardization" id="mwdA">ISO</a>/<a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/International_Electrotechnical_Commission" title="International Electrotechnical Commission" id="mwdQ">IEC</a> 24759:2017(E) <i id="mwdg">Information technology — Security techniques — Test requirements for cryptographic modules</i>. In the first draft version<sup about="#mwt24" class="mw-ref reference" id="cite_ref-6" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-6"}}'><a href="#cite_note-6" id="mwdw"><span class="mw-reflink-text" id="mweA"><span class="cite-bracket" id="mweQ">[</span>6<span class="cite-bracket" id="mweg">]</span></span></a></sup> of the FIPS 140-3 standard, NIST introduced a new software security section, one additional level of assurance (Level 5) and new <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Simple_Power_Analysis" title="Simple Power Analysis" class="mw-redirect" id="mwew">Simple Power Analysis</a> (SPA) and <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Differential_Power_Analysis" title="Differential Power Analysis" class="mw-redirect" id="mwfA">Differential Power Analysis</a> (DPA) requirements. The draft issued on 11 Sep 2009, however, reverted to four security levels and limits the security levels of software to levels 1 and 2.</p>
+
+</section><section data-mw-section-id="5" id="mwfQ" aria-labelledby="Criticism"><div class="mw-heading mw-heading2"><h2 id="Criticism">Criticism</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=5" title="Edit section: Criticism"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<p id="mwfg">Due to the way in which the validation process is set up, a software vendor is required to re-validate their FIPS-validated module for every change, no matter how small, to the software; this re-validation is required even for obvious bug or security fixes. Since validation is an expensive process, this gives software vendors an incentive to postpone changes to their software and can result in software that does not receive security updates until the next validation. The result may be that validated software is less safe than a non-validated equivalent.<sup about="#mwt27" class="mw-ref reference" id="cite_ref-7" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-7"}}'><a href="#cite_note-7" id="mwfw"><span class="mw-reflink-text" id="mwgA"><span class="cite-bracket" id="mwgQ">[</span>7<span class="cite-bracket" id="mwgg">]</span></span></a></sup></p>
+
+<p id="mwgw">This criticism has been countered more recently by some industry experts who instead put the responsibility on the vendor to narrow their validation boundary. As most of the re-validation efforts are triggered by bugs and security fixes outside the core cryptographic operations, a properly scoped validation is not subject to the common re-validation as described.<sup about="#mwt30" class="mw-ref reference" id="cite_ref-8" rel="dc:references" typeof="mw:Extension/ref" data-mw='{"name":"ref","attrs":{},"body":{"id":"mw-reference-text-cite_note-8"}}'><a href="#cite_note-8" id="mwhA"><span class="mw-reflink-text" id="mwhQ"><span class="cite-bracket" id="mwhg">[</span>8<span class="cite-bracket" id="mwhw">]</span></span></a></sup></p>
+
+</section><section data-mw-section-id="6" id="mwiA" aria-labelledby="See_also"><div class="mw-heading mw-heading2"><h2 id="See_also">See also</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=6" title="Edit section: See also"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<ul id="mwiQ"><li id="mwig"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Common_Criteria" title="Common Criteria" id="mwiw">Common Criteria</a></li>
+<li id="mwjA"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-2" title="FIPS 140-2" id="mwjQ">FIPS 140-2</a></li>
+<li id="mwjg"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/FIPS_140-3" title="FIPS 140-3" id="mwjw">FIPS 140-3</a></li>
+<li id="mwkA"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/ISO/IEC_19790" title="ISO/IEC 19790" id="mwkQ">ISO/IEC 19790</a></li>
+<li id="mwkg"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Category:Computer_security_standards" title="Category:Computer security standards" id="mwkw">Category: Computer security standards</a></li>
+<li id="mwlA"><a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Category:Cryptography_standards" title="Category:Cryptography standards" id="mwlQ">Category: Cryptography standards</a></li></ul>
+
+</section><section data-mw-section-id="7" id="mwlg" aria-labelledby="References"><div class="mw-heading mw-heading2"><h2 id="References">References</h2><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=FIPS_140&amp;action=edit&amp;section=7" title="Edit section: References"><span>edit</span></a><span class="mw-editsection-bracket">]</span></span></div>
+<span class="mw-empty-elt" about="#mwt31" typeof="mw:Transclusion" id="mwlw" data-mw='{"parts":[{"template":{"target":{"wt":"reflist","href":"./Template:Reflist"},"params":{},"i":0}}]}'><style data-mw-deduplicate="TemplateStyles:r1327269900" typeof="mw:Extension/templatestyles" about="#mwt32" data-mw='{"name":"templatestyles","attrs":{"src":"Reflist/styles.css"}}'>.mw-parser-output .reflist-columns-2{column-width:30em}.mw-parser-output .reflist-columns-3{column-width:25em}body.skin-vector-2022 .mw-parser-output .reflist-columns-2{column-width:27em}body.skin-vector-2022 .mw-parser-output .reflist-columns-3{column-width:22.5em}.mw-parser-output .references[data-mw-group=upper-alpha]{list-style-type:upper-alpha}.mw-parser-output .references[data-mw-group=upper-roman]{list-style-type:upper-roman}.mw-parser-output .references[data-mw-group=lower-alpha]{list-style-type:lower-alpha}.mw-parser-output .references[data-mw-group=lower-greek]{list-style-type:lower-greek}.mw-parser-output .references[data-mw-group=lower-roman]{list-style-type:lower-roman}.mw-parser-output div.reflist-liststyle-upper-alpha .references{list-style-type:upper-alpha}.mw-parser-output div.reflist-liststyle-upper-roman .references{list-style-type:upper-roman}.mw-parser-output div.reflist-liststyle-lower-alpha .references{list-style-type:lower-alpha}.mw-parser-output div.reflist-liststyle-lower-greek .references{list-style-type:lower-greek}.mw-parser-output div.reflist-liststyle-lower-roman .references{list-style-type:lower-roman}</style></span><div about="#mwt31" id="mwmA">
+<div class="mw-references-wrap" typeof="mw:Extension/references" about="#mwt33" id="mwmQ" data-mw='{"name":"references","attrs":{"group":"","responsive":"1"},"body":{"extsrc":""}}'><ol class="mw-references references" id="mwmg"><li about="#cite_note-1" id="cite_note-1" data-mw-footnote-number="1"><span class="mw-cite-backlink" id="mwmw"><a href="#cite_ref-1" rel="mw:referencedBy" id="mwnA"><span class="mw-linkback-text" id="mwnQ">↑</span></a></span> <span id="mw-reference-text-cite_note-1" class="mw-reference-text reference-text"><style data-mw-deduplicate="TemplateStyles:r1333433106" typeof="mw:Extension/templatestyles mw:Transclusion" about="#mwt5" id="mwng" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n ","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://www.nist.gov/itl/fips-general-information"},"title":{"wt":"FIPS General Information"},"date":{"wt":"2010-10-05"},"publisher":{"wt":"[[NIST]]"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'>.mw-parser-output cite.citation{font-style:inherit;word-wrap:break-word}.mw-parser-output .citation q{quotes:"\"""\"""'""'"}.mw-parser-output .citation:target{background-color:rgba(0,127,255,0.133)}.mw-parser-output .id-lock-free.id-lock-free a{background:url("//upload.wikimedia.org/wikipedia/commons/6/65/Lock-green.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-limited.id-lock-limited a,.mw-parser-output .id-lock-registration.id-lock-registration a{background:url("//upload.wikimedia.org/wikipedia/commons/d/d6/Lock-gray-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .id-lock-subscription.id-lock-subscription a{background:url("//upload.wikimedia.org/wikipedia/commons/a/aa/Lock-red-alt-2.svg")right 0.1em center/9px no-repeat}.mw-parser-output .cs1-ws-icon a{background:url("//upload.wikimedia.org/wikipedia/commons/4/4c/Wikisource-logo.svg")right 0.1em center/12px no-repeat}body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-free a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-limited a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-registration a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .id-lock-subscription a,body:not(.skin-timeless):not(.skin-minerva) .mw-parser-output .cs1-ws-icon a{background-size:contain;padding:0 1em 0 0}.mw-parser-output .cs1-code{color:inherit;background:inherit;border:none;padding:inherit}.mw-parser-output .cs1-hidden-error{display:none;color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-visible-error{color:var(--color-error,#bf3c2c)}.mw-parser-output .cs1-maint{display:none;color:#085;margin-left:0.3em}.mw-parser-output .cs1-kern-left{padding-left:0.2em}.mw-parser-output .cs1-kern-right{padding-right:0.2em}.mw-parser-output .citation .mw-selflink{font-weight:inherit}@media screen{.mw-parser-output .cs1-format{font-size:95%}html.skin-theme-clientpref-night .mw-parser-output .cs1-maint{color:#18911f}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output .cs1-maint{color:#18911f}}</style><cite class="citation web cs1" about="#mwt5" id="mwnw"><a rel="mw:ExtLink nofollow" href="https://www.nist.gov/itl/fips-general-information" class="external text" id="mwoA">"FIPS General Information"</a>. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/NIST" title="NIST" class="mw-redirect" id="mwoQ">NIST</a>. October 5, 2010<span class="reference-accessdate" id="mwog">. Retrieved <span class="nowrap" id="mwow">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=FIPS+General+Information&amp;rft.pub=NIST&amp;rft.date=2010-10-05&amp;rft_id=https%3A%2F%2Fwww.nist.gov%2Fitl%2Ffips-general-information&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt5" id="mwpA"></span></span></li>
+<li about="#cite_note-approval-2" id="cite_note-approval-2" data-mw-footnote-number="2"><span rel="mw:referencedBy" class="mw-cite-backlink" id="mwpQ"><a href="#cite_ref-approval_2-0" id="mwpg"><span class="mw-linkback-text" id="mwpw">1</span></a> <a href="#cite_ref-approval_2-1" id="mwqA"><span class="mw-linkback-text" id="mwqQ">2</span></a></span> <span id="mw-reference-text-cite_note-approval-2" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt8" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwqg" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://www.nist.gov/news-events/news/2019/05/announcing-approval-and-issuance-fips-140-3-security-requirements"},"title":{"wt":"Announcing Approval and Issuance of FIPS 140-3, Security Requirements for Cryptographic Modules"},"date":{"wt":"May 1, 2019"},"publisher":{"wt":"NIST"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt8" id="mwqw"><a rel="mw:ExtLink nofollow" href="https://www.nist.gov/news-events/news/2019/05/announcing-approval-and-issuance-fips-140-3-security-requirements" class="external text" id="mwrA">"Announcing Approval and Issuance of FIPS 140-3, Security Requirements for Cryptographic Modules"</a>. NIST. May 1, 2019<span class="reference-accessdate" id="mwrQ">. Retrieved <span class="nowrap" id="mwrg">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Announcing+Approval+and+Issuance+of+FIPS+140-3%2C+Security+Requirements+for+Cryptographic+Modules&amp;rft.pub=NIST&amp;rft.date=2019-05-01&amp;rft_id=https%3A%2F%2Fwww.nist.gov%2Fnews-events%2Fnews%2F2019%2F05%2Fannouncing-approval-and-issuance-fips-140-3-security-requirements&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt8" id="mwrw"></span></span></li>
+<li about="#cite_note-transition-3" id="cite_note-transition-3" data-mw-footnote-number="3"><span rel="mw:referencedBy" class="mw-cite-backlink" id="mwsA"><a href="#cite_ref-transition_3-0" id="mwsQ"><span class="mw-linkback-text" id="mwsg">1</span></a> <a href="#cite_ref-transition_3-1" id="mwsw"><span class="mw-linkback-text" id="mwtA">2</span></a></span> <span id="mw-reference-text-cite_note-transition-3" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt11" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwtQ" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://csrc.nist.gov/Projects/fips-140-3-transition-effort"},"title":{"wt":"FIPS 140-3 Transition Effort"},"date":{"wt":"June 2, 2021"},"publisher":{"wt":"NIST"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt11" id="mwtg"><a rel="mw:ExtLink nofollow" href="https://csrc.nist.gov/Projects/fips-140-3-transition-effort" class="external text" id="mwtw">"FIPS 140-3 Transition Effort"</a>. NIST. June 2, 2021<span class="reference-accessdate" id="mwuA">. Retrieved <span class="nowrap" id="mwuQ">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=FIPS+140-3+Transition+Effort&amp;rft.pub=NIST&amp;rft.date=2021-06-02&amp;rft_id=https%3A%2F%2Fcsrc.nist.gov%2FProjects%2Ffips-140-3-transition-effort&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt11" id="mwug"></span></span></li>
+<li about="#cite_note-4" id="cite_note-4" data-mw-footnote-number="4"><span class="mw-cite-backlink" id="mwuw"><a href="#cite_ref-4" rel="mw:referencedBy" id="mwvA"><span class="mw-linkback-text" id="mwvQ">↑</span></a></span> <span id="mw-reference-text-cite_note-4" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt15" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwvg" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://csrc.nist.rip/publications/fips/fips140-1/fips1401.htm"},"title":{"wt":"Federal Information Processing Standard (FIPS) 140-1: Security Requirements for Cryptographic Modules"},"publisher":{"wt":"NIST"},"date":{"wt":"1994-01-11"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt15" id="mwvw"><a rel="mw:ExtLink nofollow" href="https://csrc.nist.rip/publications/fips/fips140-1/fips1401.htm" class="external text" id="mwwA">"Federal Information Processing Standard (FIPS) 140-1: Security Requirements for Cryptographic Modules"</a>. NIST. January 11, 1994<span class="reference-accessdate" id="mwwQ">. Retrieved <span class="nowrap" id="mwwg">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Federal+Information+Processing+Standard+%28FIPS%29+140-1%3A+Security+Requirements+for+Cryptographic+Modules&amp;rft.pub=NIST&amp;rft.date=1994-01-11&amp;rft_id=https%3A%2F%2Fcsrc.nist.rip%2Fpublications%2Ffips%2Ffips140-1%2Ffips1401.htm&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt15" id="mwww"></span></span></li>
+<li about="#cite_note-5" id="cite_note-5" data-mw-footnote-number="5"><span class="mw-cite-backlink" id="mwxA"><a href="#cite_ref-5" rel="mw:referencedBy" id="mwxQ"><span class="mw-linkback-text" id="mwxg">↑</span></a></span> <span id="mw-reference-text-cite_note-5" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt18" typeof="mw:Extension/templatestyles mw:Transclusion" id="mwxw" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://csrc.nist.gov/pubs/sp/800/29/final"},"title":{"wt":"A Comparison of the Security Requirements for Cryptographic Modules in FIPS 140-1 and FIPS 140-2"},"date":{"wt":"2001-06-01"},"publisher":{"wt":"NIST"},"doi":{"wt":"10.6028/NIST.SP.800-29"},"last1":{"wt":"Snouffer"},"first1":{"wt":"Ray"},"last2":{"wt":"Lee"},"first2":{"wt":"Annabelle"},"last3":{"wt":"Oldehoeft"},"first3":{"wt":"Arch"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite id="CITEREFSnoufferLeeOldehoeft2001" class="citation web cs1" about="#mwt18">Snouffer, Ray; Lee, Annabelle; Oldehoeft, Arch (June 1, 2001). <a rel="mw:ExtLink nofollow" href="https://csrc.nist.gov/pubs/sp/800/29/final" class="external text" id="mwyA">"A Comparison of the Security Requirements for Cryptographic Modules in FIPS 140-1 and FIPS 140-2"</a>. NIST. <a rel="mw:WikiLink" href="https://en.wikipedia.org/wiki/Doi_(identifier)" title="Doi (identifier)" class="mw-redirect" id="mwyQ">doi</a>:<a rel="mw:ExtLink nofollow" href="https://doi.org/10.6028%2FNIST.SP.800-29" class="external text" id="mwyg">10.6028/NIST.SP.800-29</a><span class="reference-accessdate" id="mwyw">. Retrieved <span class="nowrap" id="mwzA">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=A+Comparison+of+the+Security+Requirements+for+Cryptographic+Modules+in+FIPS+140-1+and+FIPS+140-2&amp;rft.pub=NIST&amp;rft.date=2001-06-01&amp;rft_id=info%3Adoi%2F10.6028%2FNIST.SP.800-29&amp;rft.aulast=Snouffer&amp;rft.aufirst=Ray&amp;rft.au=Lee%2C+Annabelle&amp;rft.au=Oldehoeft%2C+Arch&amp;rft_id=https%3A%2F%2Fcsrc.nist.gov%2Fpubs%2Fsp%2F800%2F29%2Ffinal&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt18" id="mwzQ"></span></span></li>
+<li about="#cite_note-6" id="cite_note-6" data-mw-footnote-number="6"><span class="mw-cite-backlink" id="mwzg"><a href="#cite_ref-6" rel="mw:referencedBy" id="mwzw"><span class="mw-linkback-text" id="mw0A">↑</span></a></span> <span id="mw-reference-text-cite_note-6" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt22" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw0Q" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://csrc.nist.gov/pubs/fips/140-3/ipd"},"title":{"wt":"FIPS 140-3: Security Requirements for Cryptographic Modules (Initial Public Draft)"},"date":{"wt":"2013-03-07"},"publisher":{"wt":"NIST"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt22" id="mw0g"><a rel="mw:ExtLink nofollow" href="https://csrc.nist.gov/pubs/fips/140-3/ipd" class="external text" id="mw0w">"FIPS 140-3: Security Requirements for Cryptographic Modules (Initial Public Draft)"</a>. NIST. March 7, 2013<span class="reference-accessdate" id="mw1A">. Retrieved <span class="nowrap" id="mw1Q">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=FIPS+140-3%3A+Security+Requirements+for+Cryptographic+Modules+%28Initial+Public+Draft%29&amp;rft.pub=NIST&amp;rft.date=2013-03-07&amp;rft_id=https%3A%2F%2Fcsrc.nist.gov%2Fpubs%2Ffips%2F140-3%2Fipd&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt22" id="mw1g"></span></span></li>
+<li about="#cite_note-7" id="cite_note-7" data-mw-footnote-number="7"><span class="mw-cite-backlink" id="mw1w"><a href="#cite_ref-7" rel="mw:referencedBy" id="mw2A"><span class="mw-linkback-text" id="mw2Q">↑</span></a></span> <span id="mw-reference-text-cite_note-7" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt25" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw2g" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://blogs.oracle.com/solaris/post/is-fips-140-2-actively-harmful-to-software"},"title":{"wt":"Is FIPS 140-2 Actively harmful to software?"},"date":{"wt":"2014-04-16"},"publisher":{"wt":"Darren Moffat, Oracle Solaris"},"archive-date":{"wt":"2022-11-28"},"archive-url":{"wt":"https://web.archive.org/web/20221128054211/https://blogs.oracle.com/solaris/post/is-fips-140-2-actively-harmful-to-software"},"url-status":{"wt":"live"},"access-date":{"wt":"2017-03-18"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt25" id="mw2w"><a rel="mw:ExtLink nofollow" href="https://blogs.oracle.com/solaris/post/is-fips-140-2-actively-harmful-to-software" class="external text" id="mw3A">"Is FIPS 140-2 Actively harmful to software?"</a>. Darren Moffat, Oracle Solaris. April 16, 2014. <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20221128054211/https://blogs.oracle.com/solaris/post/is-fips-140-2-actively-harmful-to-software" class="external text" id="mw3Q">Archived</a> from the original on November 28, 2022<span class="reference-accessdate" id="mw3g">. Retrieved <span class="nowrap" id="mw3w">March 18,</span> 2017</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Is+FIPS+140-2+Actively+harmful+to+software%3F&amp;rft.pub=Darren+Moffat%2C+Oracle+Solaris&amp;rft.date=2014-04-16&amp;rft_id=https%3A%2F%2Fblogs.oracle.com%2Fsolaris%2Fpost%2Fis-fips-140-2-actively-harmful-to-software&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt25" id="mw4A"></span></span></li>
+<li about="#cite_note-8" id="cite_note-8" data-mw-footnote-number="8"><span class="mw-cite-backlink" id="mw4Q"><a href="#cite_ref-8" rel="mw:referencedBy" id="mw4g"><span class="mw-linkback-text" id="mw4w">↑</span></a></span> <span id="mw-reference-text-cite_note-8" class="mw-reference-text reference-text"><link rel="mw-deduplicated-inline-style" href="mw-data:TemplateStyles:r1333433106" about="#mwt28" typeof="mw:Extension/templatestyles mw:Transclusion" id="mw5A" data-mw='{"name":"templatestyles","attrs":{"src":"Module:Citation/CS1/styles.css"},"body":{"extsrc":""},"parts":[{"template":{"target":{"wt":"cite web\n","href":"./Template:Cite_web"},"params":{"url":{"wt":"https://www.safelogic.com/blog/inside-fips-inside"},"title":{"wt":"Inside &apos;FIPS Inside&apos;"},"date":{"wt":"2018-04-10"},"publisher":{"wt":"Walter Paley, SafeLogic"},"archive-date":{"wt":"2020-10-20"},"archive-url":{"wt":"https://web.archive.org/web/20201020042433/https://www.safelogic.com/inside-fips-inside/"},"url-status":{"wt":"live"},"access-date":{"wt":"2025-12-20"}},"i":0}}]}'/><cite class="citation web cs1" about="#mwt28" id="mw5Q"><a rel="mw:ExtLink nofollow" href="https://www.safelogic.com/blog/inside-fips-inside" class="external text" id="mw5g">"Inside 'FIPS Inside'<span class="cs1-kern-right" id="mw5w"></span>"</a>. Walter Paley, SafeLogic. April 10, 2018. <a rel="mw:ExtLink nofollow" href="https://web.archive.org/web/20201020042433/https://www.safelogic.com/inside-fips-inside/" class="external text" id="mw6A">Archived</a> from the original on October 20, 2020<span class="reference-accessdate" id="mw6Q">. Retrieved <span class="nowrap" id="mw6g">December 20,</span> 2025</span>.</cite><span title="ctx_ver=Z39.88-2004&amp;rft_val_fmt=info%3Aofi%2Ffmt%3Akev%3Amtx%3Abook&amp;rft.genre=unknown&amp;rft.btitle=Inside+%27FIPS+Inside%27&amp;rft.pub=Walter+Paley%2C+SafeLogic&amp;rft.date=2018-04-10&amp;rft_id=https%3A%2F%2Fwww.safelogic.com%2Fblog%2Finside-fips-inside&amp;rfr_id=info%3Asid%2Fen.wikipedia.org%3AFIPS+140" class="Z3988" about="#mwt28" id="mw6w"></span></span></li>
+</ol></div></div>
+
+<link rel="mw:PageProp/Category" href="./Category:Computer_security_standards" id="mw7A"/>
+<link rel="mw:PageProp/Category" href="./Category:Cryptography_standards" id="mw7Q"/>
+<link rel="mw:PageProp/Category" href="./Category:Standards_of_the_United_States" id="mw7g"/></section>
+<!-- 
+NewPP limit report
+Parsed by mw‐web.codfw.main‐7ff746664f‐26z67
+Cached time: 20261120004236
+Cache expiry: 86400
+Cache expiry source: Template:As_of (#time)
+Reduced expiry: true
+Complications: [vary‐revision‐sha1, show‐toc, use‐parsoid]
+CPU time usage: 0.344 seconds
+Real time usage: 0.397 seconds
+Preprocessor visited node count: 959/1000000
+Revision size: 11466/2097152 bytes
+Post‐expand include size: 17155/2097152 bytes
+Template argument size: 1561/2097152 bytes
+Highest expansion depth: 22/100
+Expensive parser function count: 4/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 19557/5000000 bytes
+Lua time usage: 0.099/10.000 seconds
+Lua memory usage: 5367970/52428800 bytes
+Number of Wikibase entities loaded: 0/500
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  327.951      1 -total
+ 26.30%   86.240      1 Template:Short_description
+ 25.05%   82.143      8 Template:Cite_web
+ 14.27%   46.783      2 Template:Pagetype
+  7.83%   25.664      5 Template:Main_other
+  7.02%   23.006      1 Template:SDcat
+  4.93%   16.178      1 Template:Use_American_English
+  4.82%   15.804      1 Template:As_of
+  4.57%   14.987      3 Template:Dated_maintenance_category
+  4.21%   13.821      2 Template:DMCA
+-->
+
+<!-- Render ID 47afb128-e47b-11f1-9837-d74590f35424 -->
+
+<!-- Saved in parser cache with key enwiki:parsoid-pcache:1539324:|#|:idhash:useParsoid=1 and timestamp 20261120004236 and revision id 1378598115. Rendering was triggered because: page_view
+ -->
+
+<!-- Parsoid 0.25.0.0-alpha3 -->
+</div><!--
+Post‐processing cache key enwiki:postproc‐parsoid‐pcache:1539324:|#|:idhash:injectTOC=0!postproc=1!skin=vector‐2022!useParsoid=1!visibleLinks=single, generated at 20261120023304
+--><noscript><img src="https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
+<div class="printfooter" data-nosnippet="">Retrieved from "<a dir="ltr" href="https://en.wikipedia.org/w/index.php?title=FIPS_140&amp;oldid=1378598115">https://en.wikipedia.org/w/index.php?title=FIPS_140&amp;oldid=1378598115</a>"</div></div>
+					<div id="catlinks" class="catlinks" data-mw-interface=""><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Help:Category" title="Help:Category">Categories</a>: <ul><li><a href="/wiki/Category:Computer_security_standards" title="Category:Computer security standards">Computer security standards</a></li><li><a href="/wiki/Category:Cryptography_standards" title="Category:Cryptography standards">Cryptography standards</a></li><li><a href="/wiki/Category:Standards_of_the_United_States" title="Category:Standards of the United States">Standards of the United States</a></li></ul></div><div id="mw-hidden-catlinks" class="mw-hidden-catlinks mw-hidden-cats-hidden">Hidden categories: <ul><li><a href="/wiki/Category:Articles_with_short_description" title="Category:Articles with short description">Articles with short description</a></li><li><a href="/wiki/Category:Short_description_matches_Wikidata" title="Category:Short description matches Wikidata">Short description matches Wikidata</a></li><li><a href="/wiki/Category:Use_American_English_from_August_2026" title="Category:Use American English from August 2026">Use American English from August 2026</a></li><li><a href="/wiki/Category:All_Wikipedia_articles_written_in_American_English" title="Category:All Wikipedia articles written in American English">All Wikipedia articles written in American English</a></li><li><a href="/wiki/Category:Use_mdy_dates_from_August_2026" title="Category:Use mdy dates from August 2026">Use mdy dates from August 2026</a></li><li><a href="/wiki/Category:Articles_containing_potentially_dated_statements_from_October_2020" title="Category:Articles containing potentially dated statements from October 2020">Articles containing potentially dated statements from October 2020</a></li><li><a href="/wiki/Category:All_articles_containing_potentially_dated_statements" title="Category:All articles containing potentially dated statements">All articles containing potentially dated statements</a></li></ul></div></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			<footer id="footer" class="mw-footer" >
+				<ul id="footer-info" class="mw-portlet mw-portlet-footer-info">
+	<li id="footer-info-lastmod"> This page was last edited on 5 October 2026, at 03:58<span class="anonymous-show">&#160;(UTC)</span>.</li>
+	<li id="footer-info-renderedwith">Page was rendered with <a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid" class="extiw" title="mw:Special:MyLanguage/Parsoid">Parsoid</a>.</li>
+	<li id="footer-info-copyright">Text is available under the <a href="/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License" title="Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License">Creative Commons Attribution-ShareAlike 4.0 License</a>;
+additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use" class="extiw" title="foundation:Special:MyLanguage/Policy:Terms of Use">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy" class="extiw" title="foundation:Special:MyLanguage/Policy:Privacy policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a rel="nofollow" class="external text" href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</li>
+</ul>
+
+				<ul id="footer-places" class="mw-portlet mw-portlet-footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy">Privacy policy</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:About">About Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:General_disclaimer">Disclaimers</a></li>
+	<li id="footer-places-contact"><a href="//en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></li>
+	<li id="footer-places-legal-safety-contacts"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information">Legal &amp; safety contacts</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct">Code of Conduct</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Developers</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement">Cookie statement</a></li>
+	<li id="footer-places-mobileview"><a href="//en.wikipedia.org/w/index.php?title=FIPS_140&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Mobile view</a></li>
+</ul>
+
+				<ul id="footer-icons" class="mw-portlet mw-portlet-footer-icons noprint">
+	<li id="footer-copyrightico"><a href="https://www.wikimedia.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/static/images/footer/wikimedia-button.svg" width="84" height="29"><img src="/static/images/footer/wikimedia.svg" width="25" height="25" alt="Wikimedia Foundation" lang="en" loading="lazy"></picture></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/" class="cdx-button cdx-button--fake-button cdx-button--size-large cdx-button--fake-button--enabled"><picture><source media="(min-width: 500px)" srcset="/w/resources/assets/poweredby_mediawiki.svg" width="88" height="31"><img src="/w/resources/assets/mediawiki_compact.svg" alt="Powered by MediaWiki" lang="en" width="25" height="25" loading="lazy"></picture></a></li>
+</ul>
+
+			</footer>
+		</div>
+	</div> 
+</div> 
+<div class="vector-header-container vector-sticky-header-container no-font-mode-scale">
+	<div id="vector-sticky-header" class="vector-sticky-header">
+		<div class="vector-sticky-header-start">
+			<div class="vector-sticky-header-icon-start vector-button-flush-left" aria-hidden="true">
+				<button class="cdx-button cdx-button--weight-quiet cdx-button--icon-only vector-sticky-header-search-toggle" tabindex="-1" data-event-name="ui.vector-sticky-search-form.icon"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search cdx-button__icon"></span>
+
+<span>Search</span>
+			</button>
+		</div>
+			
+		<div role="search" class="vector-search-box-vue  vector-search-box-show-thumbnail vector-search-box">
+			<div class="vector-typeahead-search-container">
+				<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail">
+					<form action="/w/index.php" id="vector-sticky-search-form" class="cdx-search-input cdx-search-input--has-end-button">
+						<div  class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+							<div class="cdx-text-input cdx-text-input--has-start-icon">
+								<input
+									class="cdx-text-input__input mw-searchInput" autocomplete="off"
+									
+									type="search" name="search" placeholder="Search Wikipedia">
+								<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+							</div>
+							<input type="hidden" name="title" value="Special:Search">
+						</div>
+						<button class="cdx-button cdx-search-input__end-button">Search</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-context-bar">
+				<nav aria-label="Contents" class="vector-toc-landmark">
+						
+					<div id="vector-sticky-header-toc" class="vector-dropdown mw-portlet mw-portlet-sticky-header-toc vector-sticky-header-toc vector-button-flush-left"  >
+						<input type="checkbox" id="vector-sticky-header-toc-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-sticky-header-toc" class="vector-dropdown-checkbox "  aria-label="Toggle the table of contents"   >
+						<label id="vector-sticky-header-toc-label" for="vector-sticky-header-toc-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-listBullet mw-ui-icon-wikimedia-listBullet cdx-button__icon"></span>
+
+<span class="vector-dropdown-label-text">Toggle the table of contents</span>
+						</label>
+						<div class="vector-dropdown-content">
+					
+						<div id="vector-sticky-header-toc-unpinned-container" class="vector-unpinned-container">
+						</div>
+					
+						</div>
+					</div>
+			</nav>
+				<div class="vector-sticky-header-context-bar-primary" aria-hidden="true" ><span lang="en" dir="ltr"><span class="mw-page-title-main">FIPS 140</span></span></div>
+			</div>
+		</div>
+		<div class="vector-sticky-header-end" aria-hidden="true">
+			<div class="vector-sticky-header-icons">
+				<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-talk-sticky-header" tabindex="-1" data-event-name="talk-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbles mw-ui-icon-wikimedia-speechBubbles cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-subject-sticky-header" tabindex="-1" data-event-name="subject-sticky-header"><span class="vector-icon mw-ui-icon-article mw-ui-icon-wikimedia-article cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-history-sticky-header" tabindex="-1" data-event-name="history-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-history mw-ui-icon-wikimedia-wikimedia-history cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-watchlink" id="ca-watchstar-sticky-header" tabindex="-1" data-event-name="watch-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-star mw-ui-icon-wikimedia-wikimedia-star cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-edit-sticky-header" tabindex="-1" data-event-name="wikitext-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-wikiText mw-ui-icon-wikimedia-wikimedia-wikiText cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-ve-edit-sticky-header" tabindex="-1" data-event-name="ve-edit-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-edit mw-ui-icon-wikimedia-wikimedia-edit cdx-button__icon"></span>
+
+<span></span>
+			</a>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only" id="ca-viewsource-sticky-header" tabindex="-1" data-event-name="ve-edit-protected-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-editLock mw-ui-icon-wikimedia-wikimedia-editLock cdx-button__icon"></span>
+
+<span></span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-buttons">
+				<button class="cdx-button cdx-button--weight-quiet mw-interlanguage-selector" id="p-lang-btn-sticky-header" tabindex="-1" data-event-name="ui.dropdown-p-lang-btn-sticky-header"><span class="vector-icon mw-ui-icon-wikimedia-language mw-ui-icon-wikimedia-wikimedia-language cdx-button__icon"></span>
+
+<span>2 languages</span>
+			</button>
+			<a href="#" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--action-progressive" id="ca-addsection-sticky-header" tabindex="-1" data-event-name="addsection-sticky-header"><span class="vector-icon mw-ui-icon-speechBubbleAdd-progressive mw-ui-icon-wikimedia-speechBubbleAdd-progressive cdx-button__icon"></span>
+
+<span>Add topic</span>
+			</a>
+		</div>
+			<div class="vector-sticky-header-icon-end">
+				<div class="vector-user-links">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="mw-portlet mw-portlet-dock-bottom emptyPortlet" id="p-dock-bottom">
+	<ul>
+		
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-85dd68f579-7w497","wgBackendResponseTime":153,"wgPageParseReport":{"limitreport":{"cputime":"0.344","walltime":"0.397","ppvisitednodes":{"value":959,"limit":1000000},"revisionsize":{"value":11466,"limit":2097152},"postexpandincludesize":{"value":17155,"limit":2097152},"templateargumentsize":{"value":1561,"limit":2097152},"expansiondepth":{"value":22,"limit":100},"expensivefunctioncount":{"value":4,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":19557,"limit":5000000},"entityaccesscount":{"value":0,"limit":500},"timingprofile":["100.00%  327.951      1 -total"," 26.30%   86.240      1 Template:Short_description"," 25.05%   82.143      8 Template:Cite_web"," 14.27%   46.783      2 Template:Pagetype","  7.83%   25.664      5 Template:Main_other","  7.02%   23.006      1 Template:SDcat","  4.93%   16.178      1 Template:Use_American_English","  4.82%   15.804      1 Template:As_of","  4.57%   14.987      3 Template:Dated_maintenance_category","  4.21%   13.821      2 Template:DMCA"]},"scribunto":{"limitreport-timeusage":{"value":"0.099","limit":"10.000"},"limitreport-memusage":{"value":5367970,"limit":52428800}},"cachereport":{"origin":"mw-web.codfw.main-7ff746664f-26z67","timestamp":"20261120004236","ttl":86400,"transientcontent":true,"expiry-source":"Template:As_of (#time)"}}});});</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"FIPS 140","url":"https:\/\/en.wikipedia.org\/wiki\/FIPS_140","sameAs":"http:\/\/www.wikidata.org\/entity\/Q5425847","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q5425847","author":{"@type":"Organization","name":"Contributors to Wikimedia projects"},"publisher":{"@type":"Organization","name":"Wikimedia Foundation, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2005-02-24T03:30:47Z","dateModified":"2026-10-05T03:58:55Z","headline":"U.S. government cryptographic standard"}</script>
+</body>
+</html>

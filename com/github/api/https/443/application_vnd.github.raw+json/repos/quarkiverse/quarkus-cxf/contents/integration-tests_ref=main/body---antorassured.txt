@@ -1,0 +1,306 @@
+[
+  {
+    "name": "client-server",
+    "path": "integration-tests/client-server",
+    "sha": "433891a247956a433b287d0d3b42925bb73f217f",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/client-server?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/client-server",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/433891a247956a433b287d0d3b42925bb73f217f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/client-server?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/433891a247956a433b287d0d3b42925bb73f217f",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/client-server"
+    }
+  },
+  {
+    "name": "client",
+    "path": "integration-tests/client",
+    "sha": "0fc4030dc0fa3e5fe2976e9050d1f519bc1f5088",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/client?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/client",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/0fc4030dc0fa3e5fe2976e9050d1f519bc1f5088",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/client?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/0fc4030dc0fa3e5fe2976e9050d1f519bc1f5088",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/client"
+    }
+  },
+  {
+    "name": "fastinfoset",
+    "path": "integration-tests/fastinfoset",
+    "sha": "e9a2e92001ab157f2087e74f2c2e66882d8785a6",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/fastinfoset?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/fastinfoset",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/e9a2e92001ab157f2087e74f2c2e66882d8785a6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/fastinfoset?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/e9a2e92001ab157f2087e74f2c2e66882d8785a6",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/fastinfoset"
+    }
+  },
+  {
+    "name": "metrics",
+    "path": "integration-tests/metrics",
+    "sha": "7a75225225505ec7b9df15fe5b8c7c62d51ca07e",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/metrics?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/metrics",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/7a75225225505ec7b9df15fe5b8c7c62d51ca07e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/metrics?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/7a75225225505ec7b9df15fe5b8c7c62d51ca07e",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/metrics"
+    }
+  },
+  {
+    "name": "mtls",
+    "path": "integration-tests/mtls",
+    "sha": "75a086345bbce5d9543be403d452f82c82ea22cc",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mtls?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mtls",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/75a086345bbce5d9543be403d452f82c82ea22cc",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mtls?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/75a086345bbce5d9543be403d452f82c82ea22cc",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mtls"
+    }
+  },
+  {
+    "name": "mtom-awt",
+    "path": "integration-tests/mtom-awt",
+    "sha": "c477fcb7f86fe341553f24a388f8e807ebba9936",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mtom-awt?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mtom-awt",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/c477fcb7f86fe341553f24a388f8e807ebba9936",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mtom-awt?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/c477fcb7f86fe341553f24a388f8e807ebba9936",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mtom-awt"
+    }
+  },
+  {
+    "name": "mutable-jar",
+    "path": "integration-tests/mutable-jar",
+    "sha": "35af9805aa06cf9a3506b790996324e3c37b8ef9",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mutable-jar?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mutable-jar",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/35af9805aa06cf9a3506b790996324e3c37b8ef9",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/mutable-jar?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/35af9805aa06cf9a3506b790996324e3c37b8ef9",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/mutable-jar"
+    }
+  },
+  {
+    "name": "oidc",
+    "path": "integration-tests/oidc",
+    "sha": "ebbdd40d0f9f1c0ed1e4161b322fca6b95815248",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/oidc?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/oidc",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ebbdd40d0f9f1c0ed1e4161b322fca6b95815248",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/oidc?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ebbdd40d0f9f1c0ed1e4161b322fca6b95815248",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/oidc"
+    }
+  },
+  {
+    "name": "opentelemetry",
+    "path": "integration-tests/opentelemetry",
+    "sha": "4bce5f84de7aefdfd85cecb4652349ab53e96905",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/opentelemetry",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/4bce5f84de7aefdfd85cecb4652349ab53e96905",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/4bce5f84de7aefdfd85cecb4652349ab53e96905",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/opentelemetry"
+    }
+  },
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/pom.xml",
+    "sha": "ed7c17ab1f2e02997e6b2894be35152213450b72",
+    "size": 4299,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/ed7c17ab1f2e02997e6b2894be35152213450b72",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/ed7c17ab1f2e02997e6b2894be35152213450b72",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/pom.xml"
+    }
+  },
+  {
+    "name": "saaj",
+    "path": "integration-tests/saaj",
+    "sha": "ab8e75c3d4327560d34605fc5ed97a993e8c29e6",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/saaj?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/saaj",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ab8e75c3d4327560d34605fc5ed97a993e8c29e6",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/saaj?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ab8e75c3d4327560d34605fc5ed97a993e8c29e6",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/saaj"
+    }
+  },
+  {
+    "name": "santuario-xmlsec",
+    "path": "integration-tests/santuario-xmlsec",
+    "sha": "8fd7c0ae06a9e139cf2abc99eaaf535b7b72bcba",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/santuario-xmlsec?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/santuario-xmlsec",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/8fd7c0ae06a9e139cf2abc99eaaf535b7b72bcba",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/santuario-xmlsec?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/8fd7c0ae06a9e139cf2abc99eaaf535b7b72bcba",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/santuario-xmlsec"
+    }
+  },
+  {
+    "name": "server",
+    "path": "integration-tests/server",
+    "sha": "c6dce7b816bf63ea23f586adbb79f2e811d3aead",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/server?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/server",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/c6dce7b816bf63ea23f586adbb79f2e811d3aead",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/server?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/c6dce7b816bf63ea23f586adbb79f2e811d3aead",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/server"
+    }
+  },
+  {
+    "name": "ws-rm-client",
+    "path": "integration-tests/ws-rm-client",
+    "sha": "fbe207fc5d63bea3536ce148b275e2756b771034",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-rm-client?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-rm-client",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/fbe207fc5d63bea3536ce148b275e2756b771034",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-rm-client?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/fbe207fc5d63bea3536ce148b275e2756b771034",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-rm-client"
+    }
+  },
+  {
+    "name": "ws-security-policy",
+    "path": "integration-tests/ws-security-policy",
+    "sha": "6b1e039495423375533b023010e3e8cb00eed691",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security-policy",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/6b1e039495423375533b023010e3e8cb00eed691",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security-policy?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/6b1e039495423375533b023010e3e8cb00eed691",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security-policy"
+    }
+  },
+  {
+    "name": "ws-security",
+    "path": "integration-tests/ws-security",
+    "sha": "fdc4ecedef58971fb717c90b7fcd148db7a0380a",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/fdc4ecedef58971fb717c90b7fcd148db7a0380a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/fdc4ecedef58971fb717c90b7fcd148db7a0380a",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security"
+    }
+  },
+  {
+    "name": "ws-trust",
+    "path": "integration-tests/ws-trust",
+    "sha": "88fd60e9fbbe69e7aa4b47fdfa0b628ae4a88b21",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-trust",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/88fd60e9fbbe69e7aa4b47fdfa0b628ae4a88b21",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/88fd60e9fbbe69e7aa4b47fdfa0b628ae4a88b21",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-trust"
+    }
+  },
+  {
+    "name": "wsdl2java-no-config",
+    "path": "integration-tests/wsdl2java-no-config",
+    "sha": "ca9e80db668f01d1aa7d5358d64ebdfcfdfcc627",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/wsdl2java-no-config?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/wsdl2java-no-config",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ca9e80db668f01d1aa7d5358d64ebdfcfdfcc627",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/wsdl2java-no-config?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/ca9e80db668f01d1aa7d5358d64ebdfcfdfcc627",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/wsdl2java-no-config"
+    }
+  },
+  {
+    "name": "wsdl2java",
+    "path": "integration-tests/wsdl2java",
+    "sha": "b6824c3a126b79d03f32ba5c9a1c3fe9a8fd21a3",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/wsdl2java?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/wsdl2java",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/b6824c3a126b79d03f32ba5c9a1c3fe9a8fd21a3",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/wsdl2java?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/b6824c3a126b79d03f32ba5c9a1c3fe9a8fd21a3",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/wsdl2java"
+    }
+  }
+]

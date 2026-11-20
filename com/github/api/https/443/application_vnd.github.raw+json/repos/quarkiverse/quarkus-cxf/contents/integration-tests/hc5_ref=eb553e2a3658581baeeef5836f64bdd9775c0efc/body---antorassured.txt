@@ -1,0 +1,34 @@
+[
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/hc5/pom.xml",
+    "sha": "10d96a4d28f9a3e59c5c50352af7613d66de0368",
+    "size": 8214,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/hc5/pom.xml?ref=eb553e2a3658581baeeef5836f64bdd9775c0efc",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/eb553e2a3658581baeeef5836f64bdd9775c0efc/integration-tests/hc5/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/10d96a4d28f9a3e59c5c50352af7613d66de0368",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/eb553e2a3658581baeeef5836f64bdd9775c0efc/integration-tests/hc5/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/hc5/pom.xml?ref=eb553e2a3658581baeeef5836f64bdd9775c0efc",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/10d96a4d28f9a3e59c5c50352af7613d66de0368",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/eb553e2a3658581baeeef5836f64bdd9775c0efc/integration-tests/hc5/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "integration-tests/hc5/src",
+    "sha": "8f34cdc95f10f9a4259e5215f4d6165d2b6b6fd4",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/hc5/src?ref=eb553e2a3658581baeeef5836f64bdd9775c0efc",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/eb553e2a3658581baeeef5836f64bdd9775c0efc/integration-tests/hc5/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/8f34cdc95f10f9a4259e5215f4d6165d2b6b6fd4",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/hc5/src?ref=eb553e2a3658581baeeef5836f64bdd9775c0efc",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/8f34cdc95f10f9a4259e5215f4d6165d2b6b6fd4",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/eb553e2a3658581baeeef5836f64bdd9775c0efc/integration-tests/hc5/src"
+    }
+  }
+]

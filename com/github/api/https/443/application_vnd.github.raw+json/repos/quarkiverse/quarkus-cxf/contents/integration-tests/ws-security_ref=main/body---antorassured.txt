@@ -1,0 +1,66 @@
+[
+  {
+    "name": "README.adoc",
+    "path": "integration-tests/ws-security/README.adoc",
+    "sha": "15ed2c3a2a22649aef505c71c8cf8e99ed65a2cb",
+    "size": 1063,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/README.adoc?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/README.adoc",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/15ed2c3a2a22649aef505c71c8cf8e99ed65a2cb",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security/README.adoc",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/README.adoc?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/15ed2c3a2a22649aef505c71c8cf8e99ed65a2cb",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/README.adoc"
+    }
+  },
+  {
+    "name": "generate-certs.sh",
+    "path": "integration-tests/ws-security/generate-certs.sh",
+    "sha": "d6cfadfac48a867f2ae0e5f9195f2f49fc0d5c08",
+    "size": 2127,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/generate-certs.sh?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/generate-certs.sh",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/d6cfadfac48a867f2ae0e5f9195f2f49fc0d5c08",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security/generate-certs.sh",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/generate-certs.sh?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/d6cfadfac48a867f2ae0e5f9195f2f49fc0d5c08",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/generate-certs.sh"
+    }
+  },
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/ws-security/pom.xml",
+    "sha": "820850f2fd3521ea5a45144111b97c38e314d0c0",
+    "size": 22226,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/820850f2fd3521ea5a45144111b97c38e314d0c0",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-security/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/820850f2fd3521ea5a45144111b97c38e314d0c0",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-security/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "integration-tests/ws-security/src",
+    "sha": "2bc93aa3061f0dd88190cd9cc0d17abba3ceec82",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/src?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/2bc93aa3061f0dd88190cd9cc0d17abba3ceec82",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-security/src?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/2bc93aa3061f0dd88190cd9cc0d17abba3ceec82",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-security/src"
+    }
+  }
+]

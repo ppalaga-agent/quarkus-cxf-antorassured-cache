@@ -1,0 +1,66 @@
+[
+  {
+    "name": "README.adoc",
+    "path": "integration-tests/ws-trust/README.adoc",
+    "sha": "f9c221ec81c1dac6b440f25685bfab038f5ae567",
+    "size": 248,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/README.adoc?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/README.adoc",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/f9c221ec81c1dac6b440f25685bfab038f5ae567",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-trust/README.adoc",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/README.adoc?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/f9c221ec81c1dac6b440f25685bfab038f5ae567",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/README.adoc"
+    }
+  },
+  {
+    "name": "generate-certs.sh",
+    "path": "integration-tests/ws-trust/generate-certs.sh",
+    "sha": "e8eb98e5991e12b8de6b82de0f195f1c145ef80a",
+    "size": 2557,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/generate-certs.sh?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/generate-certs.sh",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/e8eb98e5991e12b8de6b82de0f195f1c145ef80a",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-trust/generate-certs.sh",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/generate-certs.sh?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/e8eb98e5991e12b8de6b82de0f195f1c145ef80a",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/generate-certs.sh"
+    }
+  },
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/ws-trust/pom.xml",
+    "sha": "5487043a95c35e5b7b62d48d3c82a851bdccbfc7",
+    "size": 9049,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/5487043a95c35e5b7b62d48d3c82a851bdccbfc7",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/ws-trust/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/5487043a95c35e5b7b62d48d3c82a851bdccbfc7",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/ws-trust/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "integration-tests/ws-trust/src",
+    "sha": "7d3cf61c0989d8c9ca35c55c15e110a87074c6e2",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/src?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-trust/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/7d3cf61c0989d8c9ca35c55c15e110a87074c6e2",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/ws-trust/src?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/7d3cf61c0989d8c9ca35c55c15e110a87074c6e2",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/ws-trust/src"
+    }
+  }
+]

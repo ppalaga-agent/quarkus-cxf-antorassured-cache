@@ -1,0 +1,34 @@
+[
+  {
+    "name": "pom.xml",
+    "path": "integration-tests/opentelemetry/pom.xml",
+    "sha": "b2c5657ff9eab31a6f4d7f44becaff89bb5f520e",
+    "size": 5072,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/opentelemetry/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/b2c5657ff9eab31a6f4d7f44becaff89bb5f520e",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/integration-tests/opentelemetry/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/b2c5657ff9eab31a6f4d7f44becaff89bb5f520e",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/integration-tests/opentelemetry/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "integration-tests/opentelemetry/src",
+    "sha": "b1324d1872b23e92fb08797b43ef690e912e8cbe",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry/src?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/opentelemetry/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/b1324d1872b23e92fb08797b43ef690e912e8cbe",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/integration-tests/opentelemetry/src?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/b1324d1872b23e92fb08797b43ef690e912e8cbe",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/integration-tests/opentelemetry/src"
+    }
+  }
+]

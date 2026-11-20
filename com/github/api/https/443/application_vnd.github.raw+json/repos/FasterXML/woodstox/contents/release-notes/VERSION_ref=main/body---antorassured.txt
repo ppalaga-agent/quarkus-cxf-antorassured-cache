@@ -1,0 +1,387 @@
+Project: woodstox
+
+------------------------------------------------------------------------
+=== Releases ===
+------------------------------------------------------------------------
+
+7.4.0 (not yet released)
+
+- Update to `oss-parent` v80 for latest Maven plug-in versions
+- Update to `stax2-api` 4.3.2 (from 4.3.1)
+
+7.3.0 (28-Sep-2026)
+
+#305: Fix XML 1.1 Restricted Character Validation for Reader Inputs
+ (contributed by @metsw24-max)
+#327: Fix merging from child table after rehash
+ (contributed by @winfriedgerlach)
+#330: Disable external entity resolution in MSV schema factories by default
+  (configurable via `WstxInputProperties.P_MSV_SCHEMA_EXTERNAL_ACCESS`)
+ (contributed by @aizu-m)
+#331: Update to `stax2-api` 4.3.1
+#333: Defer URL construction for system id of `Source` input in `WstxInputFactory`
+ (contributed by @winfriedgerlach)
+#334: `BufferingXmlWriter.writeCData(char[], off, len)` misses `]]>` when `off > 0`
+ (contributed by @winfriedgerlach)
+#336: Fix truncating upper char bits in `MergedReader.read()`
+ (contributed by @winfriedgerlach)
+#341: Speed up text scanning in BasicStreamReader; P_MAX_TEXT_LENGTH now counts all chars of skipped text
+ (contributed by @winfriedgerlach)
+
+7.2.2 (03-Aug-2026)
+
+#300: Combine surrogate pairs in `BufferingXmlWriter` entity escaping
+ (contributed by @aizu-m)
+#301: Reject U+00D7 and U+00F7 in `is11NameChar()`
+ (contributed by @aizu-m)
+#303: Check for `]]>` in content split across input buffer boundary
+ (contributed by @aizu-m)
+#306: Escape tab, newline and CR in `TextEscaper.writeEscapedAttrValue()`
+ (contributed by @aizu-m)
+#308: Regression in `NonNsStreamWriter` which causes erroneous `WstxOutputException`
+   ("trying to write attribute '***' twice")
+ (reported by Joe J)
+#310: Reject xml-decl encoding name not matching EncName
+ (contributed by @aizu-m)
+#311: Reject/fix comment ending in '-' in byte-backed XML writers
+ (contributed by @aizu-m)
+#316: Reject U+009F in xml 1.1 unescapable content in `ISOLatin1XmlWriter`
+  (also fix `ISOLatin1XmlWriter` and `AsciiXmlWriter` writing already-flushed output
+   a second time, when a replacing `InvalidCharHandler` is configured)
+ (contributed by @aizu-m)
+#318: Encode DOCTYPE root name in `EncodingXmlWriter.writeDTD()`
+ (contributed by @aizu-m)
+#321: Honour `external-parameter-entities` feature in SAX layer
+  (note: maps onto the same single setting as `external-general-entities`,
+   so setting either feature also changes the other)
+  (also recognize `FEATURE_SECURE_PROCESSING` in `WstxSAXParser`, not just
+   in `WstxSAXParserFactory`)
+ (contributed by @aizu-m)
+
+7.2.1 (07-Jun-2026)
+
+#290: Regression in 7.2.0: `writeRaw()` no longer closing an open start
+  element (from #95) breaks emitting whitespace after start/end tags;
+  reverted #95 so `writeRaw()` again closes an open start element
+ (reported by Konrad W)
+#291: Reject overlong UTF-8 sequences in `UTF8Reader`
+ (contributed by @aizu-m)
+#292: Text corruption (in element content and attribute values) with
+  `doTreatCharRefsAsEnts` enabled when a character reference is split across
+  the internal input buffer boundary
+ (reported by @Skrethel)
+#293: Reject out-of-range code points in `UTF32Reader`
+ (contributed by @aizu-m)
+#297: NMTOKEN default value validation skips first character
+ (fix by @jmestwa-coder)
+#299: NMTOKENS default value validation for single-character tokens
+ (fix by @jmestwa-coder)
+
+7.2.0 (19-May-2026)
+
+#12: Improve hashing implementation used for symbol tables for element
+  and attribute names
+#33: `xml:lang` attribute not handled correctly by `XMLStreamReader2`
+  using DTD validation
+ (reported by Dennis S)
+#91: `getStartLocation()` returns inconsistent system id / offset when
+  reader crosses into or out of an expanded external entity
+ (reported by Nico K)
+#95: `BaseStreamWriter.writeRaw()` no longer closes an open start element
+  (NOTE: behavior change; existing callers that relied on the auto-close
+  must now emit an empty `writeCharacters("")` or other element-body call
+  before writing post-attribute content with `writeRaw()`)
+ (reported by Konrad W)
+#113: `IllegalStateException` on closing tags; cannot recover from
+  unbalanced close tag when it is not preceded by whitespace
+ (reported by Joshua E)
+#156: Javadoc for `XMLStreamReader.getLocation()` (`BasicStreamReader`)
+  is inconsistent with the implementation; document that Woodstox
+  returns the start-of-event location
+ (reported by @klease)
+#162: Add support for `XMLConstants.ACCESS_EXTERNAL_DTD`
+ (reported by @saurav1910)
+ (fix contributed by @GaoSSR)
+#179: `WstxValidationException`: Unknown reason (at end element </nl:nillableIntElement>)
+  when validating a document with nillable elements
+ (reported by Peter P)
+ (fix by Guillaume N)
+#184: Notations declared in external DTD subsets reported as undefined
+  when referenced from the internal subset
+ (reported, fix contributed by Nektarios K)
+#189: 'Undefined ID' not thrown when validating with `SimpleNsStreamWriter`
+ (reported by Peter P)
+#190: 'Element <root> has no attribute "verbose"' not thrown from
+ `RepairingNsStreamWriter` when validating against a DTD schema
+ (reported by Peter P)
+ (fix by Guillaume N)
+#201: `BufferingXmlWriter` does not check for invalid characters in
+  CDATA / COMMENT / PI content
+ (reported by @marcinar)
+#226: `WstxSAXParser` does not inherit `XMLResolver` configuration from
+  underlying `WstxInputFactory`
+ (reported by @coreders)
+#231: Fix locale-dependent assertion in `TestEntityResolver`
+ (reported by @AlexUg)
+#249: Minor performance optimizations
+ (contributed by @winfriedgerlach)
+#250: Bug in `ValidatingStreamReader.getProcessedDTDSchema()`
+ (reported by @winfriedgerlach)
+#251: Update `stax2-api` dependency to 4.3.0
+#254: Optimize locking on global `InternCache`
+ (contributed by @winfriedgerlach)
+#266: Convert "new XMLStreamException()" calls with "throwOutputError()" for writers
+#279: Deprecate unused/unsupported property `WstxInputProperties.P_VALIDATE_TEXT_CHARS`
+#286: Convert tests from JUnit4 to JUnit5
+- Minor DTD validation exception message formatting fixes (remove extra space)
+- Branch "master" renamed as "main"
+- Update to `oss-parent` v79 for latest Maven plug-in versions
+
+7.1.1 (28-May-2025)
+
+#213: SAX: `Locator#getSystemId` and `Locator#getPublicId` are not
+  available during `startDocument` event
+ (fix contributed by Philipp N)
+#220: Switch to lookup tables in hotspots `isNameChar()`/`isNameStartChar()`
+ (contributed by @winfriedgerlach)
+#253: Fix minor `EmptyValidator.getEmptyInstance()` implementation
+- Update to `oss-parent` v68 to switch to Central Portal publishing
+
+7.1.0 (22-Oct-2024)
+
+#209: SAXParser: Add support for `LexicalHandler.startEntity()` and `.endEntity()`
+ (contributed by Philipp N)
+#211: Disable `resolveEntityReferences` by default for newly created SAX parsers
+ (contributed by Philipp N)
+
+7.0.0 (21-Jun-2024)
+
+#134: Increase JDK baseline to Java 8
+#194: Remove `QNameCreator` compatibility class
+#196: WstxSAXParser error handling when used with JAXB validation
+ (reported by @winfriedgerlach)
+
+6.7.0 (21-Jun-2024)
+
+#204: Non-conformant `XMLEventFactory.setLocation(null)`
+ (fix provided by Stanimir S)
+
+6.6.2 (26-Mar-2024)
+
+#200: Fix shading of `isorelax` dependency (and other msv-core components)
+ (reported, fix contributed by Jeremy N)
+
+6.6.1 (26-Feb-2024)
+
+#193: Module `com.ctc.wstx` does not read a module that exports
+  `com.ctc.wstx.shaded.msv.org_isorelax.verifier`
+ (reported by Alexey G)
+
+6.6.0 (15-Jan-2024)
+
+#67: Wrong line for XML event location in elements following DTD
+ (reported by @m-g-sonar)
+ (fix contributed by Tim M)
+#165: Add support to optionally allow surrogate pair entities
+ (contributed by Kamil G)
+#176: Fix parser when not replacing entities and treating char references
+  as entities
+ (contributed by Guillaume N)
+#182: Update `msv-core` dependency to `2022.7`
+- Update `stax2-api` dependency to 4.2.2
+- Update `oss-parent` dependency to 56 (from 50)
+
+6.5.1 (19-Apr-2023)
+
+#170: After update to 6.5.0, in osgi/felix runtime the bundle is not started
+  due to missing dependency
+ (reported by @oana-dc)
+ (fix contributed by Chris R)
+
+6.5.0 (14-Jan-2023)
+
+#163: `woodstox-core` 6.3/6.4 javac warning due to unexpected new dependency
+  on `aQute.bnd.annotation.Resolution`
+ (reported by Ben S)
+
+6.4.0 (24-Oct-2022)
+
+#160: Add limit and configuration setting for maximum nesting for DTD subsets
+ [CVE-2022-40152]
+ (contributed by @pjfanning)
+
+6.3.1 (13-Aug-2022)
+
+#155: Declare `osgi.serviceloader.registrar` requirement as optional
+ (contributed by Chris R)
+
+6.3.0 (27-Jun-2022)
+
+#133: Update "org.osgi.core" dependency from one published in 2009 to
+  something newer
+#142: `XMLEventReader` always returns the full content in text events,
+  even if coalescing disabled
+ (contributed by Johannes H)
+#147: Typo: "expected" misspelled as "excepted"
+ (contributed by pdo-axelor@github)
+#151: Add standard osgi.serviceloader OSGi metadata for provided services
+ (contributed by Chris R)
+
+6.2.8 (13-Jan-2022)
+
+#121: Fix issues outlined by "lgtm.com"'s static analysis
+#136: `com.ctc.wstx.evt` is not exported in `module-info.java`
+ (reported by ChrisTrenkamp@github)
+
+6.2.7 (20-Nov-2021)
+
+#132: `copyEventFromReader()` Processing Instruction event bug
+ (reported by Daniel L)
+- A few LGTM.com fixes
+
+6.2.6 (19-Apr-2021)
+
+#125: `ArrayIndexOutOfBoundsException` for UTF-32 encoded data
+#127: Invalid attributes producing extra null characters during DTD validation
+ (repported by Chris T)
+
+6.2.5 (06-Apr-2021)
+
+#123: NPE for content that only has XML declaration and unknown encoding
+#124: ArrayIndexOutOfBoundsException for 4-byte UTF-8 character at end of CDATA
+
+6.2.4 (11-Feb-2021)
+
+#122: Expected either attr limit (2147483647) >= currAttrSize (0) OR >= outBuf.length (96)
+ (reported by j3rem1e@github)
+
+6.2.3 (16-Oct-2020)
+
+#117: Problem with `Stax2ByteArraySource`, encodings other than UTF-8
+
+6.2.2 (13-Oct-2020)
+
+#112: Max attributes per element limit only loosely enforced
+ (reported by jhaeyaert@github)
+- Update junit dependency (via oss-parent:41)
+
+6.2.1 (14-May-2020)
+
+#107: Sub-optimal exception with `WstxOutputProperties.P_OUTPUT_VALIDATE_NAMES`
+#108: Repairing `XMLStreamWriter` tries to bind `xml` namespace URI
+- Update stax2-api dependency to 4.2.1
+
+6.2.0 (25-Apr-2020)
+
+#103: Issue caused by MSV shading
+ (fix contributed by Daniel K)
+#104: `NullPointerException` in `DTDValidator.validateElementEnd()`
+  for element undefined in DTD
+ (reported by ChrisTrenkamp@github)
+#105: W3CSchemaFactory constructor incorrectly references relaxng
+ (reported by Colm H)
+
+6.1.1 (28-Feb-2020)
+
+- Fix for #96 (see below) had an issue leading to non-functioning
+  RelaxNG, W3C Schema validation
+
+6.1.0 (27-Feb-2020)
+
+#96: woodstox-core.jar 6.0.2 uses JDK-11 removed internal APIs
+ (reported by rohitgaikwad09@github, fix contributed by Konrad W)
+
+6.0.3 (07-Dec-2019)
+
+#88: Missing closing quote for attribute values during in Validating output mode
+ (reported, fixed by michaelsiegel@github)
+#93: Stax2 `maxAttributeSize` limit is only vaguely respected
+ (reported by Ivo S)
+#97: `copyEventFromReader()` `ArrayIndexOutOfBoundsException`
+ (reported by Daniel L)
+
+6.0.2 (12-Oct-2019)
+
+#85: OSGi dependency on relaxng should be `optional`
+ (reported by Colm H)
+
+6.0.1 (14-Sep-2019)
+
+#82: Recycled buffers in XMLStreamWriter are colliding between multiple writer
+  instances when used in an Akka stream
+ (reported by Jamie P)
+
+6.0.0 (29-Aug-2019)
+
+#78: Shade MSV dependency
+- Add `module-info.class` for Java 9+ module system
+
+5.4.0 (24-Oct-2022)
+
+#104: `NullPointerException` in `DTDValidator.validateElementEnd()`
+  for element undefined in DTD
+ (reported by ChrisTrenkamp@github)
+#105: W3CSchemaFactory constructor incorrectly references relaxng
+#160: Add limit and configuration setting for maximum nesting for DTD subsets [CVE-2022-40152]
+ (contributed by @pjfanning)
+
+5.3.0 (15-Jul-2019)
+
+#58: Reading comment comments after Root Element closed sometimes throws `NullPointerException`
+#61: Add support for `XMLConstants.FEATURE_SECURE_PROCESSING` via SAX/Stax factories
+
+5.2.1 (14-May-2019)
+
+#74: Infinite loop in BijectiveNsMap#addGeneratedMapping when ctxt.getNamespaceURI(prefix)
+   returns an empty String
+ (reported by Ioan M)
+
+5.2.0 (02-Nov-2018)
+
+#42: Multi-document mode produces events only for first document
+ (reported by display-none@github)
+#46: NoSuchMethodError after update to Woodstox 5.1.0
+ (reported by Alexander V, veita@github)
+#47: Validation error due to white-space being handled as CData by `BaseStreamWriter`
+ (reported by Alexis H)
+#53: `XMLStreamReader.getAttributeValue(null, localName)` does not ignore namespace URI
+ (reported by flappingeagle@github)
+#56: Add `WstxInputProperties.P_ALLOW_XML11_ESCAPED_CHARS_IN_XML10` to allow XML 1.1 escaped
+ characters in XML 1.0 content
+  (suggested by Mickaël G, mguessan@github)
+
+5.1.0 (31-Mar-2018)
+
+#23: Text content is not validated correctly when copying events to `XmlStreamWriter`
+ (reported by hxc9@github)
+#43: `CompactStartElement` appears to incorrectly classify attributes as default
+ (reported by Jonathan T)
+- Add `Automatic-Module-Name` indicator in jar metadata, for Java 9
+- Upgrade `stax2-api` dependency to 4.1 (from 3.1)
+
+5.0.3 (23-Aug-2016)
+
+#13: `BasicStreamReader.getElementText()` behavior doesn't match Java documentation
+ (reported by Caleb-An@github)
+#15: `BasicStreamReader` should use `WstxUnexpectedCharException` instead of WstxParsingException
+ (reported by dima-kapustin@github)
+#16: Incorrect validation error(s) only using Stax2 writer
+ (reported by hxc9@github)
+#21: 500 characters limit when calling XMLStreamReader#getText() after CDATA event
+ (reported by elrodro83@github)
+
+5.0.2 (10-Dec-2015)
+
+#10: Stax 4.0.0 is not compatible with Woodstox 5.0.1
+ (reported by naveengopi@github)
+
+5.0.1 (02-Apr-2015)
+
+#3: Initial 5.0.0 release did not contain class files (d'oh!)
+ (reported by norrisjeremy@github)
+#4: Fix validation of text for an XMLStreamWriter
+ (reported by Wilco G, wgreven-ibr@github)
+
+5.0.0 (earlier)
+
+Attempted initial release -- unfortunately, as per #3 (see above), not a working jar.

@@ -1,0 +1,34 @@
+[
+  {
+    "name": "pom.xml",
+    "path": "test-util-parent/test-ws-rm-server-jvm/pom.xml",
+    "sha": "666c3e3eb1354a7dafa89394ddaa08f43bb5c282",
+    "size": 5744,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/test-util-parent/test-ws-rm-server-jvm/pom.xml?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/blob/main/test-util-parent/test-ws-rm-server-jvm/pom.xml",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/666c3e3eb1354a7dafa89394ddaa08f43bb5c282",
+    "download_url": "https://raw.githubusercontent.com/quarkiverse/quarkus-cxf/main/test-util-parent/test-ws-rm-server-jvm/pom.xml",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/test-util-parent/test-ws-rm-server-jvm/pom.xml?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/blobs/666c3e3eb1354a7dafa89394ddaa08f43bb5c282",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/blob/main/test-util-parent/test-ws-rm-server-jvm/pom.xml"
+    }
+  },
+  {
+    "name": "src",
+    "path": "test-util-parent/test-ws-rm-server-jvm/src",
+    "sha": "5a15814721f34737c522bd33ea12334d7f10d11f",
+    "size": 0,
+    "url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/test-util-parent/test-ws-rm-server-jvm/src?ref=main",
+    "html_url": "https://github.com/quarkiverse/quarkus-cxf/tree/main/test-util-parent/test-ws-rm-server-jvm/src",
+    "git_url": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/5a15814721f34737c522bd33ea12334d7f10d11f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/quarkiverse/quarkus-cxf/contents/test-util-parent/test-ws-rm-server-jvm/src?ref=main",
+      "git": "https://api.github.com/repos/quarkiverse/quarkus-cxf/git/trees/5a15814721f34737c522bd33ea12334d7f10d11f",
+      "html": "https://github.com/quarkiverse/quarkus-cxf/tree/main/test-util-parent/test-ws-rm-server-jvm/src"
+    }
+  }
+]

@@ -1,0 +1,3 @@
+# Antorassured page cache for https://github.com/quarkiverse/quarkus-cxf
+
+See https://docs.quarkiverse.io/quarkus-antora/dev/testing.html
