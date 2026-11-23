@@ -49,6 +49,9 @@
       <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
+
+  <!-- SEO ALTERNATES -->
+  <link rel="alternate" type="text/markdown" href="https://quarkus.io/blog/quarkiverse-and-smallrye-new-release-process/index.md" />
     <script src="/assets/javascript/hl.js" type="text/javascript"></script>
     <link rel="alternate" hreflang="en" href="https://quarkus.io//blogquarkiverse-and-smallrye-new-release-process/" />
     <link rel="alternate" hreflang="pt-br" href="https://pt.quarkus.io//blogquarkiverse-and-smallrye-new-release-process/" />
@@ -551,7 +554,7 @@ The new release process simply wouldn’t have been possible without his reactiv
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkiverse-and-smallrye-new-release-process/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#427d313720282721367f113630272c25362a272c2b2c2562362a276210272e272331276212302d2127313162242d306213372330292b342730312762232c2662112f232e2e103b2764232f3279202d263b7f113630272c25362a272c2b2c2562362a276210272e272331276212302d2127313162242d306213372330292b342730312762232c2662112f232e2e103b27622a36363231786d6d333723302937316c2b2d6d202e2d256d33372330292b34273031276f232c266f312f232e2e303b276f2c27356f30272e272331276f32302d212731316d" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#67581412050d0204135a341315020900130f02090e090047130f024735020b0206140247371508040214144701081547361206150c0e11021514024706090347340a060b0b351e0241060a175c0508031e5a341315020900130f02090e090047130f024735020b0206140247371508040214144701081547361206150c0e11021514024706090347340a060b0b351e02470f131317145d4848161206150c1214490e0848050b080048161206150c0e11021514024a0609034a140a060b0b151e024a0902104a15020b020614024a1715080402141448" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
