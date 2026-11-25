@@ -420,7 +420,7 @@ Many many thanks to each and everyone of them.</p>
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-32-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#ccf3bfb9aea6a9afb8f19db9adbea7b9bfecffe2fffeece1ec9cbea3a6a9afb8ec80a9b5a8a9a2eca5a2b8a9abbeadb8a5a3a2e0eca1a3bea9ecabbeadafa9aab9a0ecbfa4b9b8a8a3bba2e0ecadb9b8a3a1adb8a5afec8fa3a2bfb9a0ecbea9aba5bfb8beadb8a5a3a2ecada2a8eca1a3bea9edeaada1bcf7aea3a8b5f19db9adbea7b9bfecffe2fffeece1ec9cbea3a6a9afb8ec80a9b5a8a9a2eca5a2b8a9abbeadb8a5a3a2e0eca1a3bea9ecabbeadafa9aab9a0ecbfa4b9b8a8a3bba2e0ecadb9b8a3a1adb8a5afec8fa3a2bfb9a0ecbea9aba5bfb8beadb8a5a3a2ecada2a8eca1a3bea9edeca4b8b8bcbff6e3e3bdb9adbea7b9bfe2a5a3e3aea0a3abe3bdb9adbea7b9bfe1ffe1fffee1bea9a0a9adbfa9a8e3" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#3e014d4b5c545b5d4a036f4b5f4c554b4d1e0d100d0c1e131e6e4c51545b5d4a1e725b475a5b501e57504a5b594c5f4a575150121e53514c5b1e594c5f5d5b584b521e4d564b4a5a514950121e5f4b4a51535f4a575d1e7d51504d4b521e4c5b59574d4a4c5f4a5751501e5f505a1e53514c5b1f185f534e055c515a47036f4b5f4c554b4d1e0d100d0c1e131e6e4c51545b5d4a1e725b475a5b501e57504a5b594c5f4a575150121e53514c5b1e594c5f5d5b584b521e4d564b4a5a514950121e5f4b4a51535f4a575d1e7d51504d4b521e4c5b59574d4a4c5f4a5751501e5f505a1e53514c5b1f1e564a4a4e4d0411114f4b5f4c554b4d105751115c525159114f4b5f4c554b4d130d130d0c134c5b525b5f4d5b5a11" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

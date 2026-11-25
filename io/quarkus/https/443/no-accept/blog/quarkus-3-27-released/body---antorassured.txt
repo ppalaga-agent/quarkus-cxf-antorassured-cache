@@ -371,7 +371,7 @@ Many many thanks to each and everyone of them.</p>
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-27-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#efd09c9a8d858a8c9bd2be9a8e9d849a9ccfdcc1ddd8cfc2cf818a98cfa3bbbccf998a9d9c868081c98e829fd48d808b96d2be9a8e9d849a9ccfdcc1ddd8cfc2cf818a98cfa3bbbccf998a9d9c868081cf879b9b9f9cd5c0c09e9a8e9d849a9cc18680c08d838088c09e9a8e9d849a9cc2dcc2ddd8c29d8a838a8e9c8a8bc0" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#78470b0d1a121d1b0c45290d190a130d0b584b564a4f585558161d0f58342c2b580e1d0a0b1117165e191508431a171c0145290d190a130d0b584b564a4f585558161d0f58342c2b580e1d0a0b11171658100c0c080b425757090d190a130d0b561117571a14171f57090d190a130d0b554b554a4f550a1d141d190b1d1c57" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

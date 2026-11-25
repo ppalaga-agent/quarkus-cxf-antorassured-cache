@@ -289,7 +289,7 @@ It should be a safe upgrade for anyone already using 3.39.</p>
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-39-2-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#e6d99593848c838592dbb79387948d9395c6d5c8d5dfc8d4cac6d5c8d5d5c8d5c8d4c6aab2b5cac6d5c8d4d1c8d3c8d4c6aab2b5c6cbc6ab878f8892838887888583c694838a8387958395c0878b96dd8489829fdbb79387948d9395c6d5c8d5dfc8d4cac6d5c8d5d5c8d5c8d4c6aab2b5cac6d5c8d4d1c8d3c8d4c6aab2b5c6cbc6ab878f8892838887888583c694838a8387958395c68e92929695dcc9c9979387948d9395c88f89c9848a8981c9979387948d9395cbd5cbd5dfcbd4cb94838a8387958382c9" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#17286462757d7274632a466276657c6264372439242e39253b372439242439243925375b43443b372439252039223925375b4344373a375a767e79637279767974723765727b727664726431767a672c7578736e2a466276657c6264372439242e39253b372439242439243925375b43443b372439252039223925375b4344373a375a767e79637279767974723765727b7276647264377f636367642d3838666276657c6264397e7838757b787038666276657c62643a243a242e3a253a65727b727664727338" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

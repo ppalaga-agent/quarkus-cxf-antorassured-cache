@@ -965,10 +965,10 @@
             <a href="../../quarkus-mcp-server/dev/index.html">dev</a>
           </li>
           <li class="version">
-            <a href="../../quarkus-mcp-server/2.0.x/index.html">2.0.x</a>
+            <a href="../../quarkus-mcp-server/2.1.x/index.html">2.1.x</a>
           </li>
           <li class="version">
-            <a href="../../quarkus-mcp-server/1.13.x/index.html">1.13.x</a>
+            <a href="../../quarkus-mcp-server/2.0.x/index.html">2.0.x</a>
           </li>
           <li class="version">
             <a href="../../quarkus-mcp-server/1.10.x/index.html">1.10.x</a>
@@ -1603,7 +1603,7 @@
          origin-filter="quarkiverse-hub"
 >
   <div class="search">
-    <input name="q" type="search" placeholder="Search by keyword" autocomplete="off">
+    <input name="q" type="search" placeholder="Search all Quarkiverse docs by keyword" autocomplete="off">
   </div>
 </qs-form>
   <div class="edit-this-page"><a href="https://github.com/quarkiverse/quarkus-antora/edit/main/docs/modules/ROOT/pages/testing.adoc">Edit this Page</a></div>
@@ -2022,8 +2022,15 @@ Pass a predicate returning <code>false</code> for every URI instead:</p>
   </qs-target>
 </main>
 </div>
-<footer class="footer">
-  <p>Copyright (C) 2020-2026 <a href="https://www.redhat.com">Red Hat</a> and individual contributors to <a href="https://github.com/quarkiverse/">Quarkiverse</a>.</p>
+<footer class="footer quarkiverse-footer">
+  <div class="footer-bar">
+    <a href="https://github.com/quarkiverse/quarkus-antora" target="_blank" rel="noreferrer" class="footer-anchor-link">Contribute<i class="fab fa-github footer-styled-font-awesome-icon" aria-hidden="true"></i></a>
+    <a href="https://www.commonhaus.org/" class="footer-foundation-logo" target="_blank" rel="noreferrer"><img src="../../_/img/commonhaus_reversed.svg" alt="Commonhaus Foundation logo" loading="lazy"></a>
+    <div class="footer-license-info"><i class="fab fa-creative-commons footer-padded-icon" aria-hidden="true"></i><i class="fab fa-creative-commons-by footer-padded-icon" aria-hidden="true"></i><a href="https://creativecommons.org/licenses/by/3.0/" class="footer-license-text">CC by 3.0</a></div>
+  </div>
+  <div class="footer-legal">
+    Copyright © Quarkiverse. All rights reserved. For details on our trademarks, please visit our <a href="https://www.commonhaus.org/policies/trademark-policy/">Trademark Policy</a> and <a href="https://www.commonhaus.org/trademarks/">Trademark List</a>. Trademarks of third parties are owned by their respective holders and their mention here does not suggest any endorsement or association.
+  </div>
 </footer>
 <script src="../../_/js/site.js"></script>
 <script async src="../../_/js/vendor/fontawesome-icon-defs.js"></script>

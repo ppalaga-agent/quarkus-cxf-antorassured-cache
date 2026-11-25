@@ -204,7 +204,7 @@
   <div class="width-4-12 width-12-12-m help-block">
     <img loading="lazy" src="/assets/images/icons/icon-development.svg" alt="">
     <h4>Quarkus Development</h4>
-    <p>Discuss the development of Quarkus with the team in the <a href="/cdn-cgi/l/email-protection#37464256455c42441a5352411c4442554454455e555277505858505b525045584247441954585a">development mailing list </a> or by <a href="https://quarkusio.zulipchat.com/" target="blank">Zulip Chat</a>.</p>
+    <p>Discuss the development of Quarkus with the team in the <a href="/cdn-cgi/l/email-protection#16676377647d63653b7273603d6563746575647f747356717979717a737164796366653875797b">development mailing list </a> or by <a href="https://quarkusio.zulipchat.com/" target="blank">Zulip Chat</a>.</p>
   </div>
 </div>
 <div class="component-wrapper options-band">
