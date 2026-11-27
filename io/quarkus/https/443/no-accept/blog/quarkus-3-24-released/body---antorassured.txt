@@ -46,7 +46,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
     <link rel="stylesheet" href="/guides/stylesheet/config.css" />
     <script type="module" src="/static/bundle/app-UNQQD6ED.js"></script>
-      <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
+      <link rel="stylesheet" href="/static/bundle/app-63KZGM2H.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
 
@@ -392,7 +392,7 @@ Many many thanks to each and everyone of them.</p>
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-24-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#744b0701161e11170049250115061f010754475a4640545954301102543507071d0700151a0058543c1d1611061a150011543b2639544358543c1d1611061a150011542215181d1015001b06544d5a5a5a521519044f161b100d49250115061f010754475a4640545954301102543507071d0700151a0058543c1d1611061a150011543b2639544358543c1d1611061a150011542215181d1015001b06544d5a5a5a541c000004074e5b5b050115061f01075a1d1b5b16181b135b050115061f010759475946405906111811150711105b" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#330c404651595650470e6246524158464013001d0107131e13775645137240405a4047525d471f137b5a5156415d524756137c617e13041f137b5a5156415d5247561365525f5a5752475c41130a1d1d1d15525e4308515c574a0e6246524158464013001d0107131e13775645137240405a4047525d471f137b5a5156415d524756137c617e13041f137b5a5156415d5247561365525f5a5752475c41130a1d1d1d135b47474340091c1c424652415846401d5a5c1c515f5c541c424652415846401e001e01071e41565f56524056571c" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

@@ -46,7 +46,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
     <link rel="stylesheet" href="/guides/stylesheet/config.css" />
     <script type="module" src="/static/bundle/app-UNQQD6ED.js"></script>
-      <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
+      <link rel="stylesheet" href="/static/bundle/app-63KZGM2H.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
 
@@ -554,7 +554,7 @@ The new release process simply wouldn’t have been possible without his reactiv
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkiverse-and-smallrye-new-release-process/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#102f6365727a7573642d436462757e776478757e797e77306478753042757c757163753040627f7375636330767f6230416571627b79667562637530717e7430437d717c7c42697536717d602b727f74692d436462757e776478757e797e77306478753042757c757163753040627f7375636330767f6230416571627b79667562637530717e7430437d717c7c4269753078646460632a3f3f616571627b65633e797f3f727c7f773f616571627b7966756263753d717e743d637d717c7c6269753d7e75673d62757c757163753d60627f737563633f" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#8db2fef8efe7e8eef9b0def9ffe8e3eaf9e5e8e3e4e3eaadf9e5e8addfe8e1e8ecfee8adddffe2eee8fefeadebe2ffaddcf8ecffe6e4fbe8fffee8adece3e9addee0ece1e1dff4e8abece0fdb6efe2e9f4b0def9ffe8e3eaf9e5e8e3e4e3eaadf9e5e8addfe8e1e8ecfee8adddffe2eee8fefeadebe2ffaddcf8ecffe6e4fbe8fffee8adece3e9addee0ece1e1dff4e8ade5f9f9fdfeb7a2a2fcf8ecffe6f8fea3e4e2a2efe1e2eaa2fcf8ecffe6e4fbe8fffee8a0ece3e9a0fee0ece1e1fff4e8a0e3e8faa0ffe8e1e8ecfee8a0fdffe2eee8fefea2" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

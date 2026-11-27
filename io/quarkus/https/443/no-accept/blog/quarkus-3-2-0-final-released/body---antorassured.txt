@@ -46,7 +46,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
     <link rel="stylesheet" href="/guides/stylesheet/config.css" />
     <script type="module" src="/static/bundle/app-UNQQD6ED.js"></script>
-      <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
+      <link rel="stylesheet" href="/static/bundle/app-63KZGM2H.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
 
@@ -341,7 +341,7 @@ The extension is now properly tested both in JVM and native modes.</p>
 <div class="sect2">
 <h3 id="_io_uring">io_uring</h3>
 <div class="paragraph">
-<p>If you are interested in using io_uring with Quarkus, please have a look at the <a href="/guides/vertx-reference#use-io_uring">new documentation that has been added</a>.</p>
+<p>If you are interested in using io_uring with Quarkus, please have a look at the <a href="/guides/native-transport-reference#io_uring-details">new documentation that has been added</a>.</p>
 </div>
 </div>
 </div>
@@ -406,7 +406,7 @@ Many many thanks to each and everyone of them.</p>
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-2-0-final-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#d3eca0a6b1b9b6b0a7ee82a6b2a1b8a6a0f3e0fde1fde3fd95babdb2bff3a1b6bfb6b2a0b6b7f3fef39db6a4f3a0b6b0a6a1baa7aaf3b5b6b2a7a6a1b6a0fff39382a6b2a1b8a6a090bcbea3bcbdb6bda787b6a0a7f5b2bea3e8b1bcb7aaee82a6b2a1b8a6a0f3e0fde1fde3fd95babdb2bff3a1b6bfb6b2a0b6b7f3fef39db6a4f3a0b6b0a6a1baa7aaf3b5b6b2a7a6a1b6a0fff39382a6b2a1b8a6a090bcbea3bcbdb6bda787b6a0a7f3bba7a7a3a0e9fcfca2a6b2a1b8a6a0fdbabcfcb1bfbcb4fca2a6b2a1b8a6a0fee0fee1fee3feb5babdb2bffea1b6bfb6b2a0b6b7fc" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#4a75393f28202f293e771b3f2b38213f396a796478647a640c23242b266a382f262f2b392f2e6a676a042f3d6a392f293f38233e336a2c2f2b3e3f382f39666a0a1b3f2b38213f390925273a25242f243e1e2f393e6c2b273a7128252e33771b3f2b38213f396a796478647a640c23242b266a382f262f2b392f2e6a676a042f3d6a392f293f38233e336a2c2f2b3e3f382f39666a0a1b3f2b38213f390925273a25242f243e1e2f393e6a223e3e3a397065653b3f2b38213f39642325652826252d653b3f2b38213f3967796778677a672c23242b2667382f262f2b392f2e65" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

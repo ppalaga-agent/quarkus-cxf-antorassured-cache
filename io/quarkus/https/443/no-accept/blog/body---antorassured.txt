@@ -46,7 +46,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
     <link rel="stylesheet" href="/guides/stylesheet/config.css" />
     <script type="module" src="/static/bundle/app-UNQQD6ED.js"></script>
-      <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
+      <link rel="stylesheet" href="/static/bundle/app-63KZGM2H.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
 
@@ -183,6 +183,45 @@
         <div class="blog-list-item grid-wrapper">
           <div class="grid__item width-12-12">
             <div class="post-title">
+              <a href="/blog/quarkus-4-0-released/">Quarkus 4.0, our new major release, is here!</a>
+            </div>
+            <div class="post-date small">
+              November 25, 2026 
+                <span class="tags">tags:<a href="/blog/tag/release">#release</a></span>
+            </div>
+          </div>
+          <div class="grid__item width-12-12 byline-wrapper">
+            <div class="byline">
+                  <img loading="lazy" class="headshot" src="https://www.gravatar.com/avatar/ec96387a1a8295b6fd6dffb68f80c352" alt="Guillaume Smet avatar">
+                <a href="/author/gsmet">Guillaume Smet</a>
+            </div>
+          </div>
+          <div class="grid__item width-12-12">
+              <p>It is our great pleasure to announce our new major release of Quarkus: Quarkus 4.0. Java 21, Vert.x 5, Netty 4.2, HTTP/3, Jackson 3, Hibernate ORM 8, Quarkus Data, and much more!</p>
+          </div>
+          <div class="grid__item width-8-12 read-more small"><a href="/blog/quarkus-4-0-released/">Read More &rsaquo;</a></div>
+          <div class="grid__item width-4-12 width-12-12-m share-post"><div class="share-page">
+  <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://quarkus.io/blog/quarkus-4-0-released/&title=Quarkus 4.0, our new major release, is here!" rel="nofollow" target="_blank" title="Share on LinkedIn">
+    <i class="fa-brands fa-linkedin fa-xl"></i>
+  </a>
+  <a class="share-x" href="https://x.com/intent/tweet?text=Quarkus 4.0, our new major release, is here!&url=https://quarkus.io/blog/quarkus-4-0-released/&via=quarkusio&related=quarkusio" rel="nofollow" target="_blank" title="Share on X">
+    <i class="fa-brands fa-square-x-twitter fa-xl"></i>
+  </a>
+  <a class="share-facebook" href="https://facebook.com/sharer.php?u=https://quarkus.io/blog/quarkus-4-0-released/" rel="nofollow" target="_blank" title="Share on Facebook">
+    <i class="fa-brands fa-square-facebook fa-xl"></i>
+  </a>
+  <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-4-0-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
+    <i class="fa-brands fa-square-reddit fa-xl"></i>
+  </a>
+  <a class="share-email" href="/cdn-cgi/l/email-protection#e3dc90968189868097deb2968291889690c3d7cdd3cfc38c9691c38d8694c38e82898c91c391868f86829086cfc38a90c38b869186c2c5828e93d8818c879adeb2968291889690c3d7cdd3cfc38c9691c38d8694c38e82898c91c391868f86829086cfc38a90c38b869186c2c38b97979390d9cccc92968291889690cd8a8ccc818f8c84cc92968291889690ced7ced3ce91868f8682908687cc" title="Share via Email">
+    <i class="fa-solid fa-envelope fa-xl"></i>
+  </a>
+</div>
+</div>
+        </div>
+        <div class="blog-list-item grid-wrapper">
+          <div class="grid__item width-12-12">
+            <div class="post-title">
               <a href="/blog/java4shell/">Java4Shell (CVE-2026-114938): Status and mitigation for Quarkus users</a>
             </div>
             <div class="post-date small">
@@ -213,7 +252,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/java4shell/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#dde2aea8bfb7b8bea9e097bcabbce98eb5b8b1b1fdf59e8b98f0efedefebf0ecece9e4eee5f4e7fd8ea9bca9a8aefdbcb3b9fdb0b4a9b4babca9b4b2b3fdbbb2affd8ca8bcafb6a8aefda8aeb8afaefbbcb0ade6bfb2b9a4e097bcabbce98eb5b8b1b1fdf59e8b98f0efedefebf0ecece9e4eee5f4e7fd8ea9bca9a8aefdbcb3b9fdb0b4a9b4babca9b4b2b3fdbbb2affd8ca8bcafb6a8aefda8aeb8afaefdb5a9a9adaee7f2f2aca8bcafb6a8aef3b4b2f2bfb1b2baf2b7bcabbce9aeb5b8b1b1f2" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#3d024e485f57585e4900775c4b5c096e555851511d157e6b78100f0d0f0b100c0c09040e0514071d6e495c49484e1d5c53591d505449545a5c495452531d5b524f1d6c485c4f56484e1d484e584f4e1b5c504d065f52594400775c4b5c096e555851511d157e6b78100f0d0f0b100c0c09040e0514071d6e495c49484e1d5c53591d505449545a5c495452531d5b524f1d6c485c4f56484e1d484e584f4e1d5549494d4e0712124c485c4f56484e135452125f51525a12575c4b5c094e5558515112" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -252,7 +291,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-newsletter-74/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#b08fc3c5d2dad5d3c48de1c5d1c2dbc5c390fed5c7c3dcd5c4c4d5c290938784909d90fedfc6d5ddd2d5c296d1ddc08bd2dfd4c98de1c5d1c2dbc5c390fed5c7c3dcd5c4c4d5c290938784909d90fedfc6d5ddd2d5c290d8c4c4c0c38a9f9fc1c5d1c2dbc5c39ed9df9fd2dcdfd79fc1c5d1c2dbc5c39dded5c7c3dcd5c4c4d5c29d87849f" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#cdf2beb8afa7a8aeb9f09cb8acbfa6b8beed83a8babea1a8b9b9a8bfedeefaf9ede0ed83a2bba8a0afa8bfebaca0bdf6afa2a9b4f09cb8acbfa6b8beed83a8babea1a8b9b9a8bfedeefaf9ede0ed83a2bba8a0afa8bfeda5b9b9bdbef7e2e2bcb8acbfa6b8bee3a4a2e2afa1a2aae2bcb8acbfa6b8bee0a3a8babea1a8b9b9a8bfe0faf9e2" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -291,7 +330,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/ai-root-cause-analysis-deep-dive/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#b48bc7c1d6ded1d7c089f5fd94e6dbdbc094f7d5c1c7d194f5dad5d8cdc7ddc78e94f5c6d7dcddc0d1d7c0c1c6d19894e0d1c7c0dddad39894d5dad094f1c2d5d8c1d5c0dddbda92d5d9c48fd6dbd0cd89f5fd94e6dbdbc094f7d5c1c7d194f5dad5d8cdc7ddc78e94f5c6d7dcddc0d1d7c0c1c6d19894e0d1c7c0dddad39894d5dad094f1c2d5d8c1d5c0dddbda94dcc0c0c4c78e9b9bc5c1d5c6dfc1c79adddb9bd6d8dbd39bd5dd99c6dbdbc099d7d5c1c7d199d5dad5d8cdc7ddc799d0d1d1c499d0ddc2d19b" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#39064a4c5b535c5a4d047870196b56564d197a584c4a5c1978575855404a504a0319784b5a51504d5c5a4d4c4b5c15196d5c4a4d50575e151958575d197c4f58554c584d5056571f585449025b565d40047870196b56564d197a584c4a5c1978575855404a504a0319784b5a51504d5c5a4d4c4b5c15196d5c4a4d50575e151958575d197c4f58554c584d50565719514d4d494a031616484c584b524c4a175056165b55565e165850144b56564d145a584c4a5c1458575855404a504a145d5c5c49145d504f5c16" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -330,7 +369,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-insights-268-secure-ai-agents-with-quarkus-langchain4j/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#7a45090f18101f190e472b0f1b08110f095a331409131d120e095a59484c42405a291f190f081f5a3b335a1b1d1f140e095a0d130e125a2b0f1b08110f095a361b141d39121b13144e105c1b170a4118151e03472b0f1b08110f095a331409131d120e095a59484c42405a291f190f081f5a3b335a1b1d1f140e095a0d130e125a2b0f1b08110f095a361b141d39121b13144e105a120e0e0a094055550b0f1b08110f09541315551816151d550b0f1b08110f0957131409131d120e0957484c4257091f190f081f571b13571b1d1f140e09570d130e12570b0f1b08110f0957161b141d19121b13144e1055" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#6a55191f08000f091e573b1f0b18011f194a230419030d021e194a49585c52504a390f091f180f4a2b234a0b0d0f041e194a1d031e024a3b1f0b18011f194a260b040d29020b03045e004c0b071a5108050e13573b1f0b18011f194a230419030d021e194a49585c52504a390f091f180f4a2b234a0b0d0f041e194a1d031e024a3b1f0b18011f194a260b040d29020b03045e004a021e1e1a195045451b1f0b18011f19440305450806050d451b1f0b18011f1947030419030d021e1947585c5247190f091f180f470b03470b0d0f041e19471d031e02471b1f0b18011f1947060b040d09020b03045e0045" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -369,7 +408,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-resiliency-testing/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#300f4345525a5553440d724255515b10495f454210545540555e54555e53595543105f5e10404542405f43550a10595e44425f544553595e5710614551425b454310625543595c59555e53491064554344595e5716515d400b525f54490d724255515b10495f454210545540555e54555e53595543105f5e10404542405f43550a10595e44425f544553595e5710614551425b454310625543595c59555e53491064554344595e571058444440430a1f1f414551425b45431e595f1f525c5f571f414551425b45431d425543595c59555e53491d44554344595e571f" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#c1feb2b4a3aba4a2b5fc83b3a4a0aae1b8aeb4b3e1a5a4b1a4afa5a4afa2a8a4b2e1aeafe1b1b4b3b1aeb2a4fbe1a8afb5b3aea5b4a2a8afa6e190b4a0b3aab4b2e193a4b2a8ada8a4afa2b8e195a4b2b5a8afa6e7a0acb1faa3aea5b8fc83b3a4a0aae1b8aeb4b3e1a5a4b1a4afa5a4afa2a8a4b2e1aeafe1b1b4b3b1aeb2a4fbe1a8afb5b3aea5b4a2a8afa6e190b4a0b3aab4b2e193a4b2a8ada8a4afa2b8e195a4b2b5a8afa6e1a9b5b5b1b2fbeeeeb0b4a0b3aab4b2efa8aeeea3adaea6eeb0b4a0b3aab4b2ecb3a4b2a8ada8a4afa2b8ecb5a4b2b5a8afa6ee" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -408,7 +447,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/ai-root-cause-analysis/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#a19ed2d4c3cbc4c2d59ce0e881f3ceced581e2c0d4d2c481e0cfc0cdd8d2c8d29b81ededec8cf1ced6c4d3c4c581f3ceced58ce2c0d4d2c481e0cfc0cdd8d2c8d281c7ced381e5c8d2d5d3c8c3d4d5c4c581f2d8d2d5c4ccd287c0ccd19ac3cec5d89ce0e881f3ceced581e2c0d4d2c481e0cfc0cdd8d2c8d29b81ededec8cf1ced6c4d3c4c581f3ceced58ce2c0d4d2c481e0cfc0cdd8d2c8d281c7ced381e5c8d2d5d3c8c3d4d5c4c581f2d8d2d5c4ccd281c9d5d5d1d29b8e8ed0d4c0d3cad4d28fc8ce8ec3cdcec68ec0c88cd3ceced58cc2c0d4d2c48cc0cfc0cdd8d2c8d28e" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#56692523343c3335226b171f7604393922761537232533761738373a2f253f256c761a1a1b7b0639213324333276043939227b1537232533761738373a2f253f257630392476123f2522243f342322333276052f2522333b2570373b266d3439322f6b171f7604393922761537232533761738373a2f253f256c761a1a1b7b0639213324333276043939227b1537232533761738373a2f253f257630392476123f2522243f342322333276052f2522333b25763e222226256c7979272337243d2325783f3979343a393179373f7b243939227b35372325337b3738373a2f253f2579" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -447,7 +486,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-sonify/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#d0efa3a5b2bab5b3a4ed98b5b1a2f0a9bfa5a2f0b1a0a0bcb9b3b1a4b9bfbef0a7b9a4b8f081a5b1a2bba5a3f083bfbeb9b6a9f6b1bda0ebb2bfb4a9ed98b5b1a2f0a9bfa5a2f0b1a0a0bcb9b3b1a4b9bfbef0a7b9a4b8f081a5b1a2bba5a3f083bfbeb9b6a9f0b8a4a4a0a3eaffffa1a5b1a2bba5a3feb9bfffb2bcbfb7ffa1a5b1a2bba5a3fda3bfbeb9b6a9ff" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#eed19d9b8c848b8d9ad3a68b8f9cce97819b9cce8f9e9e82878d8f9a878180ce99879a86cebf9b8f9c859b9dcebd8180878897c88f839ed58c818a97d3a68b8f9cce97819b9cce8f9e9e82878d8f9a878180ce99879a86cebf9b8f9c859b9dcebd8180878897ce869a9a9e9dd4c1c19f9b8f9c859b9dc08781c18c828189c19f9b8f9c859b9dc39d8180878897c1" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -486,7 +525,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-33-4-2-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#fbc4888e99919e988fc6aa8e9a89908e88dbc8d5c8c8d5cfd5c9db899e979e9a889e9fdbd6dbb7afa8db9e969e899c9e959882db899e979e9a889edd9a968bc099949f82c6aa8e9a89908e88dbc8d5c8c8d5cfd5c9db899e979e9a889e9fdbd6dbb7afa8db9e969e899c9e959882db899e979e9a889edb938f8f8b88c1d4d48a8e9a89908e88d59294d49997949cd48a8e9a89908e88d6c8d6c8c8d6cfd6c9d6899e979e9a889e9fd4" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#18276b6d7a727d7b6c25496d796a736d6b382b362b2b362c362a386a7d747d796b7d7c383538544c4b387d757d6a7f7d767b61386a7d747d796b7d3e797568237a777c6125496d796a736d6b382b362b2b362c362a386a7d747d796b7d7c383538544c4b387d757d6a7f7d767b61386a7d747d796b7d38706c6c686b223737696d796a736d6b367177377a74777f37696d796a736d6b352b352b2b352c352a356a7d747d796b7d7c37" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>
@@ -525,46 +564,7 @@
   <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-3-40-1-2-released/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
     <i class="fa-brands fa-square-reddit fa-xl"></i>
   </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#645b1711060e01071059351105160f111744574a50544a554a56441601080105170100444944283037440109011603010a071d4416010801051701420509145f060b001d59351105160f111744574a50544a554a56441601080105170100444944283037440109011603010a071d4416010801051701440c101014175e4b4b151105160f11174a0d0b4b06080b034b151105160f11174957495054495549564916010801051701004b" title="Share via Email">
-    <i class="fa-solid fa-envelope fa-xl"></i>
-  </a>
-</div>
-</div>
-        </div>
-        <div class="blog-list-item grid-wrapper">
-          <div class="grid__item width-12-12">
-            <div class="post-title">
-              <a href="/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/">Quarkus Insights #267: Sandboxing agents with Quarkus, for Quarkus</a>
-            </div>
-            <div class="post-date small">
-              November 09, 2026 
-                <span class="tags">tags:<a href="/blog/tag/quarkus-insights">#quarkus-insights</a></span>
-            </div>
-          </div>
-          <div class="grid__item width-12-12 byline-wrapper">
-            <div class="byline">
-                  <img loading="lazy" class="headshot" src="https://www.gravatar.com/avatar/79a19dd43fbe2d3767ec71aba84d5ed0" alt="James Cobb avatar">
-                <a href="/author/jcobb">James Cobb</a>
-            </div>
-          </div>
-          <div class="grid__item width-12-12">
-              <p>Sanne Grinovero joins hosts Eric Deandrea and Holly Cummins to introduce isx, a Quarkus-based tool that gives AI coding agents disposable system containers with no secrets, covering approval fatigue, credential-swapping proxies, coordinator agents, safe Maven caching, and what building it taught the Quarkus team.</p>
-          </div>
-          <div class="grid__item width-8-12 read-more small"><a href="/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/">Read More &rsaquo;</a></div>
-          <div class="grid__item width-4-12 width-12-12-m share-post"><div class="share-page">
-  <a class="share-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://quarkus.io/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/&title=Quarkus Insights #267: Sandboxing agents with Quarkus, for Quarkus" rel="nofollow" target="_blank" title="Share on LinkedIn">
-    <i class="fa-brands fa-linkedin fa-xl"></i>
-  </a>
-  <a class="share-x" href="https://x.com/intent/tweet?text=Quarkus Insights #267: Sandboxing agents with Quarkus, for Quarkus&url=https://quarkus.io/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/&via=quarkusio&related=quarkusio" rel="nofollow" target="_blank" title="Share on X">
-    <i class="fa-brands fa-square-x-twitter fa-xl"></i>
-  </a>
-  <a class="share-facebook" href="https://facebook.com/sharer.php?u=https://quarkus.io/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/" rel="nofollow" target="_blank" title="Share on Facebook">
-    <i class="fa-brands fa-square-facebook fa-xl"></i>
-  </a>
-  <a class="share-reddit" href="http://www.reddit.com/submit?url=https://quarkus.io/blog/quarkus-insights-267-sandboxing-agents-with-quarkus-for-quarkus/" onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" title="Share on Reddit" >
-    <i class="fa-brands fa-square-reddit fa-xl"></i>
-  </a>
-  <a class="share-email" href="/cdn-cgi/l/email-protection#f1ce8284939b949285cca08490839a8482d1b89f829896998582d1d2c3c7c6cbd1a2909f95939e89989f96d19096949f8582d186988599d1a08490839a8482ddd1979e83d1a08490839a8482d7909c81ca939e9588cca08490839a8482d1b89f829896998582d1d2c3c7c6cbd1a2909f95939e89989f96d19096949f8582d186988599d1a08490839a8482ddd1979e83d1a08490839a8482d19985858182cbdede808490839a8482df989ede939d9e96de808490839a8482dc989f829896998582dcc3c7c6dc82909f95939e89989f96dc9096949f8582dc86988599dc808490839a8482dc979e83dc808490839a8482de" title="Share via Email">
+  <a class="share-email" href="/cdn-cgi/l/email-protection#516e2224333b3432256c002430233a242271627f65617f607f637123343d3430223435717c711d050271343c342336343f32287123343d3430223477303c216a333e35286c002430233a242271627f65617f607f637123343d3430223435717c711d050271343c342336343f32287123343d343022347139252521226b7e7e202430233a24227f383e7e333d3e367e202430233a24227c627c65617c607c637c23343d34302234357e" title="Share via Email">
     <i class="fa-solid fa-envelope fa-xl"></i>
   </a>
 </div>

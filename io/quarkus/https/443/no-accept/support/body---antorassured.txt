@@ -46,7 +46,7 @@
     <link rel="shortcut icon" type="image/png" href="/favicon.ico" >
     <link rel="stylesheet" href="/guides/stylesheet/config.css" />
     <script type="module" src="/static/bundle/app-UNQQD6ED.js"></script>
-      <link rel="stylesheet" href="/static/bundle/app-HXHLKKAD.css" />
+      <link rel="stylesheet" href="/static/bundle/app-63KZGM2H.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
     <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Quarkus - Supersonic Subatomic Java">
 
@@ -204,7 +204,7 @@
   <div class="width-4-12 width-12-12-m help-block">
     <img loading="lazy" src="/assets/images/icons/icon-development.svg" alt="">
     <h4>Quarkus Development</h4>
-    <p>Discuss the development of Quarkus with the team in the <a href="/cdn-cgi/l/email-protection#16676377647d63653b7273603d6563746575647f747356717979717a737164796366653875797b">development mailing list </a> or by <a href="https://quarkusio.zulipchat.com/" target="blank">Zulip Chat</a>.</p>
+    <p>Discuss the development of Quarkus with the team in the <a href="/cdn-cgi/l/email-protection#21505440534a54520c4544570a52544352425348434461464e4e464d4446534e5451520f424e4c">development mailing list </a> or by <a href="https://quarkusio.zulipchat.com/" target="blank">Zulip Chat</a>.</p>
   </div>
 </div>
 <div class="component-wrapper options-band">
